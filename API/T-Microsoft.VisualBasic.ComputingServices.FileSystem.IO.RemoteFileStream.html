@@ -1,0 +1,586 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>RemoteFileStream | Hexo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="baidu-site-verification" content="1ZsVVOmjoT" />
+    <meta name="description" content="RemoteFileStreamnamespace: Microsoft.VisualBasic.ComputingServices.FileSystem.IO
+Provides a System.IO.Stream for a file, supporting both synchronous and asynchronous read and write operations.To brows">
+<meta property="og:type" content="website">
+<meta property="og:title" content="RemoteFileStream">
+<meta property="og:url" content="http://yoursite.com/API/T-Microsoft.VisualBasic.ComputingServices.FileSystem.IO.RemoteFileStream.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="RemoteFileStreamnamespace: Microsoft.VisualBasic.ComputingServices.FileSystem.IO
+Provides a System.IO.Stream for a file, supporting both synchronous and asynchronous read and write operations.To brows">
+<meta property="og:updated_time" content="2016-06-14T17:49:35.190Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="RemoteFileStream">
+<meta name="twitter:description" content="RemoteFileStreamnamespace: Microsoft.VisualBasic.ComputingServices.FileSystem.IO
+Provides a System.IO.Stream for a file, supporting both synchronous and asynchronous read and write operations.To brows">
+    
+      <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
+    
+    
+      <link rel="icon" href="http://gcmodeller.org/DNA.png">
+    
+    <link rel="stylesheet" href="/css/style.css">
+
+    
+<!-- Baidu Analytics -->
+<script type="text/javascript">
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "//hm.baidu.com/hm.js?fe2c7555911b8560db5e56121c5d5960";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+<!-- End Baidu Analytics -->
+
+
+    <script src="//cdn.bootcss.com/jquery/2.0.3/jquery.min.js"></script>
+</head>
+<body>
+<div id="container"> 
+
+    
+    <div id="wrap">
+	   
+
+<header id="header" class="hdpage">
+    
+    <div id="header-outer" class="outer">
+        
+        <div id="header-inner" class="inner">
+          <nav id="main-nav">
+            <a id="main-nav-toggle" class="nav-icon"></a>
+            
+              <a class="main-nav-link" href="/">
+                  
+                  
+
+                
+                  Home
+                </a>
+            
+              <a class="main-nav-link" href="/API">
+                  
+                  
+
+                
+                  API
+                </a>
+            
+              <a class="main-nav-link" href="/tools">
+                  
+                  
+
+                
+                  Tools
+                </a>
+            
+              <a class="main-nav-link" href="/about">
+                  
+                  
+
+                
+                  About
+                </a>
+            
+              <a class="main-nav-link" href="https://github.com/xieguigang/VisualBasic_AppFramework">
+                  
+                  
+
+                
+                  Github
+                </a>
+            
+          </nav>
+          <nav id="sub-nav">
+            
+              <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+            
+            <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+          </nav>
+          <div id="search-form-wrap">
+            <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" results="0" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
+          </div>
+        </div>
+    </div>
+</header>
+		<div class="outer">
+		
+    <article id="page-undefined" class="article article-type-page" itemscope itemprop="blogPost">
+      <div class="article-meta">
+        
+          <header class="article-header">
+            
+  
+    <a href="/API/T-Microsoft.VisualBasic.ComputingServices.FileSystem.IO.RemoteFileStream.html">
+      <h1 class="article-title" itemprop="name">
+        RemoteFileStream
+      </h1>
+    </a>
+  
+
+
+
+          </header>
+        
+
+        <!--<a href="/API/T-Microsoft.VisualBasic.ComputingServices.FileSystem.IO.RemoteFileStream.html" class="article-date">
+  <time datetime="2016-06-14T17:49:35.190Z" itemprop="datePublished">2016-06-15</time>
+</a>-->
+        <!--  -->
+      </div>
+      <div class="article-inner">
+            
+            
+              <!--<header class="article-header">
+                
+  
+    <a href="/API/T-Microsoft.VisualBasic.ComputingServices.FileSystem.IO.RemoteFileStream.html">
+      <h1 class="article-title" itemprop="name">
+        RemoteFileStream
+      </h1>
+    </a>
+  
+
+
+
+              </header>-->
+            
+            <div class="article-entry" itemprop="articleBody">
+              <div class="page-toc">
+                <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#RemoteFileStream"><span class="toc-number">1.</span> <span class="toc-text">RemoteFileStream</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Methods"><span class="toc-number">1.0.1.</span> <span class="toc-text">Methods</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#ctor"><span class="toc-number">1.0.1.1.</span> <span class="toc-text">#ctor</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#BeginRead"><span class="toc-number">1.0.1.2.</span> <span class="toc-text">BeginRead</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#BeginWrite"><span class="toc-number">1.0.1.3.</span> <span class="toc-text">BeginWrite</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Dispose"><span class="toc-number">1.0.1.4.</span> <span class="toc-text">Dispose</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#EndRead"><span class="toc-number">1.0.1.5.</span> <span class="toc-text">EndRead</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#EndWrite"><span class="toc-number">1.0.1.6.</span> <span class="toc-text">EndWrite</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Finalize"><span class="toc-number">1.0.1.7.</span> <span class="toc-text">Finalize</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Flush"><span class="toc-number">1.0.1.8.</span> <span class="toc-text">Flush</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#FlushAsync"><span class="toc-number">1.0.1.9.</span> <span class="toc-text">FlushAsync</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Read"><span class="toc-number">1.0.1.10.</span> <span class="toc-text">Read</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#ReadAsync"><span class="toc-number">1.0.1.11.</span> <span class="toc-text">ReadAsync</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#ReadByte"><span class="toc-number">1.0.1.12.</span> <span class="toc-text">ReadByte</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Seek"><span class="toc-number">1.0.1.13.</span> <span class="toc-text">Seek</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#SetLength"><span class="toc-number">1.0.1.14.</span> <span class="toc-text">SetLength</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Write"><span class="toc-number">1.0.1.15.</span> <span class="toc-text">Write</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#WriteAsync"><span class="toc-number">1.0.1.16.</span> <span class="toc-text">WriteAsync</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#WriteByte"><span class="toc-number">1.0.1.17.</span> <span class="toc-text">WriteByte</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Properties"><span class="toc-number">1.0.2.</span> <span class="toc-text">Properties</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#CanRead"><span class="toc-number">1.0.2.1.</span> <span class="toc-text">CanRead</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#CanSeek"><span class="toc-number">1.0.2.2.</span> <span class="toc-text">CanSeek</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#CanWrite"><span class="toc-number">1.0.2.3.</span> <span class="toc-text">CanWrite</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#FileHandle"><span class="toc-number">1.0.2.4.</span> <span class="toc-text">FileHandle</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Handle"><span class="toc-number">1.0.2.5.</span> <span class="toc-text">Handle</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#hashInfo"><span class="toc-number">1.0.2.6.</span> <span class="toc-text">hashInfo</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#IsAsync"><span class="toc-number">1.0.2.7.</span> <span class="toc-text">IsAsync</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Length"><span class="toc-number">1.0.2.8.</span> <span class="toc-text">Length</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Name"><span class="toc-number">1.0.2.9.</span> <span class="toc-text">Name</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Position"><span class="toc-number">1.0.2.10.</span> <span class="toc-text">Position</span></a></li></ol></li></ol></li></ol></li></ol>
+              </div>
+              
+                <h1 id="RemoteFileStream"><a href="#RemoteFileStream" class="headerlink" title="RemoteFileStream"></a>RemoteFileStream</h1><p><em>namespace: <a href="N-Microsoft.VisualBasic.ComputingServices.FileSystem.IO.html">Microsoft.VisualBasic.ComputingServices.FileSystem.IO</a></em></p>
+<p>Provides a System.IO.Stream for a file, supporting both synchronous and asynchronous<br> read and write operations.To browse the .NET Framework source code for this type,<br> see the Reference Source.</p>
+<h3 id="Methods"><a href="#Methods" class="headerlink" title="Methods"></a>Methods</h3><h4 id="ctor"><a href="#ctor" class="headerlink" title="#ctor"></a>#ctor</h4><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Microsoft.VisualBasic.ComputingServices.FileSystem.IO.RemoteFileStream.<span class="meta">#ctor(System.String,System.IO.FileMode,System.IO.FileAccess,Microsoft.VisualBasic.ComputingServices.FileSystem.FileSystem)</span></span><br></pre></td></tr></table></figure>
+<p>Initializes a new instance of the System.IO.FileStream class with the specified<br> path, creation mode, and read/write permission.</p>
+<table>
+<thead>
+<tr>
+<th>Parameter Name</th>
+<th>Remarks</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>path</td>
+<td>A relative or absolute path for the file that the current FileStream object will</td>
+</tr>
+</tbody>
+</table>
+<p> encapsulate.|<br>|mode|A constant that determines how to open or create the file.|<br>|access|A constant that determines how the file can be accessed by the FileStream object.<br> This also determines the values returned by the System.IO.FileStream.CanRead<br> and System.IO.FileStream.CanWrite properties of the FileStream object. System.IO.FileStream.CanSeek<br> is true if path specifies a disk file.|<br>|remote|-|</p>
+<h4 id="BeginRead"><a href="#BeginRead" class="headerlink" title="BeginRead"></a>BeginRead</h4><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Microsoft.VisualBasic.ComputingServices.FileSystem.IO.RemoteFileStream.BeginRead(System.Byte[],System.Int32,System.Int32,System.AsyncCallback,System.Object)</span><br></pre></td></tr></table></figure>
+<p>Begins an asynchronous read operation. (Consider using System.IO.FileStream.ReadAsync(System.Byte[],System.Int32,System.Int32,System.Threading.CancellationToken)<br> instead; see the Remarks section.)</p>
+<table>
+<thead>
+<tr>
+<th>Parameter Name</th>
+<th>Remarks</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>array</td>
+<td>The buffer to read data into.</td>
+</tr>
+<tr>
+<td>offset</td>
+<td>The byte offset in array at which to begin reading.</td>
+</tr>
+<tr>
+<td>numBytes</td>
+<td>The maximum number of bytes to read.</td>
+</tr>
+<tr>
+<td>userCallback</td>
+<td>The method to be called when the asynchronous read operation is completed.</td>
+</tr>
+<tr>
+<td>stateObject</td>
+<td>A user-provided object that distinguishes this particular asynchronous read request</td>
+</tr>
+</tbody>
+</table>
+<p> from other requests.|</p>
+<p><em>returns: An object that references the asynchronous read.</em></p>
+<h4 id="BeginWrite"><a href="#BeginWrite" class="headerlink" title="BeginWrite"></a>BeginWrite</h4><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Microsoft.VisualBasic.ComputingServices.FileSystem.IO.RemoteFileStream.BeginWrite(System.Byte[],System.Int32,System.Int32,System.AsyncCallback,System.Object)</span><br></pre></td></tr></table></figure>
+<p>Begins an asynchronous write operation. (Consider using System.IO.FileStream.WriteAsync(System.Byte[],System.Int32,System.Int32,System.Threading.CancellationToken)<br> instead; see the Remarks section.)</p>
+<table>
+<thead>
+<tr>
+<th>Parameter Name</th>
+<th>Remarks</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>array</td>
+<td>The buffer containing data to write to the current stream.</td>
+</tr>
+<tr>
+<td>offset</td>
+<td>The zero-based byte offset in array at which to begin copying bytes to the current</td>
+</tr>
+</tbody>
+</table>
+<p> stream.|<br>|numBytes|The maximum number of bytes to write.|<br>|userCallback|The method to be called when the asynchronous write operation is completed.|<br>|stateObject|A user-provided object that distinguishes this particular asynchronous write<br> request from other requests.|</p>
+<p><em>returns: An object that references the asynchronous write.</em></p>
+<h4 id="Dispose"><a href="#Dispose" class="headerlink" title="Dispose"></a>Dispose</h4><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Microsoft.VisualBasic.ComputingServices.FileSystem.IO.RemoteFileStream.Dispose(System.Boolean)</span><br></pre></td></tr></table></figure>
+<p>Releases the unmanaged resources used by the System.IO.FileStream and optionally<br> releases the managed resources.</p>
+<table>
+<thead>
+<tr>
+<th>Parameter Name</th>
+<th>Remarks</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>disposing</td>
+<td>true to release both managed and unmanaged resources; false to release only unmanaged</td>
+</tr>
+</tbody>
+</table>
+<p> resources.|</p>
+<h4 id="EndRead"><a href="#EndRead" class="headerlink" title="EndRead"></a>EndRead</h4><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Microsoft.VisualBasic.ComputingServices.FileSystem.IO.RemoteFileStream.EndRead(System.IAsyncResult)</span><br></pre></td></tr></table></figure>
+<p>Waits for the pending asynchronous read operation to complete. (Consider using<br> System.IO.FileStream.ReadAsync(System.Byte[],System.Int32,System.Int32,System.Threading.CancellationToken)<br> instead; see the Remarks section.)</p>
+<table>
+<thead>
+<tr>
+<th>Parameter Name</th>
+<th>Remarks</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>asyncResult</td>
+<td>The reference to the pending asynchronous request to wait for.</td>
+</tr>
+</tbody>
+</table>
+<p><em>returns: The number of bytes read from the stream, between 0 and the number of bytes you<br> requested. Streams only return 0 at the end of the stream, otherwise, they should<br> block until at least 1 byte is available.</em></p>
+<h4 id="EndWrite"><a href="#EndWrite" class="headerlink" title="EndWrite"></a>EndWrite</h4><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Microsoft.VisualBasic.ComputingServices.FileSystem.IO.RemoteFileStream.EndWrite(System.IAsyncResult)</span><br></pre></td></tr></table></figure>
+<p>Ends an asynchronous write operation and blocks until the I/O operation is complete.<br> (Consider using System.IO.FileStream.WriteAsync(System.Byte[],System.Int32,System.Int32,System.Threading.CancellationToken)<br> instead; see the Remarks section.)</p>
+<table>
+<thead>
+<tr>
+<th>Parameter Name</th>
+<th>Remarks</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>asyncResult</td>
+<td>The pending asynchronous I/O request.</td>
+</tr>
+</tbody>
+</table>
+<h4 id="Finalize"><a href="#Finalize" class="headerlink" title="Finalize"></a>Finalize</h4><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Microsoft.VisualBasic.ComputingServices.FileSystem.IO.RemoteFileStream.Finalize</span><br></pre></td></tr></table></figure>
+<p>Ensures that resources are freed and other cleanup operations are performed when<br> the garbage collector reclaims the FileStream.</p>
+<h4 id="Flush"><a href="#Flush" class="headerlink" title="Flush"></a>Flush</h4><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Microsoft.VisualBasic.ComputingServices.FileSystem.IO.RemoteFileStream.Flush(System.Boolean)</span><br></pre></td></tr></table></figure>
+<p>Clears buffers for this stream and causes any buffered data to be written to<br> the file, and also clears all intermediate file buffers.</p>
+<table>
+<thead>
+<tr>
+<th>Parameter Name</th>
+<th>Remarks</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>flushToDisk</td>
+<td>true to flush all intermediate file buffers; otherwise, false.</td>
+</tr>
+</tbody>
+</table>
+<h4 id="FlushAsync"><a href="#FlushAsync" class="headerlink" title="FlushAsync"></a>FlushAsync</h4><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Microsoft.VisualBasic.ComputingServices.FileSystem.IO.RemoteFileStream.FlushAsync(System.Threading.CancellationToken)</span><br></pre></td></tr></table></figure>
+<p>Asynchronously clears all buffers for this stream, causes any buffered data to<br> be written to the underlying device, and monitors cancellation requests.</p>
+<table>
+<thead>
+<tr>
+<th>Parameter Name</th>
+<th>Remarks</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>cancellationToken</td>
+<td>The token to monitor for cancellation requests.</td>
+</tr>
+</tbody>
+</table>
+<p><em>returns: A task that represents the asynchronous flush operation.</em></p>
+<h4 id="Read"><a href="#Read" class="headerlink" title="Read"></a>Read</h4><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Microsoft.VisualBasic.ComputingServices.FileSystem.IO.RemoteFileStream.Read(System.Byte[],System.Int32,System.Int32)</span><br></pre></td></tr></table></figure>
+<p>Reads a block of bytes from the stream and writes the data in a given buffer.</p>
+<table>
+<thead>
+<tr>
+<th>Parameter Name</th>
+<th>Remarks</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>array</td>
+</tr>
+</tbody>
+</table>
+<p> When this method returns, contains the specified byte array with the values between<br> offset and (offset + count - 1) replaced by the bytes read from the current source.<br> |<br>|offset|The byte offset in array at which the read bytes will be placed.|<br>|count|The maximum number of bytes to read.|</p>
+<p><em>returns: The total number of bytes read into the buffer. This might be less than the number<br> of bytes requested if that number of bytes are not currently available, or zero<br> if the end of the stream is reached.</em></p>
+<h4 id="ReadAsync"><a href="#ReadAsync" class="headerlink" title="ReadAsync"></a>ReadAsync</h4><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Microsoft.VisualBasic.ComputingServices.FileSystem.IO.RemoteFileStream.ReadAsync(System.Byte[],System.Int32,System.Int32,System.Threading.CancellationToken)</span><br></pre></td></tr></table></figure>
+<p>Asynchronously reads a sequence of bytes from the current stream, advances the<br> position within the stream by the number of bytes read, and monitors cancellation<br> requests.</p>
+<table>
+<thead>
+<tr>
+<th>Parameter Name</th>
+<th>Remarks</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>buffer</td>
+<td>The buffer to write the data into.</td>
+</tr>
+<tr>
+<td>offset</td>
+<td>The byte offset in buffer at which to begin writing data from the stream.</td>
+</tr>
+<tr>
+<td>count</td>
+<td>The maximum number of bytes to read.</td>
+</tr>
+<tr>
+<td>cancellationToken</td>
+<td>The token to monitor for cancellation requests.</td>
+</tr>
+</tbody>
+</table>
+<p><em>returns: A task that represents the asynchronous read operation. The value of the TResult<br> parameter contains the total number of bytes read into the buffer. The result<br> value can be less than the number of bytes requested if the number of bytes currently<br> available is less than the requested number, or it can be 0 (zero) if the end<br> of the stream has been reached.</em></p>
+<h4 id="ReadByte"><a href="#ReadByte" class="headerlink" title="ReadByte"></a>ReadByte</h4><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Microsoft.VisualBasic.ComputingServices.FileSystem.IO.RemoteFileStream.ReadByte</span><br></pre></td></tr></table></figure>
+<p>Reads a byte from the file and advances the read position one byte.<br><em>returns: The byte, cast to an System.Int32, or -1 if the end of the stream has been reached.</em></p>
+<h4 id="Seek"><a href="#Seek" class="headerlink" title="Seek"></a>Seek</h4><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Microsoft.VisualBasic.ComputingServices.FileSystem.IO.RemoteFileStream.Seek(System.Int64,System.IO.SeekOrigin)</span><br></pre></td></tr></table></figure>
+<p>Sets the current position of this stream to the given value.</p>
+<table>
+<thead>
+<tr>
+<th>Parameter Name</th>
+<th>Remarks</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>offset</td>
+<td>The point relative to origin from which to begin seeking.</td>
+</tr>
+<tr>
+<td>origin</td>
+<td>Specifies the beginning, the end, or the current position as a reference point</td>
+</tr>
+</tbody>
+</table>
+<p> for offset, using a value of type System.IO.SeekOrigin.|</p>
+<p><em>returns: The new position in the stream.</em></p>
+<h4 id="SetLength"><a href="#SetLength" class="headerlink" title="SetLength"></a>SetLength</h4><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Microsoft.VisualBasic.ComputingServices.FileSystem.IO.RemoteFileStream.SetLength(System.Int64)</span><br></pre></td></tr></table></figure>
+<p>Sets the length of this stream to the given value.</p>
+<table>
+<thead>
+<tr>
+<th>Parameter Name</th>
+<th>Remarks</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>value</td>
+<td>The new length of the stream.</td>
+</tr>
+</tbody>
+</table>
+<h4 id="Write"><a href="#Write" class="headerlink" title="Write"></a>Write</h4><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Microsoft.VisualBasic.ComputingServices.FileSystem.IO.RemoteFileStream.Write(System.Byte[],System.Int32,System.Int32)</span><br></pre></td></tr></table></figure>
+<p>Writes a block of bytes to the file stream.</p>
+<table>
+<thead>
+<tr>
+<th>Parameter Name</th>
+<th>Remarks</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>array</td>
+<td>The buffer containing data to write to the stream.</td>
+</tr>
+<tr>
+<td>offset</td>
+<td>The zero-based byte offset in array from which to begin copying bytes to the</td>
+</tr>
+</tbody>
+</table>
+<p> stream.|<br>|count|The maximum number of bytes to write.|</p>
+<h4 id="WriteAsync"><a href="#WriteAsync" class="headerlink" title="WriteAsync"></a>WriteAsync</h4><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Microsoft.VisualBasic.ComputingServices.FileSystem.IO.RemoteFileStream.WriteAsync(System.Byte[],System.Int32,System.Int32,System.Threading.CancellationToken)</span><br></pre></td></tr></table></figure>
+<p>Asynchronously writes a sequence of bytes to the current stream, advances the<br> current position within this stream by the number of bytes written, and monitors<br> cancellation requests.</p>
+<table>
+<thead>
+<tr>
+<th>Parameter Name</th>
+<th>Remarks</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>buffer</td>
+<td>The buffer to write data from.</td>
+</tr>
+<tr>
+<td>offset</td>
+<td>The zero-based byte offset in buffer from which to begin copying bytes to the</td>
+</tr>
+</tbody>
+</table>
+<p> stream.|<br>|count|The maximum number of bytes to write.|<br>|cancellationToken|The token to monitor for cancellation requests.|</p>
+<p><em>returns: A task that represents the asynchronous write operation.</em></p>
+<h4 id="WriteByte"><a href="#WriteByte" class="headerlink" title="WriteByte"></a>WriteByte</h4><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Microsoft.VisualBasic.ComputingServices.FileSystem.IO.RemoteFileStream.WriteByte(System.Byte)</span><br></pre></td></tr></table></figure>
+<p>Writes a byte to the current position in the file stream.</p>
+<table>
+<thead>
+<tr>
+<th>Parameter Name</th>
+<th>Remarks</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>value</td>
+<td>A byte to write to the stream.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="Properties"><a href="#Properties" class="headerlink" title="Properties"></a>Properties</h3><h4 id="CanRead"><a href="#CanRead" class="headerlink" title="CanRead"></a>CanRead</h4><p>Gets a value indicating whether the current stream supports reading.</p>
+<h4 id="CanSeek"><a href="#CanSeek" class="headerlink" title="CanSeek"></a>CanSeek</h4><p>Gets a value indicating whether the current stream supports seeking.</p>
+<h4 id="CanWrite"><a href="#CanWrite" class="headerlink" title="CanWrite"></a>CanWrite</h4><p>Gets a value indicating whether the current stream supports writing.</p>
+<h4 id="FileHandle"><a href="#FileHandle" class="headerlink" title="FileHandle"></a>FileHandle</h4><p>File handle on the remote machine file system</p>
+<h4 id="Handle"><a href="#Handle" class="headerlink" title="Handle"></a>Handle</h4><p>Gets the operating system file handle for the file that the current FileStream<br> object encapsulates.</p>
+<h4 id="hashInfo"><a href="#hashInfo" class="headerlink" title="hashInfo"></a>hashInfo</h4><p>port@remote_IP://hash+<path></path></p>
+<h4 id="IsAsync"><a href="#IsAsync" class="headerlink" title="IsAsync"></a>IsAsync</h4><p>Gets a value indicating whether the FileStream was opened asynchronously or synchronously.</p>
+<h4 id="Length"><a href="#Length" class="headerlink" title="Length"></a>Length</h4><p>Gets the length in bytes of the stream.</p>
+<h4 id="Name"><a href="#Name" class="headerlink" title="Name"></a>Name</h4><p>Gets the name of the FileStream that was passed to the constructor.</p>
+<h4 id="Position"><a href="#Position" class="headerlink" title="Position"></a>Position</h4><p>Gets or sets the current position of this stream.</p>
+
+              
+            </div>
+            <footer class="article-footer">
+              <a href="/API/T-Microsoft.VisualBasic.ComputingServices.FileSystem.IO.RemoteFileStream.html" class="article-date">
+  <time datetime="2016-06-14T17:49:35.190Z" itemprop="datePublished">2016-06-15</time>
+</a>
+              <a data-url="http://yoursite.com/API/T-Microsoft.VisualBasic.ComputingServices.FileSystem.IO.RemoteFileStream.html" data-id="cipfqyh1u009kr0v4zboe9ur5" class="article-share-link">Share</a>
+              
+              
+            </footer>
+      </div>
+      
+        
+      
+    </article>
+    <script type="text/javascript">
+      window.onscroll = function(){ 
+        $(function(){
+          var $toc = $('.page-toc'),
+              $article = $('.article-entry')
+              toc_top = $toc.offset().top
+              tocsub_width = $toc.children().width()
+              article_height = $article.children().height()
+              scroll_top = document.body.scrollTop
+              screen_h = $(window).height()
+              footer_top = $('.article-footer').offset().top - $(window).height()
+              if(toc_top&&scroll_top&&scroll_top>toc_top&&scroll_top<footer_top){
+                $toc.children().css({
+                  "position": "fixed",
+                  "height": (screen_h -20)+'px',
+                  "overflow": "auto"
+                })
+                $article.css('margin-right',tocsub_width+'px')
+              }else{
+                $toc.children().css({
+                  "position": "relative",
+                  "height":'inherit',
+                  "overflow": "auto"
+                })
+                $article.css('margin-right',0+'px')
+              }
+        })
+      } 
+    </script>
+
+
+
+
+
+
+
+
+		</div>
+		
+
+<footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+        <div class="left">
+            &copy; 2016 John Doe<br>
+            Powered by <a href="http://hexo.io/" target="_blank">Hexo</a> and Theme by <a href="https://github.com/jaywcjlove/hexoThemeKacper">hexoThemeKacper </a>
+        </div>
+        <div class="right">
+            
+        </div>
+    </div>
+  </div>
+</footer>
+<script src="//cdn.bootcss.com/jquery/2.0.3/jquery.min.js"></script>
+
+
+<script type="text/javascript">
+$(function(){
+  var $img = $('.article-entry img'),
+      $link = $img.css({
+        "display":"inline-block"
+      }).parent()
+
+  if($link.parent().is("a")){
+      $img.each(function(idx,item) {
+      $(this).parent().attr('href',$(this).parent().parent().attr('href'))
+    })
+  }
+})
+</script>
+
+
+<script src="/js/script.js"></script>
+
+  	</div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/API" class="mobile-nav-link">API</a>
+  
+    <a href="/tools" class="mobile-nav-link">Tools</a>
+  
+    <a href="/about" class="mobile-nav-link">About</a>
+  
+    <a href="https://github.com/xieguigang/VisualBasic_AppFramework" class="mobile-nav-link">Github</a>
+  
+</nav>
+    
+</div>
+</body>
+</html>
+

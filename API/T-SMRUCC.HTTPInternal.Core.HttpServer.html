@@ -1,0 +1,365 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>HttpServer | Hexo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="baidu-site-verification" content="1ZsVVOmjoT" />
+    <meta name="description" content="HttpServernamespace: SMRUCC.HTTPInternal.Core
+Internal http server core.
+Methods#ctor1SMRUCC.HTTPInternal.Core.HttpServer.#ctor(System.Int32,System.Boolean)
+
+
+
+Parameter Name
+Remarks
+
+
+
+
+port
+The netw">
+<meta property="og:type" content="website">
+<meta property="og:title" content="HttpServer">
+<meta property="og:url" content="http://yoursite.com/API/T-SMRUCC.HTTPInternal.Core.HttpServer.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="HttpServernamespace: SMRUCC.HTTPInternal.Core
+Internal http server core.
+Methods#ctor1SMRUCC.HTTPInternal.Core.HttpServer.#ctor(System.Int32,System.Boolean)
+
+
+
+Parameter Name
+Remarks
+
+
+
+
+port
+The netw">
+<meta property="og:updated_time" content="2016-06-14T17:49:36.113Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="HttpServer">
+<meta name="twitter:description" content="HttpServernamespace: SMRUCC.HTTPInternal.Core
+Internal http server core.
+Methods#ctor1SMRUCC.HTTPInternal.Core.HttpServer.#ctor(System.Int32,System.Boolean)
+
+
+
+Parameter Name
+Remarks
+
+
+
+
+port
+The netw">
+    
+      <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
+    
+    
+      <link rel="icon" href="http://gcmodeller.org/DNA.png">
+    
+    <link rel="stylesheet" href="/css/style.css">
+
+    
+<!-- Baidu Analytics -->
+<script type="text/javascript">
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "//hm.baidu.com/hm.js?fe2c7555911b8560db5e56121c5d5960";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+<!-- End Baidu Analytics -->
+
+
+    <script src="//cdn.bootcss.com/jquery/2.0.3/jquery.min.js"></script>
+</head>
+<body>
+<div id="container"> 
+
+    
+    <div id="wrap">
+	   
+
+<header id="header" class="hdpage">
+    
+    <div id="header-outer" class="outer">
+        
+        <div id="header-inner" class="inner">
+          <nav id="main-nav">
+            <a id="main-nav-toggle" class="nav-icon"></a>
+            
+              <a class="main-nav-link" href="/">
+                  
+                  
+
+                
+                  Home
+                </a>
+            
+              <a class="main-nav-link" href="/API">
+                  
+                  
+
+                
+                  API
+                </a>
+            
+              <a class="main-nav-link" href="/tools">
+                  
+                  
+
+                
+                  Tools
+                </a>
+            
+              <a class="main-nav-link" href="/about">
+                  
+                  
+
+                
+                  About
+                </a>
+            
+              <a class="main-nav-link" href="https://github.com/xieguigang/VisualBasic_AppFramework">
+                  
+                  
+
+                
+                  Github
+                </a>
+            
+          </nav>
+          <nav id="sub-nav">
+            
+              <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+            
+            <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+          </nav>
+          <div id="search-form-wrap">
+            <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" results="0" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
+          </div>
+        </div>
+    </div>
+</header>
+		<div class="outer">
+		
+    <article id="page-undefined" class="article article-type-page" itemscope itemprop="blogPost">
+      <div class="article-meta">
+        
+          <header class="article-header">
+            
+  
+    <a href="/API/T-SMRUCC.HTTPInternal.Core.HttpServer.html">
+      <h1 class="article-title" itemprop="name">
+        HttpServer
+      </h1>
+    </a>
+  
+
+
+
+          </header>
+        
+
+        <!--<a href="/API/T-SMRUCC.HTTPInternal.Core.HttpServer.html" class="article-date">
+  <time datetime="2016-06-14T17:49:36.113Z" itemprop="datePublished">2016-06-15</time>
+</a>-->
+        <!--  -->
+      </div>
+      <div class="article-inner">
+            
+            
+              <!--<header class="article-header">
+                
+  
+    <a href="/API/T-SMRUCC.HTTPInternal.Core.HttpServer.html">
+      <h1 class="article-title" itemprop="name">
+        HttpServer
+      </h1>
+    </a>
+  
+
+
+
+              </header>-->
+            
+            <div class="article-entry" itemprop="articleBody">
+              <div class="page-toc">
+                <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#HttpServer"><span class="toc-number">1.</span> <span class="toc-text">HttpServer</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Methods"><span class="toc-number">1.0.1.</span> <span class="toc-text">Methods</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#ctor"><span class="toc-number">1.0.1.1.</span> <span class="toc-text">#ctor</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#httpProcessor"><span class="toc-number">1.0.1.2.</span> <span class="toc-text">__httpProcessor</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#handleGETRequest"><span class="toc-number">1.0.1.3.</span> <span class="toc-text">handleGETRequest</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Run"><span class="toc-number">1.0.1.4.</span> <span class="toc-text">Run</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Shutdown"><span class="toc-number">1.0.1.5.</span> <span class="toc-text">Shutdown</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Properties"><span class="toc-number">1.0.2.</span> <span class="toc-text">Properties</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#IsRunning"><span class="toc-number">1.0.2.1.</span> <span class="toc-text">IsRunning</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#LocalPort"><span class="toc-number">1.0.2.2.</span> <span class="toc-text">LocalPort</span></a></li></ol></li></ol></li></ol></li></ol>
+              </div>
+              
+                <h1 id="HttpServer"><a href="#HttpServer" class="headerlink" title="HttpServer"></a>HttpServer</h1><p><em>namespace: <a href="N-SMRUCC.HTTPInternal.Core.html">SMRUCC.HTTPInternal.Core</a></em></p>
+<p>Internal http server core.</p>
+<h3 id="Methods"><a href="#Methods" class="headerlink" title="Methods"></a>Methods</h3><h4 id="ctor"><a href="#ctor" class="headerlink" title="#ctor"></a>#ctor</h4><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">SMRUCC.HTTPInternal.Core.HttpServer.<span class="meta">#ctor(System.Int32,System.Boolean)</span></span><br></pre></td></tr></table></figure>
+<table>
+<thead>
+<tr>
+<th>Parameter Name</th>
+<th>Remarks</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>port</td>
+<td>The network data port of this internal http server listen.</td>
+</tr>
+<tr>
+<td>homeShowOnStart</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<h4 id="httpProcessor"><a href="#httpProcessor" class="headerlink" title="__httpProcessor"></a>__httpProcessor</h4><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">SMRUCC.HTTPInternal.Core.HttpServer.__httpProcessor(System.Net.Sockets.TcpClient)</span><br></pre></td></tr></table></figure>
+<p>New HttpProcessor(Client, Me) with {._404Page = “….”}</p>
+<table>
+<thead>
+<tr>
+<th>Parameter Name</th>
+<th>Remarks</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>client</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<h4 id="handleGETRequest"><a href="#handleGETRequest" class="headerlink" title="handleGETRequest"></a>handleGETRequest</h4><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">SMRUCC.HTTPInternal.Core.HttpServer.handleGETRequest(SMRUCC.HTTPInternal.Core.HttpProcessor)</span><br></pre></td></tr></table></figure>
+<table>
+<thead>
+<tr>
+<th>Parameter Name</th>
+<th>Remarks</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>p</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<h4 id="Run"><a href="#Run" class="headerlink" title="Run"></a>Run</h4><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">SMRUCC.HTTPInternal.Core.HttpServer.Run</span><br></pre></td></tr></table></figure>
+<p>Running this http server.<br> NOTE: current thread will be blocked at here until the server core is shutdown.<br> (请注意，在服务器开启之后，当前的线程会被阻塞在这里)</p>
+<h4 id="Shutdown"><a href="#Shutdown" class="headerlink" title="Shutdown"></a>Shutdown</h4><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">SMRUCC.HTTPInternal.Core.HttpServer.Shutdown</span><br></pre></td></tr></table></figure>
+<p>Shutdown this internal http server</p>
+<h3 id="Properties"><a href="#Properties" class="headerlink" title="Properties"></a>Properties</h3><h4 id="IsRunning"><a href="#IsRunning" class="headerlink" title="IsRunning"></a>IsRunning</h4><p>Indicates this http server is running status or not.</p>
+<h4 id="LocalPort"><a href="#LocalPort" class="headerlink" title="LocalPort"></a>LocalPort</h4><p>The network data port of this internal http server listen.</p>
+
+              
+            </div>
+            <footer class="article-footer">
+              <a href="/API/T-SMRUCC.HTTPInternal.Core.HttpServer.html" class="article-date">
+  <time datetime="2016-06-14T17:49:36.113Z" itemprop="datePublished">2016-06-15</time>
+</a>
+              <a data-url="http://yoursite.com/API/T-SMRUCC.HTTPInternal.Core.HttpServer.html" data-id="cipfqyi8g00slr0v4np88xsbn" class="article-share-link">Share</a>
+              
+              
+            </footer>
+      </div>
+      
+        
+      
+    </article>
+    <script type="text/javascript">
+      window.onscroll = function(){ 
+        $(function(){
+          var $toc = $('.page-toc'),
+              $article = $('.article-entry')
+              toc_top = $toc.offset().top
+              tocsub_width = $toc.children().width()
+              article_height = $article.children().height()
+              scroll_top = document.body.scrollTop
+              screen_h = $(window).height()
+              footer_top = $('.article-footer').offset().top - $(window).height()
+              if(toc_top&&scroll_top&&scroll_top>toc_top&&scroll_top<footer_top){
+                $toc.children().css({
+                  "position": "fixed",
+                  "height": (screen_h -20)+'px',
+                  "overflow": "auto"
+                })
+                $article.css('margin-right',tocsub_width+'px')
+              }else{
+                $toc.children().css({
+                  "position": "relative",
+                  "height":'inherit',
+                  "overflow": "auto"
+                })
+                $article.css('margin-right',0+'px')
+              }
+        })
+      } 
+    </script>
+
+
+
+
+
+
+
+
+		</div>
+		
+
+<footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+        <div class="left">
+            &copy; 2016 John Doe<br>
+            Powered by <a href="http://hexo.io/" target="_blank">Hexo</a> and Theme by <a href="https://github.com/jaywcjlove/hexoThemeKacper">hexoThemeKacper </a>
+        </div>
+        <div class="right">
+            
+        </div>
+    </div>
+  </div>
+</footer>
+<script src="//cdn.bootcss.com/jquery/2.0.3/jquery.min.js"></script>
+
+
+<script type="text/javascript">
+$(function(){
+  var $img = $('.article-entry img'),
+      $link = $img.css({
+        "display":"inline-block"
+      }).parent()
+
+  if($link.parent().is("a")){
+      $img.each(function(idx,item) {
+      $(this).parent().attr('href',$(this).parent().parent().attr('href'))
+    })
+  }
+})
+</script>
+
+
+<script src="/js/script.js"></script>
+
+  	</div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/API" class="mobile-nav-link">API</a>
+  
+    <a href="/tools" class="mobile-nav-link">Tools</a>
+  
+    <a href="/about" class="mobile-nav-link">About</a>
+  
+    <a href="https://github.com/xieguigang/VisualBasic_AppFramework" class="mobile-nav-link">Github</a>
+  
+</nav>
+    
+</div>
+</body>
+</html>
+

@@ -1,0 +1,409 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>QTable`1 | Hexo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="baidu-site-verification" content="1ZsVVOmjoT" />
+    <meta name="description" content="QTable`1namespace: Microsoft.VisualBasic.DataMining.Framework.QLearning
+The heart of the Q-learning algorithm, the QTable contains the table which maps states, actions and their Q values. This class h">
+<meta property="og:type" content="website">
+<meta property="og:title" content="QTable`1">
+<meta property="og:url" content="http://yoursite.com/API/T-Microsoft.VisualBasic.DataMining.Framework.QLearning.QTable`1.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="QTable`1namespace: Microsoft.VisualBasic.DataMining.Framework.QLearning
+The heart of the Q-learning algorithm, the QTable contains the table which maps states, actions and their Q values. This class h">
+<meta property="og:updated_time" content="2016-06-14T17:49:35.326Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="QTable`1">
+<meta name="twitter:description" content="QTable`1namespace: Microsoft.VisualBasic.DataMining.Framework.QLearning
+The heart of the Q-learning algorithm, the QTable contains the table which maps states, actions and their Q values. This class h">
+    
+      <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
+    
+    
+      <link rel="icon" href="http://gcmodeller.org/DNA.png">
+    
+    <link rel="stylesheet" href="/css/style.css">
+
+    
+<!-- Baidu Analytics -->
+<script type="text/javascript">
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "//hm.baidu.com/hm.js?fe2c7555911b8560db5e56121c5d5960";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+<!-- End Baidu Analytics -->
+
+
+    <script src="//cdn.bootcss.com/jquery/2.0.3/jquery.min.js"></script>
+</head>
+<body>
+<div id="container"> 
+
+    
+    <div id="wrap">
+	   
+
+<header id="header" class="hdpage">
+    
+    <div id="header-outer" class="outer">
+        
+        <div id="header-inner" class="inner">
+          <nav id="main-nav">
+            <a id="main-nav-toggle" class="nav-icon"></a>
+            
+              <a class="main-nav-link" href="/">
+                  
+                  
+
+                
+                  Home
+                </a>
+            
+              <a class="main-nav-link" href="/API">
+                  
+                  
+
+                
+                  API
+                </a>
+            
+              <a class="main-nav-link" href="/tools">
+                  
+                  
+
+                
+                  Tools
+                </a>
+            
+              <a class="main-nav-link" href="/about">
+                  
+                  
+
+                
+                  About
+                </a>
+            
+              <a class="main-nav-link" href="https://github.com/xieguigang/VisualBasic_AppFramework">
+                  
+                  
+
+                
+                  Github
+                </a>
+            
+          </nav>
+          <nav id="sub-nav">
+            
+              <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+            
+            <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+          </nav>
+          <div id="search-form-wrap">
+            <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" results="0" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
+          </div>
+        </div>
+    </div>
+</header>
+		<div class="outer">
+		
+    <article id="page-undefined" class="article article-type-page" itemscope itemprop="blogPost">
+      <div class="article-meta">
+        
+          <header class="article-header">
+            
+  
+    <a href="/API/T-Microsoft.VisualBasic.DataMining.Framework.QLearning.QTable`1.html">
+      <h1 class="article-title" itemprop="name">
+        QTable`1
+      </h1>
+    </a>
+  
+
+
+
+          </header>
+        
+
+        <!--<a href="/API/T-Microsoft.VisualBasic.DataMining.Framework.QLearning.QTable`1.html" class="article-date">
+  <time datetime="2016-06-14T17:49:35.326Z" itemprop="datePublished">2016-06-15</time>
+</a>-->
+        <!--  -->
+      </div>
+      <div class="article-inner">
+            
+            
+              <!--<header class="article-header">
+                
+  
+    <a href="/API/T-Microsoft.VisualBasic.DataMining.Framework.QLearning.QTable`1.html">
+      <h1 class="article-title" itemprop="name">
+        QTable`1
+      </h1>
+    </a>
+  
+
+
+
+              </header>-->
+            
+            <div class="article-entry" itemprop="articleBody">
+              <div class="page-toc">
+                <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#QTable-1"><span class="toc-number">1.</span> <span class="toc-text">QTable`1</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Methods"><span class="toc-number">1.0.1.</span> <span class="toc-text">Methods</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#ctor"><span class="toc-number">1.0.1.1.</span> <span class="toc-text">#ctor</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#explore"><span class="toc-number">1.0.1.2.</span> <span class="toc-text">__explore</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#getActionsQValues"><span class="toc-number">1.0.1.3.</span> <span class="toc-text">__getActionsQValues</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#getBestAction"><span class="toc-number">1.0.1.4.</span> <span class="toc-text">__getBestAction</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#getMapString"><span class="toc-number">1.0.1.5.</span> <span class="toc-text">__getMapString</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#GetValues"><span class="toc-number">1.0.1.6.</span> <span class="toc-text">GetValues</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#NextAction"><span class="toc-number">1.0.1.7.</span> <span class="toc-text">NextAction</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#UpdateQvalue"><span class="toc-number">1.0.1.8.</span> <span class="toc-text">UpdateQvalue</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Properties"><span class="toc-number">1.0.2.</span> <span class="toc-text">Properties</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#randomGenerator"><span class="toc-number">1.0.2.1.</span> <span class="toc-text">__randomGenerator</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#prevAction"><span class="toc-number">1.0.2.2.</span> <span class="toc-text">_prevAction</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#prevState"><span class="toc-number">1.0.2.3.</span> <span class="toc-text">_prevState</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#ActionRange"><span class="toc-number">1.0.2.4.</span> <span class="toc-text">ActionRange</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#ExplorationChance"><span class="toc-number">1.0.2.5.</span> <span class="toc-text">ExplorationChance</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#GammaValue"><span class="toc-number">1.0.2.6.</span> <span class="toc-text">GammaValue</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#LearningRate"><span class="toc-number">1.0.2.7.</span> <span class="toc-text">LearningRate</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Table"><span class="toc-number">1.0.2.8.</span> <span class="toc-text">Table</span></a></li></ol></li></ol></li></ol></li></ol>
+              </div>
+              
+                <h1 id="QTable-1"><a href="#QTable-1" class="headerlink" title="QTable`1"></a>QTable`1</h1><p><em>namespace: <a href="N-Microsoft.VisualBasic.DataMining.Framework.QLearning.html">Microsoft.VisualBasic.DataMining.Framework.QLearning</a></em></p>
+<p>The heart of the Q-learning algorithm, the QTable contains the table<br> which maps states, actions and their Q values. This class has elaborate<br> documentation, and should be the focus of the students’ body of work<br> for the purposes of this tutorial.</p>
+<p> @author A.Liapis (Original author), A. Hartzen (2013 modifications); xie.guigang@gcmodeller.org (2016 modifications)</p>
+<h3 id="Methods"><a href="#Methods" class="headerlink" title="Methods"></a>Methods</h3><h4 id="ctor"><a href="#ctor" class="headerlink" title="#ctor"></a>#ctor</h4><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Microsoft.VisualBasic.DataMining.Framework.QLearning.QTable`<span class="number">1.</span><span class="meta">#ctor(System.Int32)</span></span><br></pre></td></tr></table></figure>
+<p>Q table constructor, initiates variables.</p>
+<table>
+<thead>
+<tr>
+<th>Parameter Name</th>
+<th>Remarks</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>actionRange</td>
+<td>number of actions available at any map state</td>
+</tr>
+</tbody>
+</table>
+<h4 id="explore"><a href="#explore" class="headerlink" title="__explore"></a>__explore</h4><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Microsoft.VisualBasic.DataMining.Framework.QLearning.QTable`<span class="number">1.</span>__explore</span><br></pre></td></tr></table></figure>
+<p>The explore function is called for e-greedy algorithms.<br> It can choose an action at random from all available,<br> or can put more weight towards actions that have not been taken<br> as often as the others (most unknown).<br><em>returns:  index of action to take </em></p>
+<blockquote>
+<p>在这里得到可能的下一步的动作的在动作列表里面编号值， Index</p>
+</blockquote>
+<h4 id="getActionsQValues"><a href="#getActionsQValues" class="headerlink" title="__getActionsQValues"></a>__getActionsQValues</h4><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Microsoft.VisualBasic.DataMining.Framework.QLearning.QTable`<span class="number">1.</span>__getActionsQValues(`<span class="number">0</span>)</span><br></pre></td></tr></table></figure>
+<p>The getActionsQValues function returns an array of Q values for<br> all the actions available at any state. Note that if the current<br> map state does not already exist in the Q table (never visited<br> before), then it is initiated with Q values of 0 for all of the<br> available actions.</p>
+<table>
+<thead>
+<tr>
+<th>Parameter Name</th>
+<th>Remarks</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>map</td>
+<td>current map (state)</td>
+</tr>
+</tbody>
+</table>
+<p><em>returns:  an array of Q values for all the actions available at any state </em></p>
+<h4 id="getBestAction"><a href="#getBestAction" class="headerlink" title="__getBestAction"></a>__getBestAction</h4><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Microsoft.VisualBasic.DataMining.Framework.QLearning.QTable`<span class="number">1.</span>__getBestAction(`<span class="number">0</span>)</span><br></pre></td></tr></table></figure>
+<p>The getBestAction function uses a greedy approach for finding<br> the best action to take. Note that if all Q values for the current<br> state are equal (such as all 0 if the state has never been visited<br> before), then getBestAction will always choose the same action.<br> If such an action is invalid, this may lead to a deadlock as the<br> map state never changes: for situations like these, exploration<br> can get the algorithm out of this deadlock.</p>
+<table>
+<thead>
+<tr>
+<th>Parameter Name</th>
+<th>Remarks</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>map</td>
+<td>current map (state)</td>
+</tr>
+</tbody>
+</table>
+<p><em>returns:  the action with the highest Q value </em></p>
+<h4 id="getMapString"><a href="#getMapString" class="headerlink" title="__getMapString"></a>__getMapString</h4><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Microsoft.VisualBasic.DataMining.Framework.QLearning.QTable`<span class="number">1.</span>__getMapString(`<span class="number">0</span>)</span><br></pre></td></tr></table></figure>
+<p>This helper function is used for entering the map state into the<br> HashMap</p>
+<table>
+<thead>
+<tr>
+<th>Parameter Name</th>
+<th>Remarks</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>map</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<p><em>returns:  String used as a key for the HashMap </em></p>
+<h4 id="GetValues"><a href="#GetValues" class="headerlink" title="GetValues"></a>GetValues</h4><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Microsoft.VisualBasic.DataMining.Framework.QLearning.QTable`<span class="number">1.</span>GetValues(`<span class="number">0</span>)</span><br></pre></td></tr></table></figure>
+<p>Helper function to find the Q-values of a given map state.</p>
+<table>
+<thead>
+<tr>
+<th>Parameter Name</th>
+<th>Remarks</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>map</td>
+<td>current map (state)</td>
+</tr>
+</tbody>
+</table>
+<p><em>returns:  the Q-values stored of the Qtable entry of the map state, otherwise null if it is not found </em></p>
+<h4 id="NextAction"><a href="#NextAction" class="headerlink" title="NextAction"></a>NextAction</h4><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Microsoft.VisualBasic.DataMining.Framework.QLearning.QTable`<span class="number">1.</span>NextAction(`<span class="number">0</span>)</span><br></pre></td></tr></table></figure>
+<p>For this example, the getNextAction function uses an e-greedy<br> approach, having exploration happen if the exploration chance<br> is rolled.<br> ( <strong><strong> 请注意，这个函数所返回的值为最佳选择的Index编号，所以可能还需要进行一些转换 </strong></strong> )</p>
+<table>
+<thead>
+<tr>
+<th>Parameter Name</th>
+<th>Remarks</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>map</td>
+<td>current map (state)</td>
+</tr>
+</tbody>
+</table>
+<p><em>returns:  the action to be taken by the calling program </em></p>
+<h4 id="UpdateQvalue"><a href="#UpdateQvalue" class="headerlink" title="UpdateQvalue"></a>UpdateQvalue</h4><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Microsoft.VisualBasic.DataMining.Framework.QLearning.QTable`<span class="number">1.</span>UpdateQvalue(System.Int32,`<span class="number">0</span>)</span><br></pre></td></tr></table></figure>
+<p>The updateQvalue is the heart of the Q-learning algorithm. Based on<br> the reward gained by taking the action prevAction while being in the<br> state prevState, the updateQvalue must update the Q value of that<br> {prevState, prevAction} entry in the Q table. In order to do that,<br> the Q value of the best action of the current map state must also<br> be calculated.</p>
+<table>
+<thead>
+<tr>
+<th>Parameter Name</th>
+<th>Remarks</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>reward</td>
+<td>at the current map state</td>
+</tr>
+<tr>
+<td>map</td>
+<td>current map state (for finding the best action of the</td>
+</tr>
+</tbody>
+</table>
+<p> current map state) |</p>
+<h3 id="Properties"><a href="#Properties" class="headerlink" title="Properties"></a>Properties</h3><h4 id="randomGenerator"><a href="#randomGenerator" class="headerlink" title="__randomGenerator"></a>__randomGenerator</h4><p>for creating random numbers</p>
+<h4 id="prevAction"><a href="#prevAction" class="headerlink" title="_prevAction"></a>_prevAction</h4><p>Since in Q-learning the updates to the Q values are made ONE STEP<br> LATE, the index of the action which resulted in the reward must be<br> stored.</p>
+<h4 id="prevState"><a href="#prevState" class="headerlink" title="_prevState"></a>_prevState</h4><p>Since in Q-learning the updates to the Q values are made ONE STEP<br> LATE, the state of the world when the action resulting in the reward<br> was made must be stored.</p>
+<h4 id="ActionRange"><a href="#ActionRange" class="headerlink" title="ActionRange"></a>ActionRange</h4><p>the actionRange variable determines the number of actions available<br> at any map state, and therefore the number of Q values in each entry<br> of the Q-table.</p>
+<h4 id="ExplorationChance"><a href="#ExplorationChance" class="headerlink" title="ExplorationChance"></a>ExplorationChance</h4><p>for e-greedy Q-learning, when taking an action a random number is<br> checked against the explorationChance variable: if the number is<br> below the explorationChance, then exploration takes place picking<br> an action at random. Note that the explorationChance is not a final<br> because it is customary that the exploration chance changes as the<br> training goes on.</p>
+<h4 id="GammaValue"><a href="#GammaValue" class="headerlink" title="GammaValue"></a>GammaValue</h4><p>the discount factor is saved as the gammaValue variable. The<br> discount factor determines the importance of future rewards.<br> If the gammaValue is 0 then the AI will only consider immediate<br> rewards, while with a gammaValue near 1 (but below 1) the AI will<br> try to maximize the long-term reward even if it is many moves away.</p>
+<h4 id="LearningRate"><a href="#LearningRate" class="headerlink" title="LearningRate"></a>LearningRate</h4><p>the learningRate determines how new information affects accumulated<br> information from previous instances. If the learningRate is 1, then<br> the new information completely overrides any previous information.<br> Note that the learningRate is not a final because it is<br> customary that the learningRate changes as the<br> training goes on.</p>
+<h4 id="Table"><a href="#Table" class="headerlink" title="Table"></a>Table</h4><p>the table variable stores the Q-table, where the state is saved<br> directly as the actual map. Each map state has an array of Q values<br> for all the actions available for that state.</p>
+
+              
+            </div>
+            <footer class="article-footer">
+              <a href="/API/T-Microsoft.VisualBasic.DataMining.Framework.QLearning.QTable`1.html" class="article-date">
+  <time datetime="2016-06-14T17:49:35.326Z" itemprop="datePublished">2016-06-15</time>
+</a>
+              <a data-url="http://yoursite.com/API/T-Microsoft.VisualBasic.DataMining.Framework.QLearning.QTable`1.html" data-id="cipfqyh6300bvr0v4fpbto81e" class="article-share-link">Share</a>
+              
+              
+            </footer>
+      </div>
+      
+        
+      
+    </article>
+    <script type="text/javascript">
+      window.onscroll = function(){ 
+        $(function(){
+          var $toc = $('.page-toc'),
+              $article = $('.article-entry')
+              toc_top = $toc.offset().top
+              tocsub_width = $toc.children().width()
+              article_height = $article.children().height()
+              scroll_top = document.body.scrollTop
+              screen_h = $(window).height()
+              footer_top = $('.article-footer').offset().top - $(window).height()
+              if(toc_top&&scroll_top&&scroll_top>toc_top&&scroll_top<footer_top){
+                $toc.children().css({
+                  "position": "fixed",
+                  "height": (screen_h -20)+'px',
+                  "overflow": "auto"
+                })
+                $article.css('margin-right',tocsub_width+'px')
+              }else{
+                $toc.children().css({
+                  "position": "relative",
+                  "height":'inherit',
+                  "overflow": "auto"
+                })
+                $article.css('margin-right',0+'px')
+              }
+        })
+      } 
+    </script>
+
+
+
+
+
+
+
+
+		</div>
+		
+
+<footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+        <div class="left">
+            &copy; 2016 John Doe<br>
+            Powered by <a href="http://hexo.io/" target="_blank">Hexo</a> and Theme by <a href="https://github.com/jaywcjlove/hexoThemeKacper">hexoThemeKacper </a>
+        </div>
+        <div class="right">
+            
+        </div>
+    </div>
+  </div>
+</footer>
+<script src="//cdn.bootcss.com/jquery/2.0.3/jquery.min.js"></script>
+
+
+<script type="text/javascript">
+$(function(){
+  var $img = $('.article-entry img'),
+      $link = $img.css({
+        "display":"inline-block"
+      }).parent()
+
+  if($link.parent().is("a")){
+      $img.each(function(idx,item) {
+      $(this).parent().attr('href',$(this).parent().parent().attr('href'))
+    })
+  }
+})
+</script>
+
+
+<script src="/js/script.js"></script>
+
+  	</div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/API" class="mobile-nav-link">API</a>
+  
+    <a href="/tools" class="mobile-nav-link">Tools</a>
+  
+    <a href="/about" class="mobile-nav-link">About</a>
+  
+    <a href="https://github.com/xieguigang/VisualBasic_AppFramework" class="mobile-nav-link">Github</a>
+  
+</nav>
+    
+</div>
+</body>
+</html>
+

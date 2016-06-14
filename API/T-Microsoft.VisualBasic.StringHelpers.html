@@ -1,0 +1,664 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>StringHelpers | Hexo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="baidu-site-verification" content="1ZsVVOmjoT" />
+    <meta name="description" content="StringHelpersnamespace: Microsoft.VisualBasic
+The extensions module for facilities the string operations.
+MethodsCount1Microsoft.VisualBasic.StringHelpers.Count(System.String,System.Char)
+Counts the s">
+<meta property="og:type" content="website">
+<meta property="og:title" content="StringHelpers">
+<meta property="og:url" content="http://yoursite.com/API/T-Microsoft.VisualBasic.StringHelpers.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="StringHelpersnamespace: Microsoft.VisualBasic
+The extensions module for facilities the string operations.
+MethodsCount1Microsoft.VisualBasic.StringHelpers.Count(System.String,System.Char)
+Counts the s">
+<meta property="og:updated_time" content="2016-06-14T17:49:34.313Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="StringHelpers">
+<meta name="twitter:description" content="StringHelpersnamespace: Microsoft.VisualBasic
+The extensions module for facilities the string operations.
+MethodsCount1Microsoft.VisualBasic.StringHelpers.Count(System.String,System.Char)
+Counts the s">
+    
+      <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
+    
+    
+      <link rel="icon" href="http://gcmodeller.org/DNA.png">
+    
+    <link rel="stylesheet" href="/css/style.css">
+
+    
+<!-- Baidu Analytics -->
+<script type="text/javascript">
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "//hm.baidu.com/hm.js?fe2c7555911b8560db5e56121c5d5960";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+<!-- End Baidu Analytics -->
+
+
+    <script src="//cdn.bootcss.com/jquery/2.0.3/jquery.min.js"></script>
+</head>
+<body>
+<div id="container"> 
+
+    
+    <div id="wrap">
+	   
+
+<header id="header" class="hdpage">
+    
+    <div id="header-outer" class="outer">
+        
+        <div id="header-inner" class="inner">
+          <nav id="main-nav">
+            <a id="main-nav-toggle" class="nav-icon"></a>
+            
+              <a class="main-nav-link" href="/">
+                  
+                  
+
+                
+                  Home
+                </a>
+            
+              <a class="main-nav-link" href="/API">
+                  
+                  
+
+                
+                  API
+                </a>
+            
+              <a class="main-nav-link" href="/tools">
+                  
+                  
+
+                
+                  Tools
+                </a>
+            
+              <a class="main-nav-link" href="/about">
+                  
+                  
+
+                
+                  About
+                </a>
+            
+              <a class="main-nav-link" href="https://github.com/xieguigang/VisualBasic_AppFramework">
+                  
+                  
+
+                
+                  Github
+                </a>
+            
+          </nav>
+          <nav id="sub-nav">
+            
+              <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+            
+            <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+          </nav>
+          <div id="search-form-wrap">
+            <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" results="0" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
+          </div>
+        </div>
+    </div>
+</header>
+		<div class="outer">
+		
+    <article id="page-undefined" class="article article-type-page" itemscope itemprop="blogPost">
+      <div class="article-meta">
+        
+          <header class="article-header">
+            
+  
+    <a href="/API/T-Microsoft.VisualBasic.StringHelpers.html">
+      <h1 class="article-title" itemprop="name">
+        StringHelpers
+      </h1>
+    </a>
+  
+
+
+
+          </header>
+        
+
+        <!--<a href="/API/T-Microsoft.VisualBasic.StringHelpers.html" class="article-date">
+  <time datetime="2016-06-14T17:49:34.313Z" itemprop="datePublished">2016-06-15</time>
+</a>-->
+        <!--  -->
+      </div>
+      <div class="article-inner">
+            
+            
+              <!--<header class="article-header">
+                
+  
+    <a href="/API/T-Microsoft.VisualBasic.StringHelpers.html">
+      <h1 class="article-title" itemprop="name">
+        StringHelpers
+      </h1>
+    </a>
+  
+
+
+
+              </header>-->
+            
+            <div class="article-entry" itemprop="articleBody">
+              <div class="page-toc">
+                <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#StringHelpers"><span class="toc-number">1.</span> <span class="toc-text">StringHelpers</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Methods"><span class="toc-number">1.0.1.</span> <span class="toc-text">Methods</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#Count"><span class="toc-number">1.0.1.1.</span> <span class="toc-text">Count</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#CountTokens"><span class="toc-number">1.0.1.2.</span> <span class="toc-text">CountTokens</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#EqualsAny"><span class="toc-number">1.0.1.3.</span> <span class="toc-text">EqualsAny</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#GetString"><span class="toc-number">1.0.1.4.</span> <span class="toc-text">GetString</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#GetTagValue"><span class="toc-number">1.0.1.5.</span> <span class="toc-text">GetTagValue</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#InStrAny"><span class="toc-number">1.0.1.6.</span> <span class="toc-text">InStrAny</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Intersection"><span class="toc-number">1.0.1.7.</span> <span class="toc-text">Intersection</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#IsBlank"><span class="toc-number">1.0.1.8.</span> <span class="toc-text">IsBlank</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#IsNullOrEmpty"><span class="toc-number">1.0.1.9.</span> <span class="toc-text">IsNullOrEmpty</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Located"><span class="toc-number">1.0.1.10.</span> <span class="toc-text">Located</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Lookup"><span class="toc-number">1.0.1.11.</span> <span class="toc-text">Lookup</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#lTokens"><span class="toc-number">1.0.1.12.</span> <span class="toc-text">lTokens</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Match"><span class="toc-number">1.0.1.13.</span> <span class="toc-text">Match</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Parts"><span class="toc-number">1.0.1.14.</span> <span class="toc-text">Parts</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#RemoveLast"><span class="toc-number">1.0.1.15.</span> <span class="toc-text">RemoveLast</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#RepeatString"><span class="toc-number">1.0.1.16.</span> <span class="toc-text">RepeatString</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Reverse"><span class="toc-number">1.0.1.17.</span> <span class="toc-text">Reverse</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Split"><span class="toc-number">1.0.1.18.</span> <span class="toc-text">Split</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#StringSplit"><span class="toc-number">1.0.1.19.</span> <span class="toc-text">StringSplit</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#TextEquals"><span class="toc-number">1.0.1.20.</span> <span class="toc-text">TextEquals</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#ZeroFill"><span class="toc-number">1.0.1.21.</span> <span class="toc-text">ZeroFill</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Properties"><span class="toc-number">1.0.2.</span> <span class="toc-text">Properties</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#NonStrictCompares"><span class="toc-number">1.0.2.1.</span> <span class="toc-text">NonStrictCompares</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#REGEX-EMAIL"><span class="toc-number">1.0.2.2.</span> <span class="toc-text">REGEX_EMAIL</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#REGEX-URL"><span class="toc-number">1.0.2.3.</span> <span class="toc-text">REGEX_URL</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#RegexICMul"><span class="toc-number">1.0.2.4.</span> <span class="toc-text">RegexICMul</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#RegexICSng"><span class="toc-number">1.0.2.5.</span> <span class="toc-text">RegexICSng</span></a></li></ol></li></ol></li></ol></li></ol>
+              </div>
+              
+                <h1 id="StringHelpers"><a href="#StringHelpers" class="headerlink" title="StringHelpers"></a>StringHelpers</h1><p><em>namespace: <a href="N-Microsoft.VisualBasic.html">Microsoft.VisualBasic</a></em></p>
+<p>The extensions module for facilities the string operations.</p>
+<h3 id="Methods"><a href="#Methods" class="headerlink" title="Methods"></a>Methods</h3><h4 id="Count"><a href="#Count" class="headerlink" title="Count"></a>Count</h4><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Microsoft.VisualBasic.StringHelpers.Count(System.String,System.Char)</span><br></pre></td></tr></table></figure>
+<p>Counts the specific char that appeared in the input string.<br> (计数在字符串之中所出现的指定的字符的出现的次数)</p>
+<table>
+<thead>
+<tr>
+<th>Parameter Name</th>
+<th>Remarks</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>str</td>
+<td>-</td>
+</tr>
+<tr>
+<td>ch</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<h4 id="CountTokens"><a href="#CountTokens" class="headerlink" title="CountTokens"></a>CountTokens</h4><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Microsoft.VisualBasic.StringHelpers.CountTokens(System.Collections.Generic.IEnumerable&#123;System.String&#125;,System.Boolean)</span><br></pre></td></tr></table></figure>
+<p>Count the string value numbers.(请注意，这个函数是倒序排序的)</p>
+<table>
+<thead>
+<tr>
+<th>Parameter Name</th>
+<th>Remarks</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>source</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<h4 id="EqualsAny"><a href="#EqualsAny" class="headerlink" title="EqualsAny"></a>EqualsAny</h4><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Microsoft.VisualBasic.StringHelpers.EqualsAny(System.String,System.String[])</span><br></pre></td></tr></table></figure>
+<p>判断目标字符串是否与字符串参数数组之中的任意一个字符串相等，大小写不敏感，假若没有相等的字符串，则会返回空字符串，假若找到了相等的字符串，则会返回该字符串</p>
+<table>
+<thead>
+<tr>
+<th>Parameter Name</th>
+<th>Remarks</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>source</td>
+<td>-</td>
+</tr>
+<tr>
+<td>compareTo</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<h4 id="GetString"><a href="#GetString" class="headerlink" title="GetString"></a>GetString</h4><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Microsoft.VisualBasic.StringHelpers.GetString(System.String,System.Char)</span><br></pre></td></tr></table></figure>
+<p>获取””或者其他字符所包围的字符串的值</p>
+<table>
+<thead>
+<tr>
+<th>Parameter Name</th>
+<th>Remarks</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>s</td>
+<td>-</td>
+</tr>
+<tr>
+<td>wrapper</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<h4 id="GetTagValue"><a href="#GetTagValue" class="headerlink" title="GetTagValue"></a>GetTagValue</h4><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Microsoft.VisualBasic.StringHelpers.GetTagValue(System.String,System.String)</span><br></pre></td></tr></table></figure>
+<p>tagName{<strong>delimiter</strong>}value</p>
+<table>
+<thead>
+<tr>
+<th>Parameter Name</th>
+<th>Remarks</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>s</td>
+<td>-</td>
+</tr>
+<tr>
+<td>delimiter</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<h4 id="InStrAny"><a href="#InStrAny" class="headerlink" title="InStrAny"></a>InStrAny</h4><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Microsoft.VisualBasic.StringHelpers.InStrAny(System.String,System.String[])</span><br></pre></td></tr></table></figure>
+<p>查找到任意一个既返回位置，大小写不敏感，假若查找不到，则返回-1值，判断是否查找成功，可以使用 &lt;0 来完成，<br> 因为是通过InStr来完成的，所以查找成功的时候，最小的值是1，即字符串序列的第一个位置，也是元素0位置</p>
+<table>
+<thead>
+<tr>
+<th>Parameter Name</th>
+<th>Remarks</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>source</td>
+<td>-</td>
+</tr>
+<tr>
+<td>find</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<h4 id="Intersection"><a href="#Intersection" class="headerlink" title="Intersection"></a>Intersection</h4><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Microsoft.VisualBasic.StringHelpers.Intersection(System.String[][])</span><br></pre></td></tr></table></figure>
+<p>求交集</p>
+<h4 id="IsBlank"><a href="#IsBlank" class="headerlink" title="IsBlank"></a>IsBlank</h4><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Microsoft.VisualBasic.StringHelpers.IsBlank(System.String)</span><br></pre></td></tr></table></figure>
+<p><strong>s</strong> Is Nothing, @”T:System.String”, @”T:System.String”</p>
+<table>
+<thead>
+<tr>
+<th>Parameter Name</th>
+<th>Remarks</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>s</td>
+<td>The input test string</td>
+</tr>
+</tbody>
+</table>
+<h4 id="IsNullOrEmpty"><a href="#IsNullOrEmpty" class="headerlink" title="IsNullOrEmpty"></a>IsNullOrEmpty</h4><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Microsoft.VisualBasic.StringHelpers.IsNullOrEmpty(System.Collections.Generic.IEnumerable&#123;System.String&#125;,System.Boolean)</span><br></pre></td></tr></table></figure>
+<p>判断这个字符串集合是否为空集合，函数会首先按照常规的集合为空进行判断，然后假若不为空的话，假若只含有一个元素并且该唯一的元素的值为空字符串，则也认为这个字符串集合为空集合</p>
+<table>
+<thead>
+<tr>
+<th>Parameter Name</th>
+<th>Remarks</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>values</td>
+<td>-</td>
+</tr>
+<tr>
+<td>strict</td>
+<td>FALSE 为非严谨，只进行常规判断，TRUE 为严谨模式，会假若不为空的话，假若只含有一个元素并且该唯一的元素的值为空字符串，则也认为这个字符串集合为空集合</td>
+</tr>
+</tbody>
+</table>
+<h4 id="Located"><a href="#Located" class="headerlink" title="Located"></a>Located</h4><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Microsoft.VisualBasic.StringHelpers.Located(System.Collections.Generic.IEnumerable&#123;System.String&#125;,System.String,System.Boolean)</span><br></pre></td></tr></table></figure>
+<p>String compares using @”M:System.Object.Equals(System.Object,System.Object)”, if the target value could not be located, then -1 will be return from this function.</p>
+<table>
+<thead>
+<tr>
+<th>Parameter Name</th>
+<th>Remarks</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>collection</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Text</td>
+<td>-</td>
+</tr>
+<tr>
+<td>caseSensitive</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<h4 id="Lookup"><a href="#Lookup" class="headerlink" title="Lookup"></a>Lookup</h4><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Microsoft.VisualBasic.StringHelpers.Lookup(System.Collections.Generic.IEnumerable&#123;System.String&#125;,System.String,System.Boolean)</span><br></pre></td></tr></table></figure>
+<p>Search the string by keyword in a string collection. Unlike search function @”M:Microsoft.VisualBasic.StringHelpers.Located(System.Collections.Generic.IEnumerable{System.String},System.String,System.Boolean)”<br> using function @”T:System.String” function to search string, this function using @”M:Microsoft.VisualBasic.Strings.InStr(System.String,System.String,Microsoft.VisualBasic.CompareMethod)”<br> to search the keyword.</p>
+<table>
+<thead>
+<tr>
+<th>Parameter Name</th>
+<th>Remarks</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>source</td>
+<td>-</td>
+</tr>
+<tr>
+<td>keyword</td>
+<td>-</td>
+</tr>
+<tr>
+<td>caseSensitive</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<p><em>returns: 返回第一个找到关键词的行数，没有找到则返回-1</em></p>
+<h4 id="lTokens"><a href="#lTokens" class="headerlink" title="lTokens"></a>lTokens</h4><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Microsoft.VisualBasic.StringHelpers.lTokens(System.String)</span><br></pre></td></tr></table></figure>
+<p>Line tokens. ==&gt; Parsing the text into lines by using @”F:Microsoft.VisualBasic.Constants.vbCr”, @”F:Microsoft.VisualBasic.Constants.vbLf”.<br> (函数对文本进行分行操作，由于在Windows(@”F:Microsoft.VisualBasic.Constants.vbCrLf”)和<br> Linux(@”F:Microsoft.VisualBasic.Constants.vbCr”, @”F:Microsoft.VisualBasic.Constants.vbLf”)平台上面所生成的文本文件的换行符有差异，<br> 所以可以使用这个函数来进行统一的分行操作)</p>
+<table>
+<thead>
+<tr>
+<th>Parameter Name</th>
+<th>Remarks</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>__text</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<h4 id="Match"><a href="#Match" class="headerlink" title="Match"></a>Match</h4><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Microsoft.VisualBasic.StringHelpers.Match(System.String,System.String,System.Text.RegularExpressions.RegexOptions)</span><br></pre></td></tr></table></figure>
+<p>Searches the specified input string for the first occurrence of the specified regular expression.</p>
+<table>
+<thead>
+<tr>
+<th>Parameter Name</th>
+<th>Remarks</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>input</td>
+<td>The string to search for a match.</td>
+</tr>
+<tr>
+<td>pattern</td>
+<td>The regular expression pattern to match.</td>
+</tr>
+<tr>
+<td>options</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<h4 id="Parts"><a href="#Parts" class="headerlink" title="Parts"></a>Parts</h4><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Microsoft.VisualBasic.StringHelpers.Parts(System.String,System.String)</span><br></pre></td></tr></table></figure>
+<table>
+<thead>
+<tr>
+<th>Parameter Name</th>
+<th>Remarks</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>s</td>
+<td>-</td>
+</tr>
+<tr>
+<td>len</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<h4 id="RemoveLast"><a href="#RemoveLast" class="headerlink" title="RemoveLast"></a>RemoveLast</h4><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Microsoft.VisualBasic.StringHelpers.RemoveLast(System.Text.StringBuilder)</span><br></pre></td></tr></table></figure>
+<p>Call @”M:System.Text.StringBuilder.Remove(System.Int32,System.Int32)”(@”P:System.Text.StringBuilder.Length” - 1, 1) for removes the last character in the string sequence.</p>
+<table>
+<thead>
+<tr>
+<th>Parameter Name</th>
+<th>Remarks</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>s</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<h4 id="RepeatString"><a href="#RepeatString" class="headerlink" title="RepeatString"></a>RepeatString</h4><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Microsoft.VisualBasic.StringHelpers.RepeatString(System.String,System.Int32)</span><br></pre></td></tr></table></figure>
+<p>this is to emulate what’s evailable in PHP</p>
+<h4 id="Reverse"><a href="#Reverse" class="headerlink" title="Reverse"></a>Reverse</h4><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Microsoft.VisualBasic.StringHelpers.Reverse(System.String)</span><br></pre></td></tr></table></figure>
+<p>Returns a reversed version of String s.</p>
+<table>
+<thead>
+<tr>
+<th>Parameter Name</th>
+<th>Remarks</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>s</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<h4 id="Split"><a href="#Split" class="headerlink" title="Split"></a>Split</h4><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Microsoft.VisualBasic.StringHelpers.Split(System.Collections.Generic.IEnumerable&#123;System.String&#125;,System.String)</span><br></pre></td></tr></table></figure>
+<p>String collection tokens by a certain delimiter string element.</p>
+<table>
+<thead>
+<tr>
+<th>Parameter Name</th>
+<th>Remarks</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>source</td>
+<td>-</td>
+</tr>
+<tr>
+<td>delimiter</td>
+</tr>
+</tbody>
+</table>
+<p> Using String.Equals function to determined this delimiter<br> |</p>
+<h4 id="StringSplit"><a href="#StringSplit" class="headerlink" title="StringSplit"></a>StringSplit</h4><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Microsoft.VisualBasic.StringHelpers.StringSplit(System.String,System.String,System.Boolean)</span><br></pre></td></tr></table></figure>
+<p>This method is used to replace most calls to the Java String.split method.</p>
+<table>
+<thead>
+<tr>
+<th>Parameter Name</th>
+<th>Remarks</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>source</td>
+<td>-</td>
+</tr>
+<tr>
+<td>regexDelimiter</td>
+<td>-</td>
+</tr>
+<tr>
+<td>trimTrailingEmptyStrings</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<h4 id="TextEquals"><a href="#TextEquals" class="headerlink" title="TextEquals"></a>TextEquals</h4><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Microsoft.VisualBasic.StringHelpers.TextEquals(System.String,System.String)</span><br></pre></td></tr></table></figure>
+<p>Shortcuts for method @”T:System.String”(s1, s2, @”F:System.StringComparison.OrdinalIgnoreCase”)</p>
+<table>
+<thead>
+<tr>
+<th>Parameter Name</th>
+<th>Remarks</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>s1</td>
+<td>-</td>
+</tr>
+<tr>
+<td>s2</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<h4 id="ZeroFill"><a href="#ZeroFill" class="headerlink" title="ZeroFill"></a>ZeroFill</h4><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Microsoft.VisualBasic.StringHelpers.ZeroFill(System.String,System.Int32)</span><br></pre></td></tr></table></figure>
+<p>Fill the number string with specific length of ZERO sequence to generates the fixed width string.</p>
+<table>
+<thead>
+<tr>
+<th>Parameter Name</th>
+<th>Remarks</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>n</td>
+<td>-</td>
+</tr>
+<tr>
+<td>len</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<h3 id="Properties"><a href="#Properties" class="headerlink" title="Properties"></a>Properties</h3><h4 id="NonStrictCompares"><a href="#NonStrictCompares" class="headerlink" title="NonStrictCompares"></a>NonStrictCompares</h4><p>String compares with ignored chars’ case.(忽略大小写为非严格的比较)</p>
+<h4 id="REGEX-EMAIL"><a href="#REGEX-EMAIL" class="headerlink" title="REGEX_EMAIL"></a>REGEX_EMAIL</h4><p>Regex expression for parsing E-Mail URL</p>
+<h4 id="REGEX-URL"><a href="#REGEX-URL" class="headerlink" title="REGEX_URL"></a>REGEX_URL</h4><p>Regex exprression for parsing the http/ftp URL</p>
+<h4 id="RegexICMul"><a href="#RegexICMul" class="headerlink" title="RegexICMul"></a>RegexICMul</h4><p>@”F:System.Text.RegularExpressions.RegexOptions.IgnoreCase” + @”F:System.Text.RegularExpressions.RegexOptions.Multiline”</p>
+<h4 id="RegexICSng"><a href="#RegexICSng" class="headerlink" title="RegexICSng"></a>RegexICSng</h4><p>@”F:System.Text.RegularExpressions.RegexOptions.IgnoreCase” + @”F:System.Text.RegularExpressions.RegexOptions.Singleline”</p>
+
+              
+            </div>
+            <footer class="article-footer">
+              <a href="/API/T-Microsoft.VisualBasic.StringHelpers.html" class="article-date">
+  <time datetime="2016-06-14T17:49:34.313Z" itemprop="datePublished">2016-06-15</time>
+</a>
+              <a data-url="http://yoursite.com/API/T-Microsoft.VisualBasic.StringHelpers.html" data-id="cipfqyi5o00orr0v4xnd1xteb" class="article-share-link">Share</a>
+              
+              
+            </footer>
+      </div>
+      
+        
+      
+    </article>
+    <script type="text/javascript">
+      window.onscroll = function(){ 
+        $(function(){
+          var $toc = $('.page-toc'),
+              $article = $('.article-entry')
+              toc_top = $toc.offset().top
+              tocsub_width = $toc.children().width()
+              article_height = $article.children().height()
+              scroll_top = document.body.scrollTop
+              screen_h = $(window).height()
+              footer_top = $('.article-footer').offset().top - $(window).height()
+              if(toc_top&&scroll_top&&scroll_top>toc_top&&scroll_top<footer_top){
+                $toc.children().css({
+                  "position": "fixed",
+                  "height": (screen_h -20)+'px',
+                  "overflow": "auto"
+                })
+                $article.css('margin-right',tocsub_width+'px')
+              }else{
+                $toc.children().css({
+                  "position": "relative",
+                  "height":'inherit',
+                  "overflow": "auto"
+                })
+                $article.css('margin-right',0+'px')
+              }
+        })
+      } 
+    </script>
+
+
+
+
+
+
+
+
+		</div>
+		
+
+<footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+        <div class="left">
+            &copy; 2016 John Doe<br>
+            Powered by <a href="http://hexo.io/" target="_blank">Hexo</a> and Theme by <a href="https://github.com/jaywcjlove/hexoThemeKacper">hexoThemeKacper </a>
+        </div>
+        <div class="right">
+            
+        </div>
+    </div>
+  </div>
+</footer>
+<script src="//cdn.bootcss.com/jquery/2.0.3/jquery.min.js"></script>
+
+
+<script type="text/javascript">
+$(function(){
+  var $img = $('.article-entry img'),
+      $link = $img.css({
+        "display":"inline-block"
+      }).parent()
+
+  if($link.parent().is("a")){
+      $img.each(function(idx,item) {
+      $(this).parent().attr('href',$(this).parent().parent().attr('href'))
+    })
+  }
+})
+</script>
+
+
+<script src="/js/script.js"></script>
+
+  	</div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/API" class="mobile-nav-link">API</a>
+  
+    <a href="/tools" class="mobile-nav-link">Tools</a>
+  
+    <a href="/about" class="mobile-nav-link">About</a>
+  
+    <a href="https://github.com/xieguigang/VisualBasic_AppFramework" class="mobile-nav-link">Github</a>
+  
+</nav>
+    
+</div>
+</body>
+</html>
+
