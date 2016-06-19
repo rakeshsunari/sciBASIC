@@ -9,56 +9,23 @@
     <meta name="baidu-site-verification" content="1ZsVVOmjoT" />
     <meta name="description" content="WaveletTransformnamespace: Microsoft.VisualBasic.DataMining.Framework
 小波变换工具
-MethodsFWT1]@,System.Int32)
-Discrete Haar Wavelet 2D Transform
 
-
-
-Parameter Name
-Remarks
-
-
-
-
-iterations
-Iteration must be I">
+ The first DWT was invented by the Hungarian mathematician Alfréd Haar. For an input represented by a list of 2n numbers,">
 <meta property="og:type" content="website">
 <meta property="og:title" content="WaveletTransform">
 <meta property="og:url" content="http://framework-docs.xieguigang.me/API/T-Microsoft.VisualBasic.DataMining.Framework.WaveletTransform.html">
 <meta property="og:site_name" content="Microsoft VisualBasic App Framework API docs">
 <meta property="og:description" content="WaveletTransformnamespace: Microsoft.VisualBasic.DataMining.Framework
 小波变换工具
-MethodsFWT1]@,System.Int32)
-Discrete Haar Wavelet 2D Transform
 
-
-
-Parameter Name
-Remarks
-
-
-
-
-iterations
-Iteration must be I">
-<meta property="og:updated_time" content="2016-06-14T17:49:35.265Z">
+ The first DWT was invented by the Hungarian mathematician Alfréd Haar. For an input represented by a list of 2n numbers,">
+<meta property="og:updated_time" content="2016-06-19T03:16:13.931Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="WaveletTransform">
 <meta name="twitter:description" content="WaveletTransformnamespace: Microsoft.VisualBasic.DataMining.Framework
 小波变换工具
-MethodsFWT1]@,System.Int32)
-Discrete Haar Wavelet 2D Transform
 
-
-
-Parameter Name
-Remarks
-
-
-
-
-iterations
-Iteration must be I">
+ The first DWT was invented by the Hungarian mathematician Alfréd Haar. For an input represented by a list of 2n numbers,">
     
       <link rel="alternative" href="/atom.xml" title="Microsoft VisualBasic App Framework API docs" type="application/atom+xml">
     
@@ -156,7 +123,7 @@ var _hmt = _hmt || [];
         
 
         <!--<a href="/API/T-Microsoft.VisualBasic.DataMining.Framework.WaveletTransform.html" class="article-date">
-  <time datetime="2016-06-14T17:49:35.265Z" itemprop="datePublished">2016-06-15</time>
+  <time datetime="2016-06-19T03:16:13.931Z" itemprop="datePublished">2016-06-19</time>
 </a>-->
         <!--  -->
       </div>
@@ -184,6 +151,32 @@ var _hmt = _hmt || [];
               
                 <h1 id="WaveletTransform"><a href="#WaveletTransform" class="headerlink" title="WaveletTransform"></a>WaveletTransform</h1><p><em>namespace: <a href="N-Microsoft.VisualBasic.DataMining.Framework.html">Microsoft.VisualBasic.DataMining.Framework</a></em></p>
 <p>小波变换工具</p>
+<blockquote>
+<p> The first DWT was invented by the Hungarian mathematician Alfréd Haar. For an input represented by a<br> list of 2n numbers, the Haar wavelet transform may be considered to simply pair up input values,<br> storing the difference and passing the sum. This process is repeated recursively, pairing up the sums<br> to provide the next scale: finally resulting in 2n-1 differences and one final sum.</p>
+<p> Suppose you are given N values</p>
+<p> x = (x1, x2, … xN)</p>
+<p> where N is even.(X向量的元素的个数必须是偶数)</p>
+<p> We take pair-wise average of numbers</p>
+<p> sk = (x2k + x2k+1)/2 for k=0, …, N/2 -1</p>
+<p> For example,</p>
+<p> x = (6, 12, 15, 15, 14, 12, 120, 116) -&gt; s = (9, 15, 13, 118)</p>
+<p> We need second list of data d so that the original list x can be recovered from s and d.</p>
+<p> For dk (called directed distances), we have:</p>
+<p> dk = (x2k - x2k+1)/2 for k=0, …, N/2 -1</p>
+<p> The process is invertible since:</p>
+<p> sk + dk = (x2k + x2k+1)/2 + (x2k - x2k+1)/2 = x2k</p>
+<p> sk - dk = (x2k + x2k+1)/2 - (x2k - x2k+1)/2 = x2k+1</p>
+<p> So we map x = (x1, x2, … , xN) to (s | d) = (s1, … , sN/2 | d1, … , dN/2).</p>
+<p> Using our example values, we have:</p>
+<p> (6, 12, 15, 15, 14, 12, 120, 116) -&gt; (9, 15, 13, 118 | -3, 0, 1, 2)</p>
+<p> This process is repeated recursively for s:</p>
+<p> (9, 15, 13, 118 | -3, 0, 1, 2) -&gt; (12, 65.5 | -3, -52.5 | -3, 0, 1, 2)</p>
+<p> (12, 65.5 | -3, -52.5 | -3, 0, 1, 2) -&gt; (38.75 | -26.75 | -3, -52.5 | -3, 0, 1, 2)</p>
+<p> So final result is:</p>
+<p> (38.75, -26.75, -3, -52.5, -3, 0, 1, 2)</p>
+<p> Why might people prefer the data in this form?</p>
+<p> We can identify large changes in the differences portion d of the transform.<br> It is easier to quantize the data in this form.<br> The transform concentrates the information (energy) in the signal in fewer values.<br> And the obvious answer: fewer digits!!<br> In case of images, we need 2D FWT. First, we perform 1D FWT for all rows, and next, for all columns.<br> For color Images, we deal with RGB components of color, and perform Haar Transform for each component<br> separately. Any component (R G B) has values from 0 to 255 to before transformation we scale this<br> values. For displaying image after transformation, we scale back transformed values.</p>
+</blockquote>
 <h3 id="Methods"><a href="#Methods" class="headerlink" title="Methods"></a>Methods</h3><h4 id="FWT"><a href="#FWT" class="headerlink" title="FWT"></a>FWT</h4><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">]@,System.Int32)</span><br></pre></td></tr></table></figure>
 <p>Discrete Haar Wavelet 2D Transform</p>
 <table>
@@ -221,7 +214,7 @@ var _hmt = _hmt || [];
             </div>
             <footer class="article-footer">
               <a href="/API/T-Microsoft.VisualBasic.DataMining.Framework.WaveletTransform.html" class="article-date">
-  <time datetime="2016-06-14T17:49:35.265Z" itemprop="datePublished">2016-06-15</time>
+  <time datetime="2016-06-19T03:16:13.931Z" itemprop="datePublished">2016-06-19</time>
 </a>
               <a data-url="http://framework-docs.xieguigang.me/API/T-Microsoft.VisualBasic.DataMining.Framework.WaveletTransform.html" data-id="cipfqyh6a00c0r0v4kn27klx6" class="article-share-link">Share</a>
               

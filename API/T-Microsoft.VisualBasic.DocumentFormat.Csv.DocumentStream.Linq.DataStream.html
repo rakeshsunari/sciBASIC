@@ -17,7 +17,7 @@ MethodsAsLinq``11Microsoft.VisualBasic.DocumentFormat.Csv.DocumentStream.Linq">
 <meta property="og:description" content="DataStreamnamespace: Microsoft.VisualBasic.DocumentFormat.Csv.DocumentStream.Linq
 Buffered large text dataset Table reader
 MethodsAsLinq``11Microsoft.VisualBasic.DocumentFormat.Csv.DocumentStream.Linq">
-<meta property="og:updated_time" content="2016-06-14T17:49:35.475Z">
+<meta property="og:updated_time" content="2016-06-19T03:16:14.110Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="DataStream">
 <meta name="twitter:description" content="DataStreamnamespace: Microsoft.VisualBasic.DocumentFormat.Csv.DocumentStream.Linq
@@ -120,7 +120,7 @@ var _hmt = _hmt || [];
         
 
         <!--<a href="/API/T-Microsoft.VisualBasic.DocumentFormat.Csv.DocumentStream.Linq.DataStream.html" class="article-date">
-  <time datetime="2016-06-14T17:49:35.475Z" itemprop="datePublished">2016-06-15</time>
+  <time datetime="2016-06-19T03:16:14.110Z" itemprop="datePublished">2016-06-19</time>
 </a>-->
         <!--  -->
       </div>
@@ -143,7 +143,7 @@ var _hmt = _hmt || [];
             
             <div class="article-entry" itemprop="articleBody">
               <div class="page-toc">
-                <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#DataStream"><span class="toc-number">1.</span> <span class="toc-text">DataStream</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Methods"><span class="toc-number">1.0.1.</span> <span class="toc-text">Methods</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#AsLinq-1"><span class="toc-number">1.0.1.1.</span> <span class="toc-text">AsLinq``1</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#BufferProvider"><span class="toc-number">1.0.1.2.</span> <span class="toc-text">BufferProvider</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#ForEachBlock-1"><span class="toc-number">1.0.1.3.</span> <span class="toc-text">ForEachBlock``1</span></a></li></ol></li></ol></li></ol></li></ol>
+                <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#DataStream"><span class="toc-number">1.</span> <span class="toc-text">DataStream</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Methods"><span class="toc-number">1.0.1.</span> <span class="toc-text">Methods</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#AsLinq-1"><span class="toc-number">1.0.1.1.</span> <span class="toc-text">AsLinq``1</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#BufferProvider"><span class="toc-number">1.0.1.2.</span> <span class="toc-text">BufferProvider</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#ForEach-1"><span class="toc-number">1.0.1.3.</span> <span class="toc-text">ForEach``1</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#ForEachBlock-1"><span class="toc-number">1.0.1.4.</span> <span class="toc-text">ForEachBlock``1</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#OpenHandle"><span class="toc-number">1.0.1.5.</span> <span class="toc-text">OpenHandle</span></a></li></ol></li></ol></li></ol></li></ol>
               </div>
               
                 <h1 id="DataStream"><a href="#DataStream" class="headerlink" title="DataStream"></a>DataStream</h1><p><em>namespace: <a href="N-Microsoft.VisualBasic.DocumentFormat.Csv.DocumentStream.Linq.html">Microsoft.VisualBasic.DocumentFormat.Csv.DocumentStream.Linq</a></em></p>
@@ -151,11 +151,12 @@ var _hmt = _hmt || [];
 <h3 id="Methods"><a href="#Methods" class="headerlink" title="Methods"></a>Methods</h3><h4 id="AsLinq-1"><a href="#AsLinq-1" class="headerlink" title="AsLinq``1"></a>AsLinq``1</h4><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Microsoft.VisualBasic.DocumentFormat.Csv.DocumentStream.Linq.DataStream.AsLinq``<span class="number">1</span></span><br></pre></td></tr></table></figure>
 <p>Csv to LINQ</p>
 <h4 id="BufferProvider"><a href="#BufferProvider" class="headerlink" title="BufferProvider"></a>BufferProvider</h4><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Microsoft.VisualBasic.DocumentFormat.Csv.DocumentStream.Linq.DataStream.BufferProvider</span><br></pre></td></tr></table></figure>
+<p>Providers the data buffer for the @”T:Microsoft.VisualBasic.DocumentFormat.Csv.DocumentStream.RowObject”</p>
 <blockquote>
 <p> 这个函数主要是为了处理第一行数据<br> 因为在构造函数部分已经读取了第一行来解析schema，所以在这里需要对第一个数据块做一些额外的处理</p>
 </blockquote>
-<h4 id="ForEachBlock-1"><a href="#ForEachBlock-1" class="headerlink" title="ForEachBlock``1"></a>ForEachBlock``1</h4><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Microsoft.VisualBasic.DocumentFormat.Csv.DocumentStream.Linq.DataStream.ForEachBlock``<span class="number">1</span>(System.Action&#123;``<span class="number">0</span>[]&#125;,System.Int32)</span><br></pre></td></tr></table></figure>
-<p>Processing large dataset in block partitions.(以分块任务的形式来处理一个非常大的数据集)</p>
+<h4 id="ForEach-1"><a href="#ForEach-1" class="headerlink" title="ForEach``1"></a>ForEach``1</h4><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Microsoft.VisualBasic.DocumentFormat.Csv.DocumentStream.Linq.DataStream.ForEach``<span class="number">1</span>(System.Action&#123;``<span class="number">0</span>&#125;)</span><br></pre></td></tr></table></figure>
+<p>For each item in the source data fram, invoke a specific task</p>
 <table>
 <thead>
 <tr>
@@ -168,9 +169,45 @@ var _hmt = _hmt || [];
 <td>invoke</td>
 <td>-</td>
 </tr>
+</tbody>
+</table>
+<h4 id="ForEachBlock-1"><a href="#ForEachBlock-1" class="headerlink" title="ForEachBlock``1"></a>ForEachBlock``1</h4><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Microsoft.VisualBasic.DocumentFormat.Csv.DocumentStream.Linq.DataStream.ForEachBlock``<span class="number">1</span>(System.Action&#123;``<span class="number">0</span>[]&#125;,System.Int32)</span><br></pre></td></tr></table></figure>
+<p>Processing large dataset in block partitions.(以分块任务的形式来处理一个非常大的数据集)</p>
+<table>
+<thead>
+<tr>
+<th>Parameter Name</th>
+<th>Remarks</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>invoke</td>
+<td>task of this block buffer</td>
+</tr>
 <tr>
 <td>blockSize</td>
-<td>行数</td>
+<td>Lines of the data source.(行数)</td>
+</tr>
+</tbody>
+</table>
+<h4 id="OpenHandle"><a href="#OpenHandle" class="headerlink" title="OpenHandle"></a>OpenHandle</h4><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Microsoft.VisualBasic.DocumentFormat.Csv.DocumentStream.Linq.DataStream.OpenHandle(System.String,System.Text.Encoding)</span><br></pre></td></tr></table></figure>
+<p>Open the data frame reader for the specific csv document.</p>
+<table>
+<thead>
+<tr>
+<th>Parameter Name</th>
+<th>Remarks</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>file</td>
+<td>*.csv data file.</td>
+</tr>
+<tr>
+<td>encoding</td>
+<td>The text encoding. default is using @”F:Microsoft.VisualBasic.TextEncodings.Encodings.Default”</td>
 </tr>
 </tbody>
 </table>
@@ -179,7 +216,7 @@ var _hmt = _hmt || [];
             </div>
             <footer class="article-footer">
               <a href="/API/T-Microsoft.VisualBasic.DocumentFormat.Csv.DocumentStream.Linq.DataStream.html" class="article-date">
-  <time datetime="2016-06-14T17:49:35.475Z" itemprop="datePublished">2016-06-15</time>
+  <time datetime="2016-06-19T03:16:14.110Z" itemprop="datePublished">2016-06-19</time>
 </a>
               <a data-url="http://framework-docs.xieguigang.me/API/T-Microsoft.VisualBasic.DocumentFormat.Csv.DocumentStream.Linq.DataStream.html" data-id="cipfqyh8l00der0v4n2z824ox" class="article-share-link">Share</a>
               

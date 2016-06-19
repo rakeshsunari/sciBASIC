@@ -9,20 +9,26 @@
     <meta name="baidu-site-verification" content="1ZsVVOmjoT" />
     <meta name="description" content="StructSerializernamespace: Microsoft.VisualBasic.Serialization.BinaryDumping
 Some times these method is not works well, not sure why?
-MethodsByteToStructure``11Microsoft.VisualBasic.Serialization.Bina">
+
+ http://blog.csdn.net/zztoll/article/details/8695992
+ Marshal类的两个">
 <meta property="og:type" content="website">
 <meta property="og:title" content="StructSerializer">
 <meta property="og:url" content="http://framework-docs.xieguigang.me/API/T-Microsoft.VisualBasic.Serialization.BinaryDumping.StructSerializer.html">
 <meta property="og:site_name" content="Microsoft VisualBasic App Framework API docs">
 <meta property="og:description" content="StructSerializernamespace: Microsoft.VisualBasic.Serialization.BinaryDumping
 Some times these method is not works well, not sure why?
-MethodsByteToStructure``11Microsoft.VisualBasic.Serialization.Bina">
-<meta property="og:updated_time" content="2016-06-14T17:49:34.903Z">
+
+ http://blog.csdn.net/zztoll/article/details/8695992
+ Marshal类的两个">
+<meta property="og:updated_time" content="2016-06-19T03:16:13.509Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="StructSerializer">
 <meta name="twitter:description" content="StructSerializernamespace: Microsoft.VisualBasic.Serialization.BinaryDumping
 Some times these method is not works well, not sure why?
-MethodsByteToStructure``11Microsoft.VisualBasic.Serialization.Bina">
+
+ http://blog.csdn.net/zztoll/article/details/8695992
+ Marshal类的两个">
     
       <link rel="alternative" href="/atom.xml" title="Microsoft VisualBasic App Framework API docs" type="application/atom+xml">
     
@@ -120,7 +126,7 @@ var _hmt = _hmt || [];
         
 
         <!--<a href="/API/T-Microsoft.VisualBasic.Serialization.BinaryDumping.StructSerializer.html" class="article-date">
-  <time datetime="2016-06-14T17:49:34.903Z" itemprop="datePublished">2016-06-15</time>
+  <time datetime="2016-06-19T03:16:13.509Z" itemprop="datePublished">2016-06-19</time>
 </a>-->
         <!--  -->
       </div>
@@ -148,6 +154,22 @@ var _hmt = _hmt || [];
               
                 <h1 id="StructSerializer"><a href="#StructSerializer" class="headerlink" title="StructSerializer"></a>StructSerializer</h1><p><em>namespace: <a href="N-Microsoft.VisualBasic.Serialization.BinaryDumping.html">Microsoft.VisualBasic.Serialization.BinaryDumping</a></em></p>
 <p>Some times these method is not works well, not sure why?</p>
+<blockquote>
+<p> <a href="http://blog.csdn.net/zztoll/article/details/8695992" target="_blank" rel="external">http://blog.csdn.net/zztoll/article/details/8695992</a></p>
+<p> Marshal类的两个方法StructureToPtr和PtrToStructure实现序列化</p>
+<p> 我们主要是使用Marshal类里的两个方法：</p>
+<p> 第一个是StructureToPtr，将数据从托管对象封送到非托管内存块。<br> 第二个是PtrToStructure，将数据从非托管内存块封送到新分配的指定类型的托管对象。</p>
+<p> 只要有了这两个相互转换的方法，我们就可以实现序列化了。</p>
+<p> 首先我们先来看下序列化</p>
+<p> 序列化：</p>
+<p> 有一个前提条件，那就是我们必须要知道需要序列化对象的大小。</p>
+<p> 第一步：我们先求出对象的大小，然后在非托管内存中给它分配相应的内存大小。<br> 第二步：接着我们就把这个对象封送到刚分配出来的内存中，之后我们会得到一个分配出来的内存块首地址指针。<br> 第三步：最后我们可以通过这个首地址指针，从指针所指的位置处开始，拷贝数据到指定的byte[]数组中，<br> 拷贝的长度就是我们为这个对象分配出来的内存大小，得到byte[]数据后，下面的事情我就不用多说了，<br> 你可以保存到数据库或者文件中。</p>
+<p> 反序列化：</p>
+<p> 序列化的时候我们先将一个对象封送到了非托管内存块中，然后再把内存块中的数据读到byte[]数组中，</p>
+<p> 现在我们反序列化</p>
+<p> 第一步：我们先求出对象的大小，然后在非托管内存中给它分配相应的内存大小。<br> 第二步：然后把这个byte[]数据拷贝到非托管内存块中。<br> 第三步：最后再从内存块中封送指定大小的数据到对象中。</p>
+<p> 有一个地方需要注意，那就是因为引用类型的对象我们是无法求的它的实际大小的，所以这里的对象我们只能使用非托管对象，比如struct结构体。<br> 所以，当我们只是用来存储数据，不涉及任何操作的对象，我们可以把它作为一个结构体来处理，这样我们在序列化的时候可以节省空间开销。<br> 因为你如果你要是用平常的序列化方法去序列化一个类对象，他所需要的空间开销是要大于你去序列化一个具有相同结构的struct对象。</p>
+</blockquote>
 <h3 id="Methods"><a href="#Methods" class="headerlink" title="Methods"></a>Methods</h3><h4 id="ByteToStructure-1"><a href="#ByteToStructure-1" class="headerlink" title="ByteToStructure``1"></a>ByteToStructure``1</h4><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Microsoft.VisualBasic.Serialization.BinaryDumping.StructSerializer.ByteToStructure``<span class="number">1</span>(System.Byte[])</span><br></pre></td></tr></table></figure>
 <p>由byte数组转换为结构体(字符串类型以及Class类型都将会被序列化为内存指针，所以这个函数只适合于值类型的)</p>
 <h4 id="StructureToByte-1"><a href="#StructureToByte-1" class="headerlink" title="StructureToByte``1"></a>StructureToByte``1</h4><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Microsoft.VisualBasic.Serialization.BinaryDumping.StructSerializer.StructureToByte``<span class="number">1</span>(``<span class="number">0</span>)</span><br></pre></td></tr></table></figure>
@@ -157,7 +179,7 @@ var _hmt = _hmt || [];
             </div>
             <footer class="article-footer">
               <a href="/API/T-Microsoft.VisualBasic.Serialization.BinaryDumping.StructSerializer.html" class="article-date">
-  <time datetime="2016-06-14T17:49:34.903Z" itemprop="datePublished">2016-06-15</time>
+  <time datetime="2016-06-19T03:16:13.509Z" itemprop="datePublished">2016-06-19</time>
 </a>
               <a data-url="http://framework-docs.xieguigang.me/API/T-Microsoft.VisualBasic.Serialization.BinaryDumping.StructSerializer.html" data-id="cipfqyhqe00nsr0v4gkd7e02l" class="article-share-link">Share</a>
               

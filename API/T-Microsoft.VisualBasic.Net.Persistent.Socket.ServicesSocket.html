@@ -8,18 +8,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <meta name="baidu-site-verification" content="1ZsVVOmjoT" />
     <meta name="description" content="ServicesSocketnamespace: Microsoft.VisualBasic.Net.Persistent.Socket
-Methods#ctor1Microsoft.VisualBasic.Net.Persistent.Socket.ServicesSocket.#ctor(System.Int32,Microsoft.VisualBasic.Net.Abstract.Excep">
+
+ 一、TCP长连接
+ 正常情况下，一条TCP连接建立后，只要双不提出关闭请求并且不出现异常情况，这条连接是一直存在的， 操作系统不会自动去关闭它，甚至经过物理网络拓扑的改变之后仍然可以使用。 所以一条连接保持几天、几个月、几年或者更长时间都有可能，只要不出现异">
 <meta property="og:type" content="website">
 <meta property="og:title" content="ServicesSocket">
 <meta property="og:url" content="http://framework-docs.xieguigang.me/API/T-Microsoft.VisualBasic.Net.Persistent.Socket.ServicesSocket.html">
 <meta property="og:site_name" content="Microsoft VisualBasic App Framework API docs">
 <meta property="og:description" content="ServicesSocketnamespace: Microsoft.VisualBasic.Net.Persistent.Socket
-Methods#ctor1Microsoft.VisualBasic.Net.Persistent.Socket.ServicesSocket.#ctor(System.Int32,Microsoft.VisualBasic.Net.Abstract.Excep">
-<meta property="og:updated_time" content="2016-06-14T17:49:35.026Z">
+
+ 一、TCP长连接
+ 正常情况下，一条TCP连接建立后，只要双不提出关闭请求并且不出现异常情况，这条连接是一直存在的， 操作系统不会自动去关闭它，甚至经过物理网络拓扑的改变之后仍然可以使用。 所以一条连接保持几天、几个月、几年或者更长时间都有可能，只要不出现异">
+<meta property="og:updated_time" content="2016-06-19T03:16:13.619Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="ServicesSocket">
 <meta name="twitter:description" content="ServicesSocketnamespace: Microsoft.VisualBasic.Net.Persistent.Socket
-Methods#ctor1Microsoft.VisualBasic.Net.Persistent.Socket.ServicesSocket.#ctor(System.Int32,Microsoft.VisualBasic.Net.Abstract.Excep">
+
+ 一、TCP长连接
+ 正常情况下，一条TCP连接建立后，只要双不提出关闭请求并且不出现异常情况，这条连接是一直存在的， 操作系统不会自动去关闭它，甚至经过物理网络拓扑的改变之后仍然可以使用。 所以一条连接保持几天、几个月、几年或者更长时间都有可能，只要不出现异">
     
       <link rel="alternative" href="/atom.xml" title="Microsoft VisualBasic App Framework API docs" type="application/atom+xml">
     
@@ -117,7 +123,7 @@ var _hmt = _hmt || [];
         
 
         <!--<a href="/API/T-Microsoft.VisualBasic.Net.Persistent.Socket.ServicesSocket.html" class="article-date">
-  <time datetime="2016-06-14T17:49:35.026Z" itemprop="datePublished">2016-06-15</time>
+  <time datetime="2016-06-19T03:16:13.619Z" itemprop="datePublished">2016-06-19</time>
 </a>-->
         <!--  -->
       </div>
@@ -144,6 +150,14 @@ var _hmt = _hmt || [];
               </div>
               
                 <h1 id="ServicesSocket"><a href="#ServicesSocket" class="headerlink" title="ServicesSocket"></a>ServicesSocket</h1><p><em>namespace: <a href="N-Microsoft.VisualBasic.Net.Persistent.Socket.html">Microsoft.VisualBasic.Net.Persistent.Socket</a></em></p>
+<blockquote>
+<p> 一、TCP长连接</p>
+<p> 正常情况下，一条TCP连接建立后，只要双不提出关闭请求并且不出现异常情况，这条连接是一直存在的，<br> 操作系统不会自动去关闭它，甚至经过物理网络拓扑的改变之后仍然可以使用。<br> 所以一条连接保持几天、几个月、几年或者更长时间都有可能，只要不出现异常情况或由用户（应用层）主动关闭。<br> 在编程中， 往往需要建立一条TCP连接， 并且长时间处于连接状态。<br> 所谓的TCP长连接并没有确切的时间限制， 而是说这条连接需要的时间比较长。</p>
+<p> 二、TCP连接的正常中断</p>
+<p> TCP连接在事务处理完毕之后， 由一方提出关闭连接请求， 双方通过四次握手（建立连接是三次握手，<br> 当然可以通过优化TCP / IP协议栈来减少握手的次数来提高性能， 但这样会形成不规范或者不优雅的通信）来正常关闭连接</p>
+<p> 三、TCP连接的异常中断</p>
+<p> 导致TCP连接异常中断的因素有： 物理连接被中断、操作系统down机、程序崩溃等等。</p>
+</blockquote>
 <h3 id="Methods"><a href="#Methods" class="headerlink" title="Methods"></a>Methods</h3><h4 id="ctor"><a href="#ctor" class="headerlink" title="#ctor"></a>#ctor</h4><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Microsoft.VisualBasic.Net.Persistent.Socket.ServicesSocket.<span class="meta">#ctor(System.Int32,Microsoft.VisualBasic.Net.Abstract.ExceptionHandler)</span></span><br></pre></td></tr></table></figure>
 <p>消息处理的方法接口： Public Delegate Function DataResponseHandler(str As String, RemotePort As Integer) As String</p>
 <table>
@@ -220,7 +234,7 @@ var _hmt = _hmt || [];
             </div>
             <footer class="article-footer">
               <a href="/API/T-Microsoft.VisualBasic.Net.Persistent.Socket.ServicesSocket.html" class="article-date">
-  <time datetime="2016-06-14T17:49:35.026Z" itemprop="datePublished">2016-06-15</time>
+  <time datetime="2016-06-19T03:16:13.619Z" itemprop="datePublished">2016-06-19</time>
 </a>
               <a data-url="http://framework-docs.xieguigang.me/API/T-Microsoft.VisualBasic.Net.Persistent.Socket.ServicesSocket.html" data-id="cipfqyhmk00ler0v4soaemn1e" class="article-share-link">Share</a>
               
