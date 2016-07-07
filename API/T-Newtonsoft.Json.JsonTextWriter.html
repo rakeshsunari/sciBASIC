@@ -1,0 +1,411 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>JsonTextWriter | Microsoft VisualBasic App Framework API docs</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="baidu-site-verification" content="1ZsVVOmjoT" />
+    <meta name="description" content="JsonTextWriternamespace: Newtonsoft.Json
+Represents a writer that provides a fast, non-cached, forward-only way of generating JSON data.
+Methods#ctor1Newtonsoft.Json.JsonTextWriter.#ctor(System.IO.Tex">
+<meta property="og:type" content="website">
+<meta property="og:title" content="JsonTextWriter">
+<meta property="og:url" content="http://framework-docs.xieguigang.me/API/T-Newtonsoft.Json.JsonTextWriter.html">
+<meta property="og:site_name" content="Microsoft VisualBasic App Framework API docs">
+<meta property="og:description" content="JsonTextWriternamespace: Newtonsoft.Json
+Represents a writer that provides a fast, non-cached, forward-only way of generating JSON data.
+Methods#ctor1Newtonsoft.Json.JsonTextWriter.#ctor(System.IO.Tex">
+<meta property="og:updated_time" content="2016-07-07T09:47:10.713Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="JsonTextWriter">
+<meta name="twitter:description" content="JsonTextWriternamespace: Newtonsoft.Json
+Represents a writer that provides a fast, non-cached, forward-only way of generating JSON data.
+Methods#ctor1Newtonsoft.Json.JsonTextWriter.#ctor(System.IO.Tex">
+    
+      <link rel="alternative" href="/atom.xml" title="Microsoft VisualBasic App Framework API docs" type="application/atom+xml">
+    
+    
+      <link rel="icon" href="https://raw.githubusercontent.com/xieguigang/VisualBasic_AppFramework/master/logo.jpg">
+    
+    <link rel="stylesheet" href="/css/style.css">
+
+    
+<!-- Baidu Analytics -->
+<script type="text/javascript">
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "//hm.baidu.com/hm.js?fe2c7555911b8560db5e56121c5d5960";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+<!-- End Baidu Analytics -->
+
+
+    <script src="//cdn.bootcss.com/jquery/2.0.3/jquery.min.js"></script>
+</head>
+<body>
+<div id="container"> 
+
+    
+    <div id="wrap">
+	   
+
+<header id="header" class="hdpage">
+    
+    <div id="header-outer" class="outer">
+        
+        <div id="header-inner" class="inner">
+          <nav id="main-nav">
+            <a id="main-nav-toggle" class="nav-icon"></a>
+            
+              <a class="main-nav-link" href="/">
+                  
+                  
+
+                
+                  Home
+                </a>
+            
+              <a class="main-nav-link" href="/API">
+                  
+                  
+
+                
+                  API
+                </a>
+            
+              <a class="main-nav-link" href="https://github.com/xieguigang/VisualBasic_AppFramework">
+                  
+                  
+
+                
+                  Github
+                </a>
+            
+          </nav>
+          <nav id="sub-nav">
+            
+              <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+            
+            <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+          </nav>
+          <div id="search-form-wrap">
+            <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" results="0" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://framework-docs.xieguigang.me"></form>
+          </div>
+        </div>
+    </div>
+</header>
+		<div class="outer">
+		
+    <article id="page-undefined" class="article article-type-page" itemscope itemprop="blogPost">
+      <div class="article-meta">
+        
+          <header class="article-header">
+            
+  
+    <a href="/API/T-Newtonsoft.Json.JsonTextWriter.html">
+      <h1 class="article-title" itemprop="name">
+        JsonTextWriter
+      </h1>
+    </a>
+  
+
+
+
+          </header>
+        
+
+        <!--<a href="/API/T-Newtonsoft.Json.JsonTextWriter.html" class="article-date">
+  <time datetime="2016-07-07T09:47:10.713Z" itemprop="datePublished">2016-07-07</time>
+</a>-->
+        <!--  -->
+      </div>
+      <div class="article-inner">
+            
+            
+              <!--<header class="article-header">
+                
+  
+    <a href="/API/T-Newtonsoft.Json.JsonTextWriter.html">
+      <h1 class="article-title" itemprop="name">
+        JsonTextWriter
+      </h1>
+    </a>
+  
+
+
+
+              </header>-->
+            
+            <div class="article-entry" itemprop="articleBody">
+              <div class="page-toc">
+                <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#JsonTextWriter"><span class="toc-number">1.</span> <span class="toc-text">JsonTextWriter</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Methods"><span class="toc-number">1.0.1.</span> <span class="toc-text">Methods</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#ctor"><span class="toc-number">1.0.1.1.</span> <span class="toc-text">#ctor</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Close"><span class="toc-number">1.0.1.2.</span> <span class="toc-text">Close</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Flush"><span class="toc-number">1.0.1.3.</span> <span class="toc-text">Flush</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#WriteComment"><span class="toc-number">1.0.1.4.</span> <span class="toc-text">WriteComment</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#WriteEnd"><span class="toc-number">1.0.1.5.</span> <span class="toc-text">WriteEnd</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#WriteIndent"><span class="toc-number">1.0.1.6.</span> <span class="toc-text">WriteIndent</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#WriteIndentSpace"><span class="toc-number">1.0.1.7.</span> <span class="toc-text">WriteIndentSpace</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#WriteNull"><span class="toc-number">1.0.1.8.</span> <span class="toc-text">WriteNull</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#WritePropertyName"><span class="toc-number">1.0.1.9.</span> <span class="toc-text">WritePropertyName</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#WriteRaw"><span class="toc-number">1.0.1.10.</span> <span class="toc-text">WriteRaw</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#WriteStartArray"><span class="toc-number">1.0.1.11.</span> <span class="toc-text">WriteStartArray</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#WriteStartConstructor"><span class="toc-number">1.0.1.12.</span> <span class="toc-text">WriteStartConstructor</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#WriteStartObject"><span class="toc-number">1.0.1.13.</span> <span class="toc-text">WriteStartObject</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#WriteUndefined"><span class="toc-number">1.0.1.14.</span> <span class="toc-text">WriteUndefined</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#WriteValue"><span class="toc-number">1.0.1.15.</span> <span class="toc-text">WriteValue</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#WriteValueDelimiter"><span class="toc-number">1.0.1.16.</span> <span class="toc-text">WriteValueDelimiter</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#WriteWhitespace"><span class="toc-number">1.0.1.17.</span> <span class="toc-text">WriteWhitespace</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Properties"><span class="toc-number">1.0.2.</span> <span class="toc-text">Properties</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#ArrayPool"><span class="toc-number">1.0.2.1.</span> <span class="toc-text">ArrayPool</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Indentation"><span class="toc-number">1.0.2.2.</span> <span class="toc-text">Indentation</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#IndentChar"><span class="toc-number">1.0.2.3.</span> <span class="toc-text">IndentChar</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#QuoteChar"><span class="toc-number">1.0.2.4.</span> <span class="toc-text">QuoteChar</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#QuoteName"><span class="toc-number">1.0.2.5.</span> <span class="toc-text">QuoteName</span></a></li></ol></li></ol></li></ol></li></ol>
+              </div>
+              
+                <h1 id="JsonTextWriter"><a href="#JsonTextWriter" class="headerlink" title="JsonTextWriter"></a>JsonTextWriter</h1><p><em>namespace: <a href="N-Newtonsoft.Json.html">Newtonsoft.Json</a></em></p>
+<p>Represents a writer that provides a fast, non-cached, forward-only way of generating JSON data.</p>
+<h3 id="Methods"><a href="#Methods" class="headerlink" title="Methods"></a>Methods</h3><h4 id="ctor"><a href="#ctor" class="headerlink" title="#ctor"></a>#ctor</h4><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Newtonsoft.Json.JsonTextWriter.<span class="meta">#ctor(System.IO.TextWriter)</span></span><br></pre></td></tr></table></figure>
+<p>Creates an instance of the JsonWriter class using the specified @”T:System.IO.TextWriter”.</p>
+<table>
+<thead>
+<tr>
+<th>Parameter Name</th>
+<th>Remarks</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>textWriter</td>
+<td>The TextWriter to write to.</td>
+</tr>
+</tbody>
+</table>
+<h4 id="Close"><a href="#Close" class="headerlink" title="Close"></a>Close</h4><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Newtonsoft.Json.JsonTextWriter.Close</span><br></pre></td></tr></table></figure>
+<p>Closes this stream and the underlying stream.</p>
+<h4 id="Flush"><a href="#Flush" class="headerlink" title="Flush"></a>Flush</h4><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Newtonsoft.Json.JsonTextWriter.Flush</span><br></pre></td></tr></table></figure>
+<p>Flushes whatever is in the buffer to the underlying streams and also flushes the underlying stream.</p>
+<h4 id="WriteComment"><a href="#WriteComment" class="headerlink" title="WriteComment"></a>WriteComment</h4><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Newtonsoft.Json.JsonTextWriter.WriteComment(System.String)</span><br></pre></td></tr></table></figure>
+<p>Writes out a comment ‘/<em>…</em>/‘ containing the specified text.</p>
+<table>
+<thead>
+<tr>
+<th>Parameter Name</th>
+<th>Remarks</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>text</td>
+<td>Text to place inside the comment.</td>
+</tr>
+</tbody>
+</table>
+<h4 id="WriteEnd"><a href="#WriteEnd" class="headerlink" title="WriteEnd"></a>WriteEnd</h4><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Newtonsoft.Json.JsonTextWriter.WriteEnd(Newtonsoft.Json.JsonToken)</span><br></pre></td></tr></table></figure>
+<p>Writes the specified end token.</p>
+<table>
+<thead>
+<tr>
+<th>Parameter Name</th>
+<th>Remarks</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>token</td>
+<td>The end token to write.</td>
+</tr>
+</tbody>
+</table>
+<h4 id="WriteIndent"><a href="#WriteIndent" class="headerlink" title="WriteIndent"></a>WriteIndent</h4><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Newtonsoft.Json.JsonTextWriter.WriteIndent</span><br></pre></td></tr></table></figure>
+<p>Writes indent characters.</p>
+<h4 id="WriteIndentSpace"><a href="#WriteIndentSpace" class="headerlink" title="WriteIndentSpace"></a>WriteIndentSpace</h4><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Newtonsoft.Json.JsonTextWriter.WriteIndentSpace</span><br></pre></td></tr></table></figure>
+<p>Writes an indent space.</p>
+<h4 id="WriteNull"><a href="#WriteNull" class="headerlink" title="WriteNull"></a>WriteNull</h4><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Newtonsoft.Json.JsonTextWriter.WriteNull</span><br></pre></td></tr></table></figure>
+<p>Writes a null value.</p>
+<h4 id="WritePropertyName"><a href="#WritePropertyName" class="headerlink" title="WritePropertyName"></a>WritePropertyName</h4><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Newtonsoft.Json.JsonTextWriter.WritePropertyName(System.String,System.Boolean)</span><br></pre></td></tr></table></figure>
+<p>Writes the property name of a name/value pair on a JSON object.</p>
+<table>
+<thead>
+<tr>
+<th>Parameter Name</th>
+<th>Remarks</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>name</td>
+<td>The name of the property.</td>
+</tr>
+<tr>
+<td>escape</td>
+<td>A flag to indicate whether the text should be escaped when it is written as a JSON property name.</td>
+</tr>
+</tbody>
+</table>
+<h4 id="WriteRaw"><a href="#WriteRaw" class="headerlink" title="WriteRaw"></a>WriteRaw</h4><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Newtonsoft.Json.JsonTextWriter.WriteRaw(System.String)</span><br></pre></td></tr></table></figure>
+<p>Writes raw JSON.</p>
+<table>
+<thead>
+<tr>
+<th>Parameter Name</th>
+<th>Remarks</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>json</td>
+<td>The raw JSON to write.</td>
+</tr>
+</tbody>
+</table>
+<h4 id="WriteStartArray"><a href="#WriteStartArray" class="headerlink" title="WriteStartArray"></a>WriteStartArray</h4><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Newtonsoft.Json.JsonTextWriter.WriteStartArray</span><br></pre></td></tr></table></figure>
+<p>Writes the beginning of a JSON array.</p>
+<h4 id="WriteStartConstructor"><a href="#WriteStartConstructor" class="headerlink" title="WriteStartConstructor"></a>WriteStartConstructor</h4><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Newtonsoft.Json.JsonTextWriter.WriteStartConstructor(System.String)</span><br></pre></td></tr></table></figure>
+<p>Writes the start of a constructor with the given name.</p>
+<table>
+<thead>
+<tr>
+<th>Parameter Name</th>
+<th>Remarks</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>name</td>
+<td>The name of the constructor.</td>
+</tr>
+</tbody>
+</table>
+<h4 id="WriteStartObject"><a href="#WriteStartObject" class="headerlink" title="WriteStartObject"></a>WriteStartObject</h4><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Newtonsoft.Json.JsonTextWriter.WriteStartObject</span><br></pre></td></tr></table></figure>
+<p>Writes the beginning of a JSON object.</p>
+<h4 id="WriteUndefined"><a href="#WriteUndefined" class="headerlink" title="WriteUndefined"></a>WriteUndefined</h4><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Newtonsoft.Json.JsonTextWriter.WriteUndefined</span><br></pre></td></tr></table></figure>
+<p>Writes an undefined value.</p>
+<h4 id="WriteValue"><a href="#WriteValue" class="headerlink" title="WriteValue"></a>WriteValue</h4><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Newtonsoft.Json.JsonTextWriter.WriteValue(System.Uri)</span><br></pre></td></tr></table></figure>
+<p>Writes a @”T:System.Uri” value.</p>
+<table>
+<thead>
+<tr>
+<th>Parameter Name</th>
+<th>Remarks</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>value</td>
+<td>The @”T:System.Uri” value to write.</td>
+</tr>
+</tbody>
+</table>
+<h4 id="WriteValueDelimiter"><a href="#WriteValueDelimiter" class="headerlink" title="WriteValueDelimiter"></a>WriteValueDelimiter</h4><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Newtonsoft.Json.JsonTextWriter.WriteValueDelimiter</span><br></pre></td></tr></table></figure>
+<p>Writes the JSON value delimiter.</p>
+<h4 id="WriteWhitespace"><a href="#WriteWhitespace" class="headerlink" title="WriteWhitespace"></a>WriteWhitespace</h4><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Newtonsoft.Json.JsonTextWriter.WriteWhitespace(System.String)</span><br></pre></td></tr></table></figure>
+<p>Writes out the given white space.</p>
+<table>
+<thead>
+<tr>
+<th>Parameter Name</th>
+<th>Remarks</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ws</td>
+<td>The string of white space characters.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="Properties"><a href="#Properties" class="headerlink" title="Properties"></a>Properties</h3><h4 id="ArrayPool"><a href="#ArrayPool" class="headerlink" title="ArrayPool"></a>ArrayPool</h4><p>Gets or sets the writer’s character array pool.</p>
+<h4 id="Indentation"><a href="#Indentation" class="headerlink" title="Indentation"></a>Indentation</h4><p>Gets or sets how many IndentChars to write for each level in the hierarchy when @”T:Newtonsoft.Json.Formatting” is set to Formatting.Indented.</p>
+<h4 id="IndentChar"><a href="#IndentChar" class="headerlink" title="IndentChar"></a>IndentChar</h4><p>Gets or sets which character to use for indenting when @”T:Newtonsoft.Json.Formatting” is set to Formatting.Indented.</p>
+<h4 id="QuoteChar"><a href="#QuoteChar" class="headerlink" title="QuoteChar"></a>QuoteChar</h4><p>Gets or sets which character to use to quote attribute values.</p>
+<h4 id="QuoteName"><a href="#QuoteName" class="headerlink" title="QuoteName"></a>QuoteName</h4><p>Gets or sets a value indicating whether object names will be surrounded with quotes.</p>
+
+              
+            </div>
+            <footer class="article-footer">
+              <a href="/API/T-Newtonsoft.Json.JsonTextWriter.html" class="article-date">
+  <time datetime="2016-07-07T09:47:10.713Z" itemprop="datePublished">2016-07-07</time>
+</a>
+              <a data-url="http://framework-docs.xieguigang.me/API/T-Newtonsoft.Json.JsonTextWriter.html" data-id="ciqc81lqw002udsv4hvl29p1n" class="article-share-link">Share</a>
+              
+              
+            </footer>
+      </div>
+      
+        
+      
+    </article>
+    <script type="text/javascript">
+      window.onscroll = function(){ 
+        $(function(){
+          var $toc = $('.page-toc'),
+              $article = $('.article-entry')
+              toc_top = $toc.offset().top
+              tocsub_width = $toc.children().width()
+              article_height = $article.children().height()
+              scroll_top = document.body.scrollTop
+              screen_h = $(window).height()
+              footer_top = $('.article-footer').offset().top - $(window).height()
+              if(toc_top&&scroll_top&&scroll_top>toc_top&&scroll_top<footer_top){
+                $toc.children().css({
+                  "position": "fixed",
+                  "height": (screen_h -20)+'px',
+                  "overflow": "auto"
+                })
+                $article.css('margin-right',tocsub_width+'px')
+              }else{
+                $toc.children().css({
+                  "position": "relative",
+                  "height":'inherit',
+                  "overflow": "auto"
+                })
+                $article.css('margin-right',0+'px')
+              }
+        })
+      } 
+    </script>
+
+
+
+
+
+
+
+
+		</div>
+		
+
+<footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+        <div class="left">
+            &copy; 2016 谢桂纲<br>
+            Powered by <a href="http://hexo.io/" target="_blank">Hexo</a> and Theme by <a href="https://github.com/jaywcjlove/hexoThemeKacper">hexoThemeKacper </a>
+        </div>
+        <div class="right">
+            
+        </div>
+    </div>
+  </div>
+</footer>
+<script src="//cdn.bootcss.com/jquery/2.0.3/jquery.min.js"></script>
+
+
+<script type="text/javascript">
+$(function(){
+  var $img = $('.article-entry img'),
+      $link = $img.css({
+        "display":"inline-block"
+      }).parent()
+
+  if($link.parent().is("a")){
+      $img.each(function(idx,item) {
+      $(this).parent().attr('href',$(this).parent().parent().attr('href'))
+    })
+  }
+})
+</script>
+
+
+<script src="/js/script.js"></script>
+
+  	</div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/API" class="mobile-nav-link">API</a>
+  
+    <a href="https://github.com/xieguigang/VisualBasic_AppFramework" class="mobile-nav-link">Github</a>
+  
+</nav>
+    
+</div>
+</body>
+</html>
+

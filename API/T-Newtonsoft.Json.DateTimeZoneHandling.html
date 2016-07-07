@@ -1,0 +1,260 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>DateTimeZoneHandling | Microsoft VisualBasic App Framework API docs</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="baidu-site-verification" content="1ZsVVOmjoT" />
+    <meta name="description" content="DateTimeZoneHandlingnamespace: Newtonsoft.Json
+Specifies how to treat the time value when converting between string and @”T:System.DateTime”.
+PropertiesLocalTreat as local time. If the @”T:System.Date">
+<meta property="og:type" content="website">
+<meta property="og:title" content="DateTimeZoneHandling">
+<meta property="og:url" content="http://framework-docs.xieguigang.me/API/T-Newtonsoft.Json.DateTimeZoneHandling.html">
+<meta property="og:site_name" content="Microsoft VisualBasic App Framework API docs">
+<meta property="og:description" content="DateTimeZoneHandlingnamespace: Newtonsoft.Json
+Specifies how to treat the time value when converting between string and @”T:System.DateTime”.
+PropertiesLocalTreat as local time. If the @”T:System.Date">
+<meta property="og:updated_time" content="2016-07-07T09:47:07.894Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="DateTimeZoneHandling">
+<meta name="twitter:description" content="DateTimeZoneHandlingnamespace: Newtonsoft.Json
+Specifies how to treat the time value when converting between string and @”T:System.DateTime”.
+PropertiesLocalTreat as local time. If the @”T:System.Date">
+    
+      <link rel="alternative" href="/atom.xml" title="Microsoft VisualBasic App Framework API docs" type="application/atom+xml">
+    
+    
+      <link rel="icon" href="https://raw.githubusercontent.com/xieguigang/VisualBasic_AppFramework/master/logo.jpg">
+    
+    <link rel="stylesheet" href="/css/style.css">
+
+    
+<!-- Baidu Analytics -->
+<script type="text/javascript">
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "//hm.baidu.com/hm.js?fe2c7555911b8560db5e56121c5d5960";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+<!-- End Baidu Analytics -->
+
+
+    <script src="//cdn.bootcss.com/jquery/2.0.3/jquery.min.js"></script>
+</head>
+<body>
+<div id="container"> 
+
+    
+    <div id="wrap">
+	   
+
+<header id="header" class="hdpage">
+    
+    <div id="header-outer" class="outer">
+        
+        <div id="header-inner" class="inner">
+          <nav id="main-nav">
+            <a id="main-nav-toggle" class="nav-icon"></a>
+            
+              <a class="main-nav-link" href="/">
+                  
+                  
+
+                
+                  Home
+                </a>
+            
+              <a class="main-nav-link" href="/API">
+                  
+                  
+
+                
+                  API
+                </a>
+            
+              <a class="main-nav-link" href="https://github.com/xieguigang/VisualBasic_AppFramework">
+                  
+                  
+
+                
+                  Github
+                </a>
+            
+          </nav>
+          <nav id="sub-nav">
+            
+              <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+            
+            <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+          </nav>
+          <div id="search-form-wrap">
+            <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" results="0" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://framework-docs.xieguigang.me"></form>
+          </div>
+        </div>
+    </div>
+</header>
+		<div class="outer">
+		
+    <article id="page-undefined" class="article article-type-page" itemscope itemprop="blogPost">
+      <div class="article-meta">
+        
+          <header class="article-header">
+            
+  
+    <a href="/API/T-Newtonsoft.Json.DateTimeZoneHandling.html">
+      <h1 class="article-title" itemprop="name">
+        DateTimeZoneHandling
+      </h1>
+    </a>
+  
+
+
+
+          </header>
+        
+
+        <!--<a href="/API/T-Newtonsoft.Json.DateTimeZoneHandling.html" class="article-date">
+  <time datetime="2016-07-07T09:47:07.894Z" itemprop="datePublished">2016-07-07</time>
+</a>-->
+        <!--  -->
+      </div>
+      <div class="article-inner">
+            
+            
+              <!--<header class="article-header">
+                
+  
+    <a href="/API/T-Newtonsoft.Json.DateTimeZoneHandling.html">
+      <h1 class="article-title" itemprop="name">
+        DateTimeZoneHandling
+      </h1>
+    </a>
+  
+
+
+
+              </header>-->
+            
+            <div class="article-entry" itemprop="articleBody">
+              <div class="page-toc">
+                <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#DateTimeZoneHandling"><span class="toc-number">1.</span> <span class="toc-text">DateTimeZoneHandling</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Properties"><span class="toc-number">1.0.1.</span> <span class="toc-text">Properties</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#Local"><span class="toc-number">1.0.1.1.</span> <span class="toc-text">Local</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#RoundtripKind"><span class="toc-number">1.0.1.2.</span> <span class="toc-text">RoundtripKind</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Unspecified"><span class="toc-number">1.0.1.3.</span> <span class="toc-text">Unspecified</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Utc"><span class="toc-number">1.0.1.4.</span> <span class="toc-text">Utc</span></a></li></ol></li></ol></li></ol></li></ol>
+              </div>
+              
+                <h1 id="DateTimeZoneHandling"><a href="#DateTimeZoneHandling" class="headerlink" title="DateTimeZoneHandling"></a>DateTimeZoneHandling</h1><p><em>namespace: <a href="N-Newtonsoft.Json.html">Newtonsoft.Json</a></em></p>
+<p>Specifies how to treat the time value when converting between string and @”T:System.DateTime”.</p>
+<h3 id="Properties"><a href="#Properties" class="headerlink" title="Properties"></a>Properties</h3><h4 id="Local"><a href="#Local" class="headerlink" title="Local"></a>Local</h4><p>Treat as local time. If the @”T:System.DateTime” object represents a Coordinated Universal Time (UTC), it is converted to the local time.</p>
+<h4 id="RoundtripKind"><a href="#RoundtripKind" class="headerlink" title="RoundtripKind"></a>RoundtripKind</h4><p>Time zone information should be preserved when converting.</p>
+<h4 id="Unspecified"><a href="#Unspecified" class="headerlink" title="Unspecified"></a>Unspecified</h4><p>Treat as a local time if a @”T:System.DateTime” is being converted to a string.<br> If a string is being converted to @”T:System.DateTime”, convert to a local time if a time zone is specified.</p>
+<h4 id="Utc"><a href="#Utc" class="headerlink" title="Utc"></a>Utc</h4><p>Treat as a UTC. If the @”T:System.DateTime” object represents a local time, it is converted to a UTC.</p>
+
+              
+            </div>
+            <footer class="article-footer">
+              <a href="/API/T-Newtonsoft.Json.DateTimeZoneHandling.html" class="article-date">
+  <time datetime="2016-07-07T09:47:07.894Z" itemprop="datePublished">2016-07-07</time>
+</a>
+              <a data-url="http://framework-docs.xieguigang.me/API/T-Newtonsoft.Json.DateTimeZoneHandling.html" data-id="ciqc81lp00024dsv4pk2v9i7z" class="article-share-link">Share</a>
+              
+              
+            </footer>
+      </div>
+      
+        
+      
+    </article>
+    <script type="text/javascript">
+      window.onscroll = function(){ 
+        $(function(){
+          var $toc = $('.page-toc'),
+              $article = $('.article-entry')
+              toc_top = $toc.offset().top
+              tocsub_width = $toc.children().width()
+              article_height = $article.children().height()
+              scroll_top = document.body.scrollTop
+              screen_h = $(window).height()
+              footer_top = $('.article-footer').offset().top - $(window).height()
+              if(toc_top&&scroll_top&&scroll_top>toc_top&&scroll_top<footer_top){
+                $toc.children().css({
+                  "position": "fixed",
+                  "height": (screen_h -20)+'px',
+                  "overflow": "auto"
+                })
+                $article.css('margin-right',tocsub_width+'px')
+              }else{
+                $toc.children().css({
+                  "position": "relative",
+                  "height":'inherit',
+                  "overflow": "auto"
+                })
+                $article.css('margin-right',0+'px')
+              }
+        })
+      } 
+    </script>
+
+
+
+
+
+
+
+
+		</div>
+		
+
+<footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+        <div class="left">
+            &copy; 2016 谢桂纲<br>
+            Powered by <a href="http://hexo.io/" target="_blank">Hexo</a> and Theme by <a href="https://github.com/jaywcjlove/hexoThemeKacper">hexoThemeKacper </a>
+        </div>
+        <div class="right">
+            
+        </div>
+    </div>
+  </div>
+</footer>
+<script src="//cdn.bootcss.com/jquery/2.0.3/jquery.min.js"></script>
+
+
+<script type="text/javascript">
+$(function(){
+  var $img = $('.article-entry img'),
+      $link = $img.css({
+        "display":"inline-block"
+      }).parent()
+
+  if($link.parent().is("a")){
+      $img.each(function(idx,item) {
+      $(this).parent().attr('href',$(this).parent().parent().attr('href'))
+    })
+  }
+})
+</script>
+
+
+<script src="/js/script.js"></script>
+
+  	</div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/API" class="mobile-nav-link">API</a>
+  
+    <a href="https://github.com/xieguigang/VisualBasic_AppFramework" class="mobile-nav-link">Github</a>
+  
+</nav>
+    
+</div>
+</body>
+</html>
+

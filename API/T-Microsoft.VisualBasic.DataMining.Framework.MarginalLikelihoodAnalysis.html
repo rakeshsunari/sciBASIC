@@ -1,0 +1,361 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>MarginalLikelihoodAnalysis | Microsoft VisualBasic App Framework API docs</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="baidu-site-verification" content="1ZsVVOmjoT" />
+    <meta name="description" content="MarginalLikelihoodAnalysisnamespace: Microsoft.VisualBasic.DataMining.Framework
+@author Marc Suchard @author Alexei Drummond
+ Source translated from model_P.c (a component of BAli-Phy by Benjamin Rede">
+<meta property="og:type" content="website">
+<meta property="og:title" content="MarginalLikelihoodAnalysis">
+<meta property="og:url" content="http://framework-docs.xieguigang.me/API/T-Microsoft.VisualBasic.DataMining.Framework.MarginalLikelihoodAnalysis.html">
+<meta property="og:site_name" content="Microsoft VisualBasic App Framework API docs">
+<meta property="og:description" content="MarginalLikelihoodAnalysisnamespace: Microsoft.VisualBasic.DataMining.Framework
+@author Marc Suchard @author Alexei Drummond
+ Source translated from model_P.c (a component of BAli-Phy by Benjamin Rede">
+<meta property="og:updated_time" content="2016-07-07T09:46:46.401Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="MarginalLikelihoodAnalysis">
+<meta name="twitter:description" content="MarginalLikelihoodAnalysisnamespace: Microsoft.VisualBasic.DataMining.Framework
+@author Marc Suchard @author Alexei Drummond
+ Source translated from model_P.c (a component of BAli-Phy by Benjamin Rede">
+    
+      <link rel="alternative" href="/atom.xml" title="Microsoft VisualBasic App Framework API docs" type="application/atom+xml">
+    
+    
+      <link rel="icon" href="https://raw.githubusercontent.com/xieguigang/VisualBasic_AppFramework/master/logo.jpg">
+    
+    <link rel="stylesheet" href="/css/style.css">
+
+    
+<!-- Baidu Analytics -->
+<script type="text/javascript">
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "//hm.baidu.com/hm.js?fe2c7555911b8560db5e56121c5d5960";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+<!-- End Baidu Analytics -->
+
+
+    <script src="//cdn.bootcss.com/jquery/2.0.3/jquery.min.js"></script>
+</head>
+<body>
+<div id="container"> 
+
+    
+    <div id="wrap">
+	   
+
+<header id="header" class="hdpage">
+    
+    <div id="header-outer" class="outer">
+        
+        <div id="header-inner" class="inner">
+          <nav id="main-nav">
+            <a id="main-nav-toggle" class="nav-icon"></a>
+            
+              <a class="main-nav-link" href="/">
+                  
+                  
+
+                
+                  Home
+                </a>
+            
+              <a class="main-nav-link" href="/API">
+                  
+                  
+
+                
+                  API
+                </a>
+            
+              <a class="main-nav-link" href="https://github.com/xieguigang/VisualBasic_AppFramework">
+                  
+                  
+
+                
+                  Github
+                </a>
+            
+          </nav>
+          <nav id="sub-nav">
+            
+              <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+            
+            <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+          </nav>
+          <div id="search-form-wrap">
+            <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" results="0" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://framework-docs.xieguigang.me"></form>
+          </div>
+        </div>
+    </div>
+</header>
+		<div class="outer">
+		
+    <article id="page-undefined" class="article article-type-page" itemscope itemprop="blogPost">
+      <div class="article-meta">
+        
+          <header class="article-header">
+            
+  
+    <a href="/API/T-Microsoft.VisualBasic.DataMining.Framework.MarginalLikelihoodAnalysis.html">
+      <h1 class="article-title" itemprop="name">
+        MarginalLikelihoodAnalysis
+      </h1>
+    </a>
+  
+
+
+
+          </header>
+        
+
+        <!--<a href="/API/T-Microsoft.VisualBasic.DataMining.Framework.MarginalLikelihoodAnalysis.html" class="article-date">
+  <time datetime="2016-07-07T09:46:46.401Z" itemprop="datePublished">2016-07-07</time>
+</a>-->
+        <!--  -->
+      </div>
+      <div class="article-inner">
+            
+            
+              <!--<header class="article-header">
+                
+  
+    <a href="/API/T-Microsoft.VisualBasic.DataMining.Framework.MarginalLikelihoodAnalysis.html">
+      <h1 class="article-title" itemprop="name">
+        MarginalLikelihoodAnalysis
+      </h1>
+    </a>
+  
+
+
+
+              </header>-->
+            
+            <div class="article-entry" itemprop="articleBody">
+              <div class="page-toc">
+                <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#MarginalLikelihoodAnalysis"><span class="toc-number">1.</span> <span class="toc-text">MarginalLikelihoodAnalysis</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Methods"><span class="toc-number">1.0.1.</span> <span class="toc-text">Methods</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#ctor"><span class="toc-number">1.0.1.1.</span> <span class="toc-text">#ctor</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#logMarginalLikelihoodAICM"><span class="toc-number">1.0.1.2.</span> <span class="toc-text">logMarginalLikelihoodAICM</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#logMarginalLikelihoodArithmetic"><span class="toc-number">1.0.1.3.</span> <span class="toc-text">logMarginalLikelihoodArithmetic</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#logMarginalLikelihoodHarmonic"><span class="toc-number">1.0.1.4.</span> <span class="toc-text">logMarginalLikelihoodHarmonic</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#logMarginalLikelihoodSmoothed"><span class="toc-number">1.0.1.5.</span> <span class="toc-text">logMarginalLikelihoodSmoothed</span></a></li></ol></li></ol></li></ol></li></ol>
+              </div>
+              
+                <h1 id="MarginalLikelihoodAnalysis"><a href="#MarginalLikelihoodAnalysis" class="headerlink" title="MarginalLikelihoodAnalysis"></a>MarginalLikelihoodAnalysis</h1><p><em>namespace: <a href="N-Microsoft.VisualBasic.DataMining.Framework.html">Microsoft.VisualBasic.DataMining.Framework</a></em></p>
+<p>@author Marc Suchard<br> @author Alexei Drummond</p>
+<p> Source translated from <code>model_P.c</code> (a component of BAli-Phy by Benjamin Redelings and Marc Suchard</p>
+<h3 id="Methods"><a href="#Methods" class="headerlink" title="Methods"></a>Methods</h3><h4 id="ctor"><a href="#ctor" class="headerlink" title="#ctor"></a>#ctor</h4><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Microsoft.VisualBasic.DataMining.Framework.MarginalLikelihoodAnalysis.<span class="meta">#ctor(System.Collections.Generic.IList&#123;System.Double&#125;,System.Int32,System.String,System.Int32)</span></span><br></pre></td></tr></table></figure>
+<p>Constructor</p>
+<table>
+<thead>
+<tr>
+<th>Parameter Name</th>
+<th>Remarks</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>sample</td>
+<td>-</td>
+</tr>
+<tr>
+<td>burnin</td>
+<td>used for ‘toString’ display purposes only</td>
+</tr>
+<tr>
+<td>analysisType</td>
+<td>-</td>
+</tr>
+<tr>
+<td>bootstrapLength</td>
+<td>a value of zero will turn off bootstrapping</td>
+</tr>
+</tbody>
+</table>
+<h4 id="logMarginalLikelihoodAICM"><a href="#logMarginalLikelihoodAICM" class="headerlink" title="logMarginalLikelihoodAICM"></a>logMarginalLikelihoodAICM</h4><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Microsoft.VisualBasic.DataMining.Framework.MarginalLikelihoodAnalysis.logMarginalLikelihoodAICM(System.Collections.Generic.IList&#123;System.Double&#125;)</span><br></pre></td></tr></table></figure>
+<p>Calculates the AICM of a model using method-of-moments from Raftery et al. (2007)</p>
+<table>
+<thead>
+<tr>
+<th>Parameter Name</th>
+<th>Remarks</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>v</td>
+<td>a posterior sample of logLikelihoods</td>
+</tr>
+</tbody>
+</table>
+<p><em>returns:  the AICM (lower values are better) </em></p>
+<h4 id="logMarginalLikelihoodArithmetic"><a href="#logMarginalLikelihoodArithmetic" class="headerlink" title="logMarginalLikelihoodArithmetic"></a>logMarginalLikelihoodArithmetic</h4><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Microsoft.VisualBasic.DataMining.Framework.MarginalLikelihoodAnalysis.logMarginalLikelihoodArithmetic(System.Collections.Generic.IList&#123;System.Nullable&#123;System.Double&#125;&#125;)</span><br></pre></td></tr></table></figure>
+<p>Calculates the log marginal likelihood of a model using the arithmetic mean estimator</p>
+<table>
+<thead>
+<tr>
+<th>Parameter Name</th>
+<th>Remarks</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>v</td>
+<td>a posterior sample of logLikelihoods</td>
+</tr>
+</tbody>
+</table>
+<p><em>returns:  the log marginal likelihood </em></p>
+<h4 id="logMarginalLikelihoodHarmonic"><a href="#logMarginalLikelihoodHarmonic" class="headerlink" title="logMarginalLikelihoodHarmonic"></a>logMarginalLikelihoodHarmonic</h4><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Microsoft.VisualBasic.DataMining.Framework.MarginalLikelihoodAnalysis.logMarginalLikelihoodHarmonic(System.Collections.Generic.IList&#123;System.Double&#125;)</span><br></pre></td></tr></table></figure>
+<p>Calculates the log marginal likelihood of a model using Newton and Raftery’s harmonic mean estimator</p>
+<table>
+<thead>
+<tr>
+<th>Parameter Name</th>
+<th>Remarks</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>v</td>
+<td>a posterior sample of logLikelihoods</td>
+</tr>
+</tbody>
+</table>
+<p><em>returns:  the log marginal likelihood </em></p>
+<h4 id="logMarginalLikelihoodSmoothed"><a href="#logMarginalLikelihoodSmoothed" class="headerlink" title="logMarginalLikelihoodSmoothed"></a>logMarginalLikelihoodSmoothed</h4><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Microsoft.VisualBasic.DataMining.Framework.MarginalLikelihoodAnalysis.logMarginalLikelihoodSmoothed(System.Collections.Generic.IList&#123;System.Double&#125;,System.Double,System.Double)</span><br></pre></td></tr></table></figure>
+<p>Calculates the log marginal likelihood of a model using Newton and Raftery’s smoothed estimator</p>
+<table>
+<thead>
+<tr>
+<th>Parameter Name</th>
+<th>Remarks</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>v</td>
+<td>a posterior sample of logLikelihood</td>
+</tr>
+<tr>
+<td>delta</td>
+<td>proportion of pseudo-samples from the prior</td>
+</tr>
+<tr>
+<td>Pdata</td>
+<td>current estimate of the log marginal likelihood</td>
+</tr>
+</tbody>
+</table>
+<p><em>returns:  the log marginal likelihood </em></p>
+
+              
+            </div>
+            <footer class="article-footer">
+              <a href="/API/T-Microsoft.VisualBasic.DataMining.Framework.MarginalLikelihoodAnalysis.html" class="article-date">
+  <time datetime="2016-07-07T09:46:46.401Z" itemprop="datePublished">2016-07-07</time>
+</a>
+              <a data-url="http://framework-docs.xieguigang.me/API/T-Microsoft.VisualBasic.DataMining.Framework.MarginalLikelihoodAnalysis.html" data-id="ciqc81jrd000vdsv4iamaqop5" class="article-share-link">Share</a>
+              
+              
+            </footer>
+      </div>
+      
+        
+      
+    </article>
+    <script type="text/javascript">
+      window.onscroll = function(){ 
+        $(function(){
+          var $toc = $('.page-toc'),
+              $article = $('.article-entry')
+              toc_top = $toc.offset().top
+              tocsub_width = $toc.children().width()
+              article_height = $article.children().height()
+              scroll_top = document.body.scrollTop
+              screen_h = $(window).height()
+              footer_top = $('.article-footer').offset().top - $(window).height()
+              if(toc_top&&scroll_top&&scroll_top>toc_top&&scroll_top<footer_top){
+                $toc.children().css({
+                  "position": "fixed",
+                  "height": (screen_h -20)+'px',
+                  "overflow": "auto"
+                })
+                $article.css('margin-right',tocsub_width+'px')
+              }else{
+                $toc.children().css({
+                  "position": "relative",
+                  "height":'inherit',
+                  "overflow": "auto"
+                })
+                $article.css('margin-right',0+'px')
+              }
+        })
+      } 
+    </script>
+
+
+
+
+
+
+
+
+		</div>
+		
+
+<footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+        <div class="left">
+            &copy; 2016 谢桂纲<br>
+            Powered by <a href="http://hexo.io/" target="_blank">Hexo</a> and Theme by <a href="https://github.com/jaywcjlove/hexoThemeKacper">hexoThemeKacper </a>
+        </div>
+        <div class="right">
+            
+        </div>
+    </div>
+  </div>
+</footer>
+<script src="//cdn.bootcss.com/jquery/2.0.3/jquery.min.js"></script>
+
+
+<script type="text/javascript">
+$(function(){
+  var $img = $('.article-entry img'),
+      $link = $img.css({
+        "display":"inline-block"
+      }).parent()
+
+  if($link.parent().is("a")){
+      $img.each(function(idx,item) {
+      $(this).parent().attr('href',$(this).parent().parent().attr('href'))
+    })
+  }
+})
+</script>
+
+
+<script src="/js/script.js"></script>
+
+  	</div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/API" class="mobile-nav-link">API</a>
+  
+    <a href="https://github.com/xieguigang/VisualBasic_AppFramework" class="mobile-nav-link">Github</a>
+  
+</nav>
+    
+</div>
+</body>
+</html>
+

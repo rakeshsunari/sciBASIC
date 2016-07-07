@@ -17,7 +17,7 @@ MethodsChange">
 <meta property="og:description" content="CStringnamespace: Microsoft.VisualBasic.Language.C
 This class provides the ability to simulate various classic C string functionswhich don’t have exact equivalents in the .NET Framework.
 MethodsChange">
-<meta property="og:updated_time" content="2016-06-19T03:16:13.335Z">
+<meta property="og:updated_time" content="2016-07-07T09:46:25.155Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="CString">
 <meta name="twitter:description" content="CStringnamespace: Microsoft.VisualBasic.Language.C
@@ -120,7 +120,7 @@ var _hmt = _hmt || [];
         
 
         <!--<a href="/API/T-Microsoft.VisualBasic.Language.C.CString.html" class="article-date">
-  <time datetime="2016-06-19T03:16:13.335Z" itemprop="datePublished">2016-06-19</time>
+  <time datetime="2016-07-07T09:46:25.155Z" itemprop="datePublished">2016-07-07</time>
 </a>-->
         <!--  -->
       </div>
@@ -143,7 +143,7 @@ var _hmt = _hmt || [];
             
             <div class="article-entry" itemprop="articleBody">
               <div class="page-toc">
-                <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#CString"><span class="toc-number">1.</span> <span class="toc-text">CString</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Methods"><span class="toc-number">1.0.1.</span> <span class="toc-text">Methods</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#ChangeCharacter"><span class="toc-number">1.0.1.1.</span> <span class="toc-text">ChangeCharacter</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#IsXDigit"><span class="toc-number">1.0.1.2.</span> <span class="toc-text">IsXDigit</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#StrChr"><span class="toc-number">1.0.1.3.</span> <span class="toc-text">StrChr</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#StrRChr"><span class="toc-number">1.0.1.4.</span> <span class="toc-text">StrRChr</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#StrStr"><span class="toc-number">1.0.1.5.</span> <span class="toc-text">StrStr</span></a></li></ol></li></ol></li></ol></li></ol>
+                <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#CString"><span class="toc-number">1.</span> <span class="toc-text">CString</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Methods"><span class="toc-number">1.0.1.</span> <span class="toc-text">Methods</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#ChangeCharacter"><span class="toc-number">1.0.1.1.</span> <span class="toc-text">ChangeCharacter</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#IsXDigit"><span class="toc-number">1.0.1.2.</span> <span class="toc-text">IsXDigit</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#StrChr"><span class="toc-number">1.0.1.3.</span> <span class="toc-text">StrChr</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#StrRChr"><span class="toc-number">1.0.1.4.</span> <span class="toc-text">StrRChr</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#StrStr"><span class="toc-number">1.0.1.5.</span> <span class="toc-text">StrStr</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#StrTok"><span class="toc-number">1.0.1.6.</span> <span class="toc-text">StrTok</span></a></li></ol></li></ol></li></ol></li></ol>
               </div>
               
                 <h1 id="CString"><a href="#CString" class="headerlink" title="CString"></a>CString</h1><p><em>namespace: <a href="N-Microsoft.VisualBasic.Language.C.html">Microsoft.VisualBasic.Language.C</a></em></p>
@@ -248,12 +248,32 @@ var _hmt = _hmt || [];
 </tr>
 </tbody>
 </table>
+<h4 id="StrTok"><a href="#StrTok" class="headerlink" title="StrTok"></a>StrTok</h4><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Microsoft.VisualBasic.Language.C.CString.StrTok(System.String,System.String)</span><br></pre></td></tr></table></figure>
+<p>This method simulates the classic C string function ‘strtok’ (and ‘wcstok’).<br> Note that the .NET string ‘Split’ method cannot be used to simulate ‘strtok’ since<br> it doesn’t allow changing the delimiters between each token retrieval.</p>
+<table>
+<thead>
+<tr>
+<th>Parameter Name</th>
+<th>Remarks</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>stringtotokenize</td>
+<td>-</td>
+</tr>
+<tr>
+<td>delimiters</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
 
               
             </div>
             <footer class="article-footer">
               <a href="/API/T-Microsoft.VisualBasic.Language.C.CString.html" class="article-date">
-  <time datetime="2016-06-19T03:16:13.335Z" itemprop="datePublished">2016-06-19</time>
+  <time datetime="2016-07-07T09:46:25.155Z" itemprop="datePublished">2016-07-07</time>
 </a>
               <a data-url="http://framework-docs.xieguigang.me/API/T-Microsoft.VisualBasic.Language.C.CString.html" data-id="cipfqyhdd00gcr0v4jdv1rntr" class="article-share-link">Share</a>
               

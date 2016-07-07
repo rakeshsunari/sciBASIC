@@ -1,0 +1,635 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>DefaultContractResolver | Microsoft VisualBasic App Framework API docs</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="baidu-site-verification" content="1ZsVVOmjoT" />
+    <meta name="description" content="DefaultContractResolvernamespace: Newtonsoft.Json.Serialization
+Used by @”T:Newtonsoft.Json.JsonSerializer” to resolves a @”T:Newtonsoft.Json.Serialization.JsonContract” for a given @”T:System.Type”.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="DefaultContractResolver">
+<meta property="og:url" content="http://framework-docs.xieguigang.me/API/T-Newtonsoft.Json.Serialization.DefaultContractResolver.html">
+<meta property="og:site_name" content="Microsoft VisualBasic App Framework API docs">
+<meta property="og:description" content="DefaultContractResolvernamespace: Newtonsoft.Json.Serialization
+Used by @”T:Newtonsoft.Json.JsonSerializer” to resolves a @”T:Newtonsoft.Json.Serialization.JsonContract” for a given @”T:System.Type”.">
+<meta property="og:updated_time" content="2016-07-07T09:47:17.245Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="DefaultContractResolver">
+<meta name="twitter:description" content="DefaultContractResolvernamespace: Newtonsoft.Json.Serialization
+Used by @”T:Newtonsoft.Json.JsonSerializer” to resolves a @”T:Newtonsoft.Json.Serialization.JsonContract” for a given @”T:System.Type”.">
+    
+      <link rel="alternative" href="/atom.xml" title="Microsoft VisualBasic App Framework API docs" type="application/atom+xml">
+    
+    
+      <link rel="icon" href="https://raw.githubusercontent.com/xieguigang/VisualBasic_AppFramework/master/logo.jpg">
+    
+    <link rel="stylesheet" href="/css/style.css">
+
+    
+<!-- Baidu Analytics -->
+<script type="text/javascript">
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "//hm.baidu.com/hm.js?fe2c7555911b8560db5e56121c5d5960";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+<!-- End Baidu Analytics -->
+
+
+    <script src="//cdn.bootcss.com/jquery/2.0.3/jquery.min.js"></script>
+</head>
+<body>
+<div id="container"> 
+
+    
+    <div id="wrap">
+	   
+
+<header id="header" class="hdpage">
+    
+    <div id="header-outer" class="outer">
+        
+        <div id="header-inner" class="inner">
+          <nav id="main-nav">
+            <a id="main-nav-toggle" class="nav-icon"></a>
+            
+              <a class="main-nav-link" href="/">
+                  
+                  
+
+                
+                  Home
+                </a>
+            
+              <a class="main-nav-link" href="/API">
+                  
+                  
+
+                
+                  API
+                </a>
+            
+              <a class="main-nav-link" href="https://github.com/xieguigang/VisualBasic_AppFramework">
+                  
+                  
+
+                
+                  Github
+                </a>
+            
+          </nav>
+          <nav id="sub-nav">
+            
+              <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+            
+            <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+          </nav>
+          <div id="search-form-wrap">
+            <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" results="0" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://framework-docs.xieguigang.me"></form>
+          </div>
+        </div>
+    </div>
+</header>
+		<div class="outer">
+		
+    <article id="page-undefined" class="article article-type-page" itemscope itemprop="blogPost">
+      <div class="article-meta">
+        
+          <header class="article-header">
+            
+  
+    <a href="/API/T-Newtonsoft.Json.Serialization.DefaultContractResolver.html">
+      <h1 class="article-title" itemprop="name">
+        DefaultContractResolver
+      </h1>
+    </a>
+  
+
+
+
+          </header>
+        
+
+        <!--<a href="/API/T-Newtonsoft.Json.Serialization.DefaultContractResolver.html" class="article-date">
+  <time datetime="2016-07-07T09:47:17.245Z" itemprop="datePublished">2016-07-07</time>
+</a>-->
+        <!--  -->
+      </div>
+      <div class="article-inner">
+            
+            
+              <!--<header class="article-header">
+                
+  
+    <a href="/API/T-Newtonsoft.Json.Serialization.DefaultContractResolver.html">
+      <h1 class="article-title" itemprop="name">
+        DefaultContractResolver
+      </h1>
+    </a>
+  
+
+
+
+              </header>-->
+            
+            <div class="article-entry" itemprop="articleBody">
+              <div class="page-toc">
+                <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#DefaultContractResolver"><span class="toc-number">1.</span> <span class="toc-text">DefaultContractResolver</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Methods"><span class="toc-number">1.0.1.</span> <span class="toc-text">Methods</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#ctor"><span class="toc-number">1.0.1.1.</span> <span class="toc-text">#ctor</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#CreateArrayContract"><span class="toc-number">1.0.1.2.</span> <span class="toc-text">CreateArrayContract</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#CreateConstructorParameters"><span class="toc-number">1.0.1.3.</span> <span class="toc-text">CreateConstructorParameters</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#CreateContract"><span class="toc-number">1.0.1.4.</span> <span class="toc-text">CreateContract</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#CreateDictionaryContract"><span class="toc-number">1.0.1.5.</span> <span class="toc-text">CreateDictionaryContract</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#CreateDynamicContract"><span class="toc-number">1.0.1.6.</span> <span class="toc-text">CreateDynamicContract</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#CreateISerializableContract"><span class="toc-number">1.0.1.7.</span> <span class="toc-text">CreateISerializableContract</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#CreateLinqContract"><span class="toc-number">1.0.1.8.</span> <span class="toc-text">CreateLinqContract</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#CreateMemberValueProvider"><span class="toc-number">1.0.1.9.</span> <span class="toc-text">CreateMemberValueProvider</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#CreateObjectContract"><span class="toc-number">1.0.1.10.</span> <span class="toc-text">CreateObjectContract</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#CreatePrimitiveContract"><span class="toc-number">1.0.1.11.</span> <span class="toc-text">CreatePrimitiveContract</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#CreateProperties"><span class="toc-number">1.0.1.12.</span> <span class="toc-text">CreateProperties</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#CreateProperty"><span class="toc-number">1.0.1.13.</span> <span class="toc-text">CreateProperty</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#CreatePropertyFromConstructorParameter"><span class="toc-number">1.0.1.14.</span> <span class="toc-text">CreatePropertyFromConstructorParameter</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#CreateStringContract"><span class="toc-number">1.0.1.15.</span> <span class="toc-text">CreateStringContract</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#GetResolvedPropertyName"><span class="toc-number">1.0.1.16.</span> <span class="toc-text">GetResolvedPropertyName</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#GetSerializableMembers"><span class="toc-number">1.0.1.17.</span> <span class="toc-text">GetSerializableMembers</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#ResolveContract"><span class="toc-number">1.0.1.18.</span> <span class="toc-text">ResolveContract</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#ResolveContractConverter"><span class="toc-number">1.0.1.19.</span> <span class="toc-text">ResolveContractConverter</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#ResolveDictionaryKey"><span class="toc-number">1.0.1.20.</span> <span class="toc-text">ResolveDictionaryKey</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#ResolvePropertyName"><span class="toc-number">1.0.1.21.</span> <span class="toc-text">ResolvePropertyName</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Properties"><span class="toc-number">1.0.2.</span> <span class="toc-text">Properties</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#DefaultMembersSearchFlags"><span class="toc-number">1.0.2.1.</span> <span class="toc-text">DefaultMembersSearchFlags</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#DynamicCodeGeneration"><span class="toc-number">1.0.2.2.</span> <span class="toc-text">DynamicCodeGeneration</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#IgnoreSerializableAttribute"><span class="toc-number">1.0.2.3.</span> <span class="toc-text">IgnoreSerializableAttribute</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#IgnoreSerializableInterface"><span class="toc-number">1.0.2.4.</span> <span class="toc-text">IgnoreSerializableInterface</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#NamingStrategy"><span class="toc-number">1.0.2.5.</span> <span class="toc-text">NamingStrategy</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#SerializeCompilerGeneratedMembers"><span class="toc-number">1.0.2.6.</span> <span class="toc-text">SerializeCompilerGeneratedMembers</span></a></li></ol></li></ol></li></ol></li></ol>
+              </div>
+              
+                <h1 id="DefaultContractResolver"><a href="#DefaultContractResolver" class="headerlink" title="DefaultContractResolver"></a>DefaultContractResolver</h1><p><em>namespace: <a href="N-Newtonsoft.Json.Serialization.html">Newtonsoft.Json.Serialization</a></em></p>
+<p>Used by @”T:Newtonsoft.Json.JsonSerializer” to resolves a @”T:Newtonsoft.Json.Serialization.JsonContract” for a given @”T:System.Type”.</p>
+<h3 id="Methods"><a href="#Methods" class="headerlink" title="Methods"></a>Methods</h3><h4 id="ctor"><a href="#ctor" class="headerlink" title="#ctor"></a>#ctor</h4><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Newtonsoft.Json.Serialization.DefaultContractResolver.<span class="meta">#ctor(System.Boolean)</span></span><br></pre></td></tr></table></figure>
+<p>Initializes a new instance of the @”T:Newtonsoft.Json.Serialization.DefaultContractResolver” class.</p>
+<table>
+<thead>
+<tr>
+<th>Parameter Name</th>
+<th>Remarks</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>shareCache</td>
+</tr>
+</tbody>
+</table>
+<pre><code>If set to true the @&quot;T:Newtonsoft.Json.Serialization.DefaultContractResolver&quot; will use a cached shared with other resolvers of the same type.
+Sharing the cache will significantly improve performance with multiple resolver instances because expensive reflection will only
+happen once. This setting can cause unexpected behavior if different instances of the resolver are suppose to produce different
+results. When set to false it is highly recommended to reuse @&quot;T:Newtonsoft.Json.Serialization.DefaultContractResolver&quot; instances with the @&quot;T:Newtonsoft.Json.JsonSerializer&quot;.
+|
+</code></pre><h4 id="CreateArrayContract"><a href="#CreateArrayContract" class="headerlink" title="CreateArrayContract"></a>CreateArrayContract</h4><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Newtonsoft.Json.Serialization.DefaultContractResolver.CreateArrayContract(System.Type)</span><br></pre></td></tr></table></figure>
+<p>Creates a @”T:Newtonsoft.Json.Serialization.JsonArrayContract” for the given type.</p>
+<table>
+<thead>
+<tr>
+<th>Parameter Name</th>
+<th>Remarks</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>objectType</td>
+<td>Type of the object.</td>
+</tr>
+</tbody>
+</table>
+<p><em>returns: A @”T:Newtonsoft.Json.Serialization.JsonArrayContract” for the given type.</em></p>
+<h4 id="CreateConstructorParameters"><a href="#CreateConstructorParameters" class="headerlink" title="CreateConstructorParameters"></a>CreateConstructorParameters</h4><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Newtonsoft.Json.Serialization.DefaultContractResolver.CreateConstructorParameters(System.Reflection.ConstructorInfo,Newtonsoft.Json.Serialization.JsonPropertyCollection)</span><br></pre></td></tr></table></figure>
+<p>Creates the constructor parameters.</p>
+<table>
+<thead>
+<tr>
+<th>Parameter Name</th>
+<th>Remarks</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>constructor</td>
+<td>The constructor to create properties for.</td>
+</tr>
+<tr>
+<td>memberProperties</td>
+<td>The type’s member properties.</td>
+</tr>
+</tbody>
+</table>
+<p><em>returns: Properties for the given @”T:System.Reflection.ConstructorInfo”.</em></p>
+<h4 id="CreateContract"><a href="#CreateContract" class="headerlink" title="CreateContract"></a>CreateContract</h4><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Newtonsoft.Json.Serialization.DefaultContractResolver.CreateContract(System.Type)</span><br></pre></td></tr></table></figure>
+<p>Determines which contract type is created for the given type.</p>
+<table>
+<thead>
+<tr>
+<th>Parameter Name</th>
+<th>Remarks</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>objectType</td>
+<td>Type of the object.</td>
+</tr>
+</tbody>
+</table>
+<p><em>returns: A @”T:Newtonsoft.Json.Serialization.JsonContract” for the given type.</em></p>
+<h4 id="CreateDictionaryContract"><a href="#CreateDictionaryContract" class="headerlink" title="CreateDictionaryContract"></a>CreateDictionaryContract</h4><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Newtonsoft.Json.Serialization.DefaultContractResolver.CreateDictionaryContract(System.Type)</span><br></pre></td></tr></table></figure>
+<p>Creates a @”T:Newtonsoft.Json.Serialization.JsonDictionaryContract” for the given type.</p>
+<table>
+<thead>
+<tr>
+<th>Parameter Name</th>
+<th>Remarks</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>objectType</td>
+<td>Type of the object.</td>
+</tr>
+</tbody>
+</table>
+<p><em>returns: A @”T:Newtonsoft.Json.Serialization.JsonDictionaryContract” for the given type.</em></p>
+<h4 id="CreateDynamicContract"><a href="#CreateDynamicContract" class="headerlink" title="CreateDynamicContract"></a>CreateDynamicContract</h4><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Newtonsoft.Json.Serialization.DefaultContractResolver.CreateDynamicContract(System.Type)</span><br></pre></td></tr></table></figure>
+<p>Creates a @”T:Newtonsoft.Json.Serialization.JsonDynamicContract” for the given type.</p>
+<table>
+<thead>
+<tr>
+<th>Parameter Name</th>
+<th>Remarks</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>objectType</td>
+<td>Type of the object.</td>
+</tr>
+</tbody>
+</table>
+<p><em>returns: A @”T:Newtonsoft.Json.Serialization.JsonDynamicContract” for the given type.</em></p>
+<h4 id="CreateISerializableContract"><a href="#CreateISerializableContract" class="headerlink" title="CreateISerializableContract"></a>CreateISerializableContract</h4><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Newtonsoft.Json.Serialization.DefaultContractResolver.CreateISerializableContract(System.Type)</span><br></pre></td></tr></table></figure>
+<p>Creates a @”T:Newtonsoft.Json.Serialization.JsonISerializableContract” for the given type.</p>
+<table>
+<thead>
+<tr>
+<th>Parameter Name</th>
+<th>Remarks</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>objectType</td>
+<td>Type of the object.</td>
+</tr>
+</tbody>
+</table>
+<p><em>returns: A @”T:Newtonsoft.Json.Serialization.JsonISerializableContract” for the given type.</em></p>
+<h4 id="CreateLinqContract"><a href="#CreateLinqContract" class="headerlink" title="CreateLinqContract"></a>CreateLinqContract</h4><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Newtonsoft.Json.Serialization.DefaultContractResolver.CreateLinqContract(System.Type)</span><br></pre></td></tr></table></figure>
+<p>Creates a @”T:Newtonsoft.Json.Serialization.JsonLinqContract” for the given type.</p>
+<table>
+<thead>
+<tr>
+<th>Parameter Name</th>
+<th>Remarks</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>objectType</td>
+<td>Type of the object.</td>
+</tr>
+</tbody>
+</table>
+<p><em>returns: A @”T:Newtonsoft.Json.Serialization.JsonLinqContract” for the given type.</em></p>
+<h4 id="CreateMemberValueProvider"><a href="#CreateMemberValueProvider" class="headerlink" title="CreateMemberValueProvider"></a>CreateMemberValueProvider</h4><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Newtonsoft.Json.Serialization.DefaultContractResolver.CreateMemberValueProvider(System.Reflection.MemberInfo)</span><br></pre></td></tr></table></figure>
+<p>Creates the @”T:Newtonsoft.Json.Serialization.IValueProvider” used by the serializer to get and set values from a member.</p>
+<table>
+<thead>
+<tr>
+<th>Parameter Name</th>
+<th>Remarks</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>member</td>
+<td>The member.</td>
+</tr>
+</tbody>
+</table>
+<p><em>returns: The @”T:Newtonsoft.Json.Serialization.IValueProvider” used by the serializer to get and set values from a member.</em></p>
+<h4 id="CreateObjectContract"><a href="#CreateObjectContract" class="headerlink" title="CreateObjectContract"></a>CreateObjectContract</h4><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Newtonsoft.Json.Serialization.DefaultContractResolver.CreateObjectContract(System.Type)</span><br></pre></td></tr></table></figure>
+<p>Creates a @”T:Newtonsoft.Json.Serialization.JsonObjectContract” for the given type.</p>
+<table>
+<thead>
+<tr>
+<th>Parameter Name</th>
+<th>Remarks</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>objectType</td>
+<td>Type of the object.</td>
+</tr>
+</tbody>
+</table>
+<p><em>returns: A @”T:Newtonsoft.Json.Serialization.JsonObjectContract” for the given type.</em></p>
+<h4 id="CreatePrimitiveContract"><a href="#CreatePrimitiveContract" class="headerlink" title="CreatePrimitiveContract"></a>CreatePrimitiveContract</h4><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Newtonsoft.Json.Serialization.DefaultContractResolver.CreatePrimitiveContract(System.Type)</span><br></pre></td></tr></table></figure>
+<p>Creates a @”T:Newtonsoft.Json.Serialization.JsonPrimitiveContract” for the given type.</p>
+<table>
+<thead>
+<tr>
+<th>Parameter Name</th>
+<th>Remarks</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>objectType</td>
+<td>Type of the object.</td>
+</tr>
+</tbody>
+</table>
+<p><em>returns: A @”T:Newtonsoft.Json.Serialization.JsonPrimitiveContract” for the given type.</em></p>
+<h4 id="CreateProperties"><a href="#CreateProperties" class="headerlink" title="CreateProperties"></a>CreateProperties</h4><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Newtonsoft.Json.Serialization.DefaultContractResolver.CreateProperties(System.Type,Newtonsoft.Json.MemberSerialization)</span><br></pre></td></tr></table></figure>
+<p>Creates properties for the given @”T:Newtonsoft.Json.Serialization.JsonContract”.</p>
+<table>
+<thead>
+<tr>
+<th>Parameter Name</th>
+<th>Remarks</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>The type to create properties for.</td>
+</tr>
+<tr>
+<td>memberSerialization</td>
+<td>The member serialization mode for the type.</td>
+</tr>
+</tbody>
+</table>
+<p><em>returns: Properties for the given @”T:Newtonsoft.Json.Serialization.JsonContract”.</em></p>
+<h4 id="CreateProperty"><a href="#CreateProperty" class="headerlink" title="CreateProperty"></a>CreateProperty</h4><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Newtonsoft.Json.Serialization.DefaultContractResolver.CreateProperty(System.Reflection.MemberInfo,Newtonsoft.Json.MemberSerialization)</span><br></pre></td></tr></table></figure>
+<p>Creates a @”T:Newtonsoft.Json.Serialization.JsonProperty” for the given @”T:System.Reflection.MemberInfo”.</p>
+<table>
+<thead>
+<tr>
+<th>Parameter Name</th>
+<th>Remarks</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>memberSerialization</td>
+<td>The member’s parent @”T:Newtonsoft.Json.MemberSerialization”.</td>
+</tr>
+<tr>
+<td>member</td>
+<td>The member to create a @”T:Newtonsoft.Json.Serialization.JsonProperty” for.</td>
+</tr>
+</tbody>
+</table>
+<p><em>returns: A created @”T:Newtonsoft.Json.Serialization.JsonProperty” for the given @”T:System.Reflection.MemberInfo”.</em></p>
+<h4 id="CreatePropertyFromConstructorParameter"><a href="#CreatePropertyFromConstructorParameter" class="headerlink" title="CreatePropertyFromConstructorParameter"></a>CreatePropertyFromConstructorParameter</h4><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Newtonsoft.Json.Serialization.DefaultContractResolver.CreatePropertyFromConstructorParameter(Newtonsoft.Json.Serialization.JsonProperty,System.Reflection.ParameterInfo)</span><br></pre></td></tr></table></figure>
+<p>Creates a @”T:Newtonsoft.Json.Serialization.JsonProperty” for the given @”T:System.Reflection.ParameterInfo”.</p>
+<table>
+<thead>
+<tr>
+<th>Parameter Name</th>
+<th>Remarks</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>matchingMemberProperty</td>
+<td>The matching member property.</td>
+</tr>
+<tr>
+<td>parameterInfo</td>
+<td>The constructor parameter.</td>
+</tr>
+</tbody>
+</table>
+<p><em>returns: A created @”T:Newtonsoft.Json.Serialization.JsonProperty” for the given @”T:System.Reflection.ParameterInfo”.</em></p>
+<h4 id="CreateStringContract"><a href="#CreateStringContract" class="headerlink" title="CreateStringContract"></a>CreateStringContract</h4><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Newtonsoft.Json.Serialization.DefaultContractResolver.CreateStringContract(System.Type)</span><br></pre></td></tr></table></figure>
+<p>Creates a @”T:Newtonsoft.Json.Serialization.JsonStringContract” for the given type.</p>
+<table>
+<thead>
+<tr>
+<th>Parameter Name</th>
+<th>Remarks</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>objectType</td>
+<td>Type of the object.</td>
+</tr>
+</tbody>
+</table>
+<p><em>returns: A @”T:Newtonsoft.Json.Serialization.JsonStringContract” for the given type.</em></p>
+<h4 id="GetResolvedPropertyName"><a href="#GetResolvedPropertyName" class="headerlink" title="GetResolvedPropertyName"></a>GetResolvedPropertyName</h4><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Newtonsoft.Json.Serialization.DefaultContractResolver.GetResolvedPropertyName(System.String)</span><br></pre></td></tr></table></figure>
+<p>Gets the resolved name of the property.</p>
+<table>
+<thead>
+<tr>
+<th>Parameter Name</th>
+<th>Remarks</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>propertyName</td>
+<td>Name of the property.</td>
+</tr>
+</tbody>
+</table>
+<p><em>returns: Name of the property.</em></p>
+<h4 id="GetSerializableMembers"><a href="#GetSerializableMembers" class="headerlink" title="GetSerializableMembers"></a>GetSerializableMembers</h4><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Newtonsoft.Json.Serialization.DefaultContractResolver.GetSerializableMembers(System.Type)</span><br></pre></td></tr></table></figure>
+<p>Gets the serializable members for the type.</p>
+<table>
+<thead>
+<tr>
+<th>Parameter Name</th>
+<th>Remarks</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>objectType</td>
+<td>The type to get serializable members for.</td>
+</tr>
+</tbody>
+</table>
+<p><em>returns: The serializable members for the type.</em></p>
+<h4 id="ResolveContract"><a href="#ResolveContract" class="headerlink" title="ResolveContract"></a>ResolveContract</h4><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Newtonsoft.Json.Serialization.DefaultContractResolver.ResolveContract(System.Type)</span><br></pre></td></tr></table></figure>
+<p>Resolves the contract for a given type.</p>
+<table>
+<thead>
+<tr>
+<th>Parameter Name</th>
+<th>Remarks</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>The type to resolve a contract for.</td>
+</tr>
+</tbody>
+</table>
+<p><em>returns: The contract for a given type.</em></p>
+<h4 id="ResolveContractConverter"><a href="#ResolveContractConverter" class="headerlink" title="ResolveContractConverter"></a>ResolveContractConverter</h4><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Newtonsoft.Json.Serialization.DefaultContractResolver.ResolveContractConverter(System.Type)</span><br></pre></td></tr></table></figure>
+<p>Resolves the default for the contract.</p>
+<table>
+<thead>
+<tr>
+<th>Parameter Name</th>
+<th>Remarks</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>objectType</td>
+<td>Type of the object.</td>
+</tr>
+</tbody>
+</table>
+<p><em>returns: The contract’s default .</em></p>
+<h4 id="ResolveDictionaryKey"><a href="#ResolveDictionaryKey" class="headerlink" title="ResolveDictionaryKey"></a>ResolveDictionaryKey</h4><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Newtonsoft.Json.Serialization.DefaultContractResolver.ResolveDictionaryKey(System.String)</span><br></pre></td></tr></table></figure>
+<p>Resolves the key of the dictionary. By default @”M:Newtonsoft.Json.Serialization.DefaultContractResolver.ResolvePropertyName(System.String)” is used to resolve dictionary keys.</p>
+<table>
+<thead>
+<tr>
+<th>Parameter Name</th>
+<th>Remarks</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>dictionaryKey</td>
+<td>Key of the dictionary.</td>
+</tr>
+</tbody>
+</table>
+<p><em>returns: Resolved key of the dictionary.</em></p>
+<h4 id="ResolvePropertyName"><a href="#ResolvePropertyName" class="headerlink" title="ResolvePropertyName"></a>ResolvePropertyName</h4><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Newtonsoft.Json.Serialization.DefaultContractResolver.ResolvePropertyName(System.String)</span><br></pre></td></tr></table></figure>
+<p>Resolves the name of the property.</p>
+<table>
+<thead>
+<tr>
+<th>Parameter Name</th>
+<th>Remarks</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>propertyName</td>
+<td>Name of the property.</td>
+</tr>
+</tbody>
+</table>
+<p><em>returns: Resolved name of the property.</em></p>
+<h3 id="Properties"><a href="#Properties" class="headerlink" title="Properties"></a>Properties</h3><h4 id="DefaultMembersSearchFlags"><a href="#DefaultMembersSearchFlags" class="headerlink" title="DefaultMembersSearchFlags"></a>DefaultMembersSearchFlags</h4><p>Gets or sets the default members search flags.</p>
+<h4 id="DynamicCodeGeneration"><a href="#DynamicCodeGeneration" class="headerlink" title="DynamicCodeGeneration"></a>DynamicCodeGeneration</h4><p>Gets a value indicating whether members are being get and set using dynamic code generation.<br> This value is determined by the runtime permissions available.</p>
+<h4 id="IgnoreSerializableAttribute"><a href="#IgnoreSerializableAttribute" class="headerlink" title="IgnoreSerializableAttribute"></a>IgnoreSerializableAttribute</h4><p>Gets or sets a value indicating whether to ignore the @”T:System.SerializableAttribute” attribute when serializing and deserializing types.</p>
+<h4 id="IgnoreSerializableInterface"><a href="#IgnoreSerializableInterface" class="headerlink" title="IgnoreSerializableInterface"></a>IgnoreSerializableInterface</h4><p>Gets or sets a value indicating whether to ignore the @”T:System.Runtime.Serialization.ISerializable” interface when serializing and deserializing types.</p>
+<h4 id="NamingStrategy"><a href="#NamingStrategy" class="headerlink" title="NamingStrategy"></a>NamingStrategy</h4><p>Gets or sets the naming strategy used to resolve how property names and dictionary keys are serialized.</p>
+<h4 id="SerializeCompilerGeneratedMembers"><a href="#SerializeCompilerGeneratedMembers" class="headerlink" title="SerializeCompilerGeneratedMembers"></a>SerializeCompilerGeneratedMembers</h4><p>Gets or sets a value indicating whether compiler generated members should be serialized.</p>
+
+              
+            </div>
+            <footer class="article-footer">
+              <a href="/API/T-Newtonsoft.Json.Serialization.DefaultContractResolver.html" class="article-date">
+  <time datetime="2016-07-07T09:47:17.245Z" itemprop="datePublished">2016-07-07</time>
+</a>
+              <a data-url="http://framework-docs.xieguigang.me/API/T-Newtonsoft.Json.Serialization.DefaultContractResolver.html" data-id="ciqc81lts0040dsv4fwlozvrb" class="article-share-link">Share</a>
+              
+              
+            </footer>
+      </div>
+      
+        
+      
+    </article>
+    <script type="text/javascript">
+      window.onscroll = function(){ 
+        $(function(){
+          var $toc = $('.page-toc'),
+              $article = $('.article-entry')
+              toc_top = $toc.offset().top
+              tocsub_width = $toc.children().width()
+              article_height = $article.children().height()
+              scroll_top = document.body.scrollTop
+              screen_h = $(window).height()
+              footer_top = $('.article-footer').offset().top - $(window).height()
+              if(toc_top&&scroll_top&&scroll_top>toc_top&&scroll_top<footer_top){
+                $toc.children().css({
+                  "position": "fixed",
+                  "height": (screen_h -20)+'px',
+                  "overflow": "auto"
+                })
+                $article.css('margin-right',tocsub_width+'px')
+              }else{
+                $toc.children().css({
+                  "position": "relative",
+                  "height":'inherit',
+                  "overflow": "auto"
+                })
+                $article.css('margin-right',0+'px')
+              }
+        })
+      } 
+    </script>
+
+
+
+
+
+
+
+
+		</div>
+		
+
+<footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+        <div class="left">
+            &copy; 2016 谢桂纲<br>
+            Powered by <a href="http://hexo.io/" target="_blank">Hexo</a> and Theme by <a href="https://github.com/jaywcjlove/hexoThemeKacper">hexoThemeKacper </a>
+        </div>
+        <div class="right">
+            
+        </div>
+    </div>
+  </div>
+</footer>
+<script src="//cdn.bootcss.com/jquery/2.0.3/jquery.min.js"></script>
+
+
+<script type="text/javascript">
+$(function(){
+  var $img = $('.article-entry img'),
+      $link = $img.css({
+        "display":"inline-block"
+      }).parent()
+
+  if($link.parent().is("a")){
+      $img.each(function(idx,item) {
+      $(this).parent().attr('href',$(this).parent().parent().attr('href'))
+    })
+  }
+})
+</script>
+
+
+<script src="/js/script.js"></script>
+
+  	</div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/API" class="mobile-nav-link">API</a>
+  
+    <a href="https://github.com/xieguigang/VisualBasic_AppFramework" class="mobile-nav-link">Github</a>
+  
+</nav>
+    
+</div>
+</body>
+</html>
+
