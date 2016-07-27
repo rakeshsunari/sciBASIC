@@ -17,7 +17,7 @@ MethodsAsDataSource``11Microsoft.VisualBasic.DocumentFormat.Csv.Extensions">
 <meta property="og:description" content="Extensionsnamespace: Microsoft.VisualBasic.DocumentFormat.Csv
 The shortcuts operation for the common csv document operations.
 MethodsAsDataSource``11Microsoft.VisualBasic.DocumentFormat.Csv.Extensions">
-<meta property="og:updated_time" content="2016-07-07T09:46:56.980Z">
+<meta property="og:updated_time" content="2016-07-27T12:07:52.606Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Extensions">
 <meta name="twitter:description" content="Extensionsnamespace: Microsoft.VisualBasic.DocumentFormat.Csv
@@ -120,7 +120,7 @@ var _hmt = _hmt || [];
         
 
         <!--<a href="/API/T-Microsoft.VisualBasic.DocumentFormat.Csv.Extensions.html" class="article-date">
-  <time datetime="2016-07-07T09:46:56.980Z" itemprop="datePublished">2016-07-07</time>
+  <time datetime="2016-07-27T12:07:52.606Z" itemprop="datePublished">2016-07-27</time>
 </a>-->
         <!--  -->
       </div>
@@ -241,6 +241,10 @@ var _hmt = _hmt || [];
 <td>encoding</td>
 <td>-</td>
 </tr>
+<tr>
+<td>maps</td>
+<td><code>Csv.Field -&gt; @&quot;P:System.Reflection.MemberInfo.Name&quot;</code></td>
+</tr>
 </tbody>
 </table>
 <h4 id="LoadDblVector"><a href="#LoadDblVector" class="headerlink" title="LoadDblVector"></a>LoadDblVector</h4><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Microsoft.VisualBasic.DocumentFormat.Csv.Extensions.LoadDblVector(System.String)</span><br></pre></td></tr></table></figure>
@@ -299,7 +303,7 @@ var _hmt = _hmt || [];
 </tr>
 </tbody>
 </table>
-<h4 id="SaveTo-1"><a href="#SaveTo-1" class="headerlink" title="SaveTo``1"></a>SaveTo``1</h4><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Microsoft.VisualBasic.DocumentFormat.Csv.Extensions.SaveTo``<span class="number">1</span>(System.Collections.Generic.IEnumerable&#123;``<span class="number">0</span>&#125;,System.String,System.Boolean,System.Text.Encoding,System.String)</span><br></pre></td></tr></table></figure>
+<h4 id="SaveTo-1"><a href="#SaveTo-1" class="headerlink" title="SaveTo``1"></a>SaveTo``1</h4><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Microsoft.VisualBasic.DocumentFormat.Csv.Extensions.SaveTo``<span class="number">1</span>(System.Collections.Generic.IEnumerable&#123;``<span class="number">0</span>&#125;,System.String,System.Boolean,System.Text.Encoding,System.String,System.Boolean,System.Collections.Generic.Dictionary&#123;System.String,System.String&#125;)</span><br></pre></td></tr></table></figure>
 <p>Save the object collection data dump into a csv file.(将一个对象数组之中的对象保存至一个Csv文件之中，请注意，这个方法仅仅会保存简单的基本数据类型的属性值)</p>
 <table>
 <thead>
@@ -323,7 +327,7 @@ var _hmt = _hmt || [];
 </tr>
 </tbody>
 </table>
-<p> if not then only save the property with the @”T:Microsoft.VisualBasic.DocumentFormat.Csv.StorageProvider.Reflection.ColumnAttribute”<br> |<br>|encoding|-|</p>
+<p> if not then only save the property with the @”T:Microsoft.VisualBasic.DocumentFormat.Csv.StorageProvider.Reflection.ColumnAttribute”<br> |<br>|encoding|-|<br>|maps|{meta_define -&gt; custom}|</p>
 <h4 id="ToCsvDoc-1"><a href="#ToCsvDoc-1" class="headerlink" title="ToCsvDoc``1"></a>ToCsvDoc``1</h4><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Microsoft.VisualBasic.DocumentFormat.Csv.Extensions.ToCsvDoc``<span class="number">1</span>(System.Collections.Generic.IEnumerable&#123;``<span class="number">0</span>&#125;,System.Boolean)</span><br></pre></td></tr></table></figure>
 <p>Generate a csv document from a object collection.(从一个特定类型的数据集合之中生成一个Csv文件，非并行化的以保持数据原有的顺序)</p>
 <table>
@@ -349,7 +353,7 @@ var _hmt = _hmt || [];
             </div>
             <footer class="article-footer">
               <a href="/API/T-Microsoft.VisualBasic.DocumentFormat.Csv.Extensions.html" class="article-date">
-  <time datetime="2016-07-07T09:46:56.980Z" itemprop="datePublished">2016-07-07</time>
+  <time datetime="2016-07-27T12:07:52.606Z" itemprop="datePublished">2016-07-27</time>
 </a>
               <a data-url="http://framework-docs.xieguigang.me/API/T-Microsoft.VisualBasic.DocumentFormat.Csv.Extensions.html" data-id="cipfqyh8v00dlr0v4f1b57a5l" class="article-share-link">Share</a>
               

@@ -9,20 +9,20 @@
     <meta name="baidu-site-verification" content="1ZsVVOmjoT" />
     <meta name="description" content="OSVersionInfonamespace: Microsoft.VisualBasic.SoftwareToolkits
 Provides detailed information about the host operating system.
-PropertiesBuildVersionGets the build version number of the operating syste">
+MethodsGetVersionEx1Microsoft.VisualBasic.SoftwareToolkits.OSVersionInfo.G">
 <meta property="og:type" content="website">
 <meta property="og:title" content="OSVersionInfo">
 <meta property="og:url" content="http://framework-docs.xieguigang.me/API/T-Microsoft.VisualBasic.SoftwareToolkits.OSVersionInfo.html">
 <meta property="og:site_name" content="Microsoft VisualBasic App Framework API docs">
 <meta property="og:description" content="OSVersionInfonamespace: Microsoft.VisualBasic.SoftwareToolkits
 Provides detailed information about the host operating system.
-PropertiesBuildVersionGets the build version number of the operating syste">
-<meta property="og:updated_time" content="2016-07-07T09:46:39.604Z">
+MethodsGetVersionEx1Microsoft.VisualBasic.SoftwareToolkits.OSVersionInfo.G">
+<meta property="og:updated_time" content="2016-07-27T12:07:51.548Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="OSVersionInfo">
 <meta name="twitter:description" content="OSVersionInfonamespace: Microsoft.VisualBasic.SoftwareToolkits
 Provides detailed information about the host operating system.
-PropertiesBuildVersionGets the build version number of the operating syste">
+MethodsGetVersionEx1Microsoft.VisualBasic.SoftwareToolkits.OSVersionInfo.G">
     
       <link rel="alternative" href="/atom.xml" title="Microsoft VisualBasic App Framework API docs" type="application/atom+xml">
     
@@ -120,7 +120,7 @@ var _hmt = _hmt || [];
         
 
         <!--<a href="/API/T-Microsoft.VisualBasic.SoftwareToolkits.OSVersionInfo.html" class="article-date">
-  <time datetime="2016-07-07T09:46:39.604Z" itemprop="datePublished">2016-07-07</time>
+  <time datetime="2016-07-27T12:07:51.548Z" itemprop="datePublished">2016-07-27</time>
 </a>-->
         <!--  -->
       </div>
@@ -143,11 +143,103 @@ var _hmt = _hmt || [];
             
             <div class="article-entry" itemprop="articleBody">
               <div class="page-toc">
-                <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#OSVersionInfo"><span class="toc-number">1.</span> <span class="toc-text">OSVersionInfo</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Properties"><span class="toc-number">1.0.1.</span> <span class="toc-text">Properties</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#BuildVersion"><span class="toc-number">1.0.1.1.</span> <span class="toc-text">BuildVersion</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Edition"><span class="toc-number">1.0.1.2.</span> <span class="toc-text">Edition</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#MajorVersion"><span class="toc-number">1.0.1.3.</span> <span class="toc-text">MajorVersion</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#MinorVersion"><span class="toc-number">1.0.1.4.</span> <span class="toc-text">MinorVersion</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#ProcessorBits"><span class="toc-number">1.0.1.5.</span> <span class="toc-text">ProcessorBits</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#ProgramBits"><span class="toc-number">1.0.1.6.</span> <span class="toc-text">ProgramBits</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#RevisionVersion"><span class="toc-number">1.0.1.7.</span> <span class="toc-text">RevisionVersion</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#ServicePack"><span class="toc-number">1.0.1.8.</span> <span class="toc-text">ServicePack</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Version"><span class="toc-number">1.0.1.9.</span> <span class="toc-text">Version</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#VersionString"><span class="toc-number">1.0.1.10.</span> <span class="toc-text">VersionString</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#WindowsName"><span class="toc-number">1.0.1.11.</span> <span class="toc-text">WindowsName</span></a></li></ol></li></ol></li></ol></li></ol>
+                <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#OSVersionInfo"><span class="toc-number">1.</span> <span class="toc-text">OSVersionInfo</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Methods"><span class="toc-number">1.0.1.</span> <span class="toc-text">Methods</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#GetVersionEx"><span class="toc-number">1.0.1.1.</span> <span class="toc-text">GetVersionEx</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#GetVersionEx-Function"><span class="toc-number">1.0.1.1.1.</span> <span class="toc-text">GetVersionEx Function</span></a></li></ol></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Properties"><span class="toc-number">1.0.2.</span> <span class="toc-text">Properties</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#BuildVersion"><span class="toc-number">1.0.2.1.</span> <span class="toc-text">BuildVersion</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Edition"><span class="toc-number">1.0.2.2.</span> <span class="toc-text">Edition</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#MajorVersion"><span class="toc-number">1.0.2.3.</span> <span class="toc-text">MajorVersion</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#MinorVersion"><span class="toc-number">1.0.2.4.</span> <span class="toc-text">MinorVersion</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#ProcessorBits"><span class="toc-number">1.0.2.5.</span> <span class="toc-text">ProcessorBits</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#ProgramBits"><span class="toc-number">1.0.2.6.</span> <span class="toc-text">ProgramBits</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#RevisionVersion"><span class="toc-number">1.0.2.7.</span> <span class="toc-text">RevisionVersion</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#ServicePack"><span class="toc-number">1.0.2.8.</span> <span class="toc-text">ServicePack</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Version"><span class="toc-number">1.0.2.9.</span> <span class="toc-text">Version</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#VersionString"><span class="toc-number">1.0.2.10.</span> <span class="toc-text">VersionString</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#WindowsName"><span class="toc-number">1.0.2.11.</span> <span class="toc-text">WindowsName</span></a></li></ol></li></ol></li></ol></li></ol>
               </div>
               
                 <h1 id="OSVersionInfo"><a href="#OSVersionInfo" class="headerlink" title="OSVersionInfo"></a>OSVersionInfo</h1><p><em>namespace: <a href="N-Microsoft.VisualBasic.SoftwareToolkits.html">Microsoft.VisualBasic.SoftwareToolkits</a></em></p>
 <p>Provides detailed information about the host operating system.</p>
+<h3 id="Methods"><a href="#Methods" class="headerlink" title="Methods"></a>Methods</h3><h4 id="GetVersionEx"><a href="#GetVersionEx" class="headerlink" title="GetVersionEx"></a>GetVersionEx</h4><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Microsoft.VisualBasic.SoftwareToolkits.OSVersionInfo.GetVersionEx(Microsoft.VisualBasic.SoftwareToolkits.OSVersionInfo.OSVERSIONINFOEX@)</span><br></pre></td></tr></table></figure>
+<h5 id="GetVersionEx-Function"><a href="#GetVersionEx-Function" class="headerlink" title="GetVersionEx Function"></a>GetVersionEx Function</h5><p> <em>GetVersionEx may be altered Or unavailable for releases after Windows 8.1. Instead, use the Version Helper functions</em></p>
+<p> With the release Of Windows 8.1, the behavior Of the GetVersionEx API has changed In the value it will Return For the<br> operating system version. The value returned by the GetVersionEx Function now depends On how the application Is<br> manifested.<br> Applications Not manifested for Windows 8.1 Or Windows 10 will return the Windows 8 OS version value (6.2). Once an<br> application Is manifested for a given operating system version, GetVersionEx will always return the version that the<br> application Is manifested for in future releases. To manifest your applications for Windows 8.1 Or Windows 10, refer<br> to Targeting your application for Windows.</p>
+<p> <strong>Syntax</strong></p>
+ <figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="function">BOOL WINAPI <span class="title">GetVersionEx</span><span class="params">(</span><br><span class="line">_Inout_ LPOSVERSIONINFO lpVersionInfo</span><br><span class="line">)</span></span>;</span><br></pre></td></tr></table></figure>
+<table>
+<thead>
+<tr>
+<th>Parameter Name</th>
+<th>Remarks</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>osVersionInfo</td>
+<td>An OSVersionInfo Or OSVERSIONINFOEX structure that receives the operating system information.</td>
+</tr>
+</tbody>
+</table>
+<p> Before calling the GetVersionEx Function, set the dwOSVersionInfoSize member of the structure as appropriate to indicate<br> which data structure Is being passed to this function.<br> |</p>
+<p><em>returns: If the Then Function succeeds, the Return value Is a nonzero value.<br> If the Then Function fails, the Return value Is zero. To Get extended Error information, Call GetLastError.<br> The Function fails If you specify an invalid value For the dwOSVersionInfoSize member Of the OSVERSIONINFO<br> Or OSVERSIONINFOEX Structure.
+ </em></p>
+<blockquote>
+<p> Identifying the current operating system Is usually Not the best way To determine whether a particular operating system<br> feature Is present. This Is because the operating system may have had New features added In a redistributable DLL. Rather<br> than Using GetVersionEx To determine the operating system platform Or version number, test For the presence Of the feature<br> itself. For more information, see Operating System Version.<br> The GetSystemMetrics function provides additional information about the current operating system.</p>
+<table>
+<thead>
+<tr>
+<th>Product</th>
+<th>Setting</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Windows XP Media Center Edition</td>
+<td>SM_MEDIACENTER</td>
+</tr>
+<tr>
+<td>Windows XP Starter Edition</td>
+<td>SM_STARTER</td>
+</tr>
+<tr>
+<td>Windows XP Tablet PC Edition</td>
+<td>SM_TABLETPC</td>
+</tr>
+<tr>
+<td>Windows Server 2003 R2</td>
+<td>SM_SERVERR2</td>
+</tr>
+</tbody>
+</table>
+<p> To check for specific operating systems Or operating system features, use the IsOS function. The GetProductInfo function retrieves the product type.<br> To retrieve information for the operating system on a remote computer, use the NetWkstaGetInfo function, the Win32_OperatingSystem WMI class, Or the OperatingSystem property of the IADsComputer interface.<br> To compare the current system version to a required version, use the VerifyVersionInfo function instead of using GetVersionEx to perform the comparison yourself.</p>
+<p> If compatibility Then mode Is In effect, the GetVersionEx Function reports the operating system As it identifies itself, which may Not<br> be the operating system that Is installed. For example, If compatibility mode Is In effect, GetVersionEx reports the operating system<br> that Is selected For application compatibility.</p>
+<p> <strong>Examples</strong></p>
+<p> When using the GetVersionEx function to determine whether your application Is running on a particular version of the operating system,<br> check for version numbers that are greater than Or equal to the desired version numbers. This ensures that the test succeeds for later<br> versions of the operating system. For example, if your application requires Windows XP Or later, use the following test.</p>
+ <figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line">&gt;  #include &lt;windows.h&gt;</span><br><span class="line">&gt;  #include &lt;stdio.h&gt;</span><br><span class="line">&gt; </span><br><span class="line">&gt;  Void main()</span><br><span class="line">&gt;  &#123;</span><br><span class="line">&gt;      OSVersionInfo osvi;</span><br><span class="line">&gt;      BOOL bIsWindowsXPorLater;</span><br><span class="line">&gt; </span><br><span class="line">&gt;      ZeroMemory(&amp;osvi, SizeOf(OSVersionInfo));</span><br><span class="line">&gt;      osvi.dwOSVersionInfoSize = SizeOf(OSVersionInfo);</span><br><span class="line">&gt; </span><br><span class="line">&gt;      GetVersionEx(&amp;osvi);</span><br><span class="line">&gt; </span><br><span class="line">&gt;      bIsWindowsXPorLater =</span><br><span class="line">&gt;         ((osvi.dwMajorVersion &gt; 5) ||</span><br><span class="line">&gt;         ((osvi.dwMajorVersion == 5) &amp;&amp; (osvi.dwMinorVersion &gt;= 1) ));</span><br><span class="line">&gt;  </span><br><span class="line">&gt;      if(bIsWindowsXPorLater) </span><br><span class="line">&gt;          printf("The system meets the requirements.\n");</span><br><span class="line">&gt;      else printf("The system does not meet the requirements.\n");</span><br><span class="line">&gt;  &#125;</span><br><span class="line">&gt;</span><br></pre></td></tr></table></figure>
+<p> For an example that identifies the current operating system, see Getting the System Version.</p>
+<p> <strong>Requirements</strong></p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Minimum supported client</td>
+<td>Windows 2000 Professional [desktop apps only]</td>
+</tr>
+<tr>
+<td>Minimum supported server</td>
+<td>Windows 2000 Server [desktop apps only]</td>
+</tr>
+<tr>
+<td>Header</td>
+<td>Winbase.h(include Windows.h)</td>
+</tr>
+<tr>
+<td>Library</td>
+<td>Kernel32.lib</td>
+</tr>
+<tr>
+<td>DLL</td>
+<td>Kernel32.dll</td>
+</tr>
+<tr>
+<td>Unicode And ANSI names</td>
+<td>GetVersionExW(Unicode) And GetVersionExA (ANSI)</td>
+</tr>
+</tbody>
+</table>
+</blockquote>
 <h3 id="Properties"><a href="#Properties" class="headerlink" title="Properties"></a>Properties</h3><h4 id="BuildVersion"><a href="#BuildVersion" class="headerlink" title="BuildVersion"></a>BuildVersion</h4><p>Gets the build version number of the operating system running on this computer.</p>
 <h4 id="Edition"><a href="#Edition" class="headerlink" title="Edition"></a>Edition</h4><p>Gets the edition of the operating system running on this computer.</p>
 <h4 id="MajorVersion"><a href="#MajorVersion" class="headerlink" title="MajorVersion"></a>MajorVersion</h4><p>Gets the major version number of the operating system running on this computer.</p>
@@ -164,7 +256,7 @@ var _hmt = _hmt || [];
             </div>
             <footer class="article-footer">
               <a href="/API/T-Microsoft.VisualBasic.SoftwareToolkits.OSVersionInfo.html" class="article-date">
-  <time datetime="2016-07-07T09:46:39.604Z" itemprop="datePublished">2016-07-07</time>
+  <time datetime="2016-07-27T12:07:51.548Z" itemprop="datePublished">2016-07-27</time>
 </a>
               <a data-url="http://framework-docs.xieguigang.me/API/T-Microsoft.VisualBasic.SoftwareToolkits.OSVersionInfo.html" data-id="cipfqyi5800ofr0v43x90481d" class="article-share-link">Share</a>
               

@@ -9,20 +9,23 @@
     <meta name="baidu-site-verification" content="1ZsVVOmjoT" />
     <meta name="description" content="GetLastErrorAPInamespace: Microsoft.VisualBasic.Win32
 Wrapper for the returns value of api @”M:Microsoft.VisualBasic.Win32.GetLastErrorAPI.GetLastError”
-MethodsGetLastError1Microsoft.VisualBasic.Win32">
+
+ @”T:Microsoft.VisualBasic.Win32.GetLastErrorA">
 <meta property="og:type" content="website">
 <meta property="og:title" content="GetLastErrorAPI">
 <meta property="og:url" content="http://framework-docs.xieguigang.me/API/T-Microsoft.VisualBasic.Win32.GetLastErrorAPI.html">
 <meta property="og:site_name" content="Microsoft VisualBasic App Framework API docs">
 <meta property="og:description" content="GetLastErrorAPInamespace: Microsoft.VisualBasic.Win32
 Wrapper for the returns value of api @”M:Microsoft.VisualBasic.Win32.GetLastErrorAPI.GetLastError”
-MethodsGetLastError1Microsoft.VisualBasic.Win32">
-<meta property="og:updated_time" content="2016-07-07T09:46:40.776Z">
+
+ @”T:Microsoft.VisualBasic.Win32.GetLastErrorA">
+<meta property="og:updated_time" content="2016-07-27T12:07:51.620Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="GetLastErrorAPI">
 <meta name="twitter:description" content="GetLastErrorAPInamespace: Microsoft.VisualBasic.Win32
 Wrapper for the returns value of api @”M:Microsoft.VisualBasic.Win32.GetLastErrorAPI.GetLastError”
-MethodsGetLastError1Microsoft.VisualBasic.Win32">
+
+ @”T:Microsoft.VisualBasic.Win32.GetLastErrorA">
     
       <link rel="alternative" href="/atom.xml" title="Microsoft VisualBasic App Framework API docs" type="application/atom+xml">
     
@@ -120,7 +123,7 @@ var _hmt = _hmt || [];
         
 
         <!--<a href="/API/T-Microsoft.VisualBasic.Win32.GetLastErrorAPI.html" class="article-date">
-  <time datetime="2016-07-07T09:46:40.776Z" itemprop="datePublished">2016-07-07</time>
+  <time datetime="2016-07-27T12:07:51.620Z" itemprop="datePublished">2016-07-27</time>
 </a>-->
         <!--  -->
       </div>
@@ -143,23 +146,37 @@ var _hmt = _hmt || [];
             
             <div class="article-entry" itemprop="articleBody">
               <div class="page-toc">
-                <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#GetLastErrorAPI"><span class="toc-number">1.</span> <span class="toc-text">GetLastErrorAPI</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Methods"><span class="toc-number">1.0.1.</span> <span class="toc-text">Methods</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#GetLastError"><span class="toc-number">1.0.1.1.</span> <span class="toc-text">GetLastError</span></a></li></ol></li></ol></li></ol></li></ol>
+                <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#GetLastErrorAPI"><span class="toc-number">1.</span> <span class="toc-text">GetLastErrorAPI</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Methods"><span class="toc-number">1.0.1.</span> <span class="toc-text">Methods</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#GetLastError"><span class="toc-number">1.0.1.1.</span> <span class="toc-text">GetLastError</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#GetLastErrorCode"><span class="toc-number">1.0.1.2.</span> <span class="toc-text">GetLastErrorCode</span></a></li></ol></li></ol></li></ol></li></ol>
               </div>
               
                 <h1 id="GetLastErrorAPI"><a href="#GetLastErrorAPI" class="headerlink" title="GetLastErrorAPI"></a>GetLastErrorAPI</h1><p><em>namespace: <a href="N-Microsoft.VisualBasic.Win32.html">Microsoft.VisualBasic.Win32</a></em></p>
 <p>Wrapper for the returns value of api @”M:Microsoft.VisualBasic.Win32.GetLastErrorAPI.GetLastError”</p>
-<h3 id="Methods"><a href="#Methods" class="headerlink" title="Methods"></a>Methods</h3><h4 id="GetLastError"><a href="#GetLastError" class="headerlink" title="GetLastError"></a>GetLastError</h4><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Microsoft.VisualBasic.Win32.GetLastErrorAPI.GetLastError</span><br></pre></td></tr></table></figure>
-<p>针对之前调用的api函数，用这个函数取得扩展错误信息（在vb里使用：在vb中，用Err对象的GetLastError属性获取GetLastError的值。<br> 这样做是必要的，因为在api调用返回以及vb调用继续执行期间，vb有时会重设GetLastError的值）</p>
-<p> GetLastError返回的值通过在api函数中调用SetLastError或SetLastErrorEx设置。函数<br> 并无必要设置上一次错误信息，所以即使一次GetLastError调用返回的是零值，也不能<br> 担保函数已成功执行。只有在函数调用返回一个错误结果时，这个函数指出的错误结果<br> 才是有效的。通常，只有在函数返回一个错误结果，而且已知函数会设置GetLastError<br> 变量的前提下，才应访问GetLastError；这时能保证获得有效的结果。SetLastError函<br> 数主要在对api函数进行模拟的dll函数中使用。</p>
 <blockquote>
-<p> GetLastError返回的值通过在api函数中调用SetLastError或SetLastErrorEx设置。函数并无必要设置上一次错误信息，<br> 所以即使一次GetLastError调用返回的是零值，也不能担保函数已成功执行。只有在函数调用返回一个错误结果时，<br> 这个函数指出的错误结果才是有效的。通常，只有在函数返回一个错误结果，而且已知函数会设置GetLastError变量的前提下，<br> 才应访问GetLastError；这时能保证获得有效的结果。SetLastError函数主要在对api函数进行模拟的dll函数中使用，<br> 所以对vb应用程序来说是没有意义的</p>
+<p> @”T:Microsoft.VisualBasic.Win32.GetLastErrorAPI.ErrorCodes” reference msdn:</p>
+<ul>
+<li><a href="https://support.microsoft.com/en-us/kb/155011" target="_blank" rel="external">https://support.microsoft.com/en-us/kb/155011</a></li>
+<li><a href="https://support.microsoft.com/EN-US/kb/155012" target="_blank" rel="external">https://support.microsoft.com/EN-US/kb/155012</a></li>
+</ul>
+</blockquote>
+<h3 id="Methods"><a href="#Methods" class="headerlink" title="Methods"></a>Methods</h3><h4 id="GetLastError"><a href="#GetLastError" class="headerlink" title="GetLastError"></a>GetLastError</h4><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Microsoft.VisualBasic.Win32.GetLastErrorAPI.GetLastError</span><br></pre></td></tr></table></figure>
+<p>针对之前调用的api函数，用这个函数取得扩展错误信息（在vb里使用：在vb中，用Err对象的<code>GetLastError</code><br> 属性获取<code>GetLastError</code>的值。这样做是必要的，因为在api调用返回以及vb调用继续执行期间，<br> vb有时会重设<code>GetLastError</code>的值）</p>
+<p> <code>GetLastError</code>返回的值通过在api函数中调用<code>SetLastError</code>或<code>SetLastErrorEx</code>设置。函数<br> 并无必要设置上一次错误信息，所以即使一次<code>GetLastError</code>调用返回的是零值，也不能<br> 担保函数已成功执行。只有在函数调用返回一个错误结果时，这个函数指出的错误结果<br> 才是有效的。通常，只有在函数返回一个错误结果，而且已知函数会设置<code>GetLastError</code><br> 变量的前提下，才应访问<code>GetLastError</code>；这时能保证获得有效的结果。<code>SetLastError</code>函<br> 数主要在对api函数进行模拟的dll函数中使用。</p>
+<blockquote>
+<p> <code>GetLastError</code>返回的值通过在api函数中调用<code>SetLastError</code>或<code>SetLastErrorEx</code>设置。函数并无必要设置上一次错误信息，<br> 所以即使一次<code>GetLastError</code>调用返回的是零值，也不能担保函数已成功执行。只有在函数调用返回一个错误结果时，<br> 这个函数指出的错误结果才是有效的。通常，只有在函数返回一个错误结果，而且已知函数会设置<code>GetLastError</code>变量的前提下，<br> 才应访问<code>GetLastError</code>；这时能保证获得有效的结果。<code>SetLastError</code>函数主要在对api函数进行模拟的dll函数中使用，<br> 所以对vb应用程序来说是没有意义的</p>
+</blockquote>
+<h4 id="GetLastErrorCode"><a href="#GetLastErrorCode" class="headerlink" title="GetLastErrorCode"></a>GetLastErrorCode</h4><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Microsoft.VisualBasic.Win32.GetLastErrorAPI.GetLastErrorCode</span><br></pre></td></tr></table></figure>
+<p>Retrieves the calling thread’s last-error code value. The last-error code is maintained on a per-thread basis.<br> Multiple threads do not overwrite each other’s last-error code.<br>_returns:<br> The return value is the calling thread’s last-error code.</p>
+<p> The Return Value section of the documentation for each function that sets the last-error code notes the conditions<br> under which the function sets the last-error code. Most functions that set the thread’s last-error code set it<br> when they fail. However, some functions also set the last-error code when they succeed. If the function is not<br> documented to set the last-error code, the value returned by this function is simply the most recent last-error<br> code to have been set; some functions set the last-error code to 0 on success and others do not.<br> _</p>
+<blockquote>
+<p> Functions executed by the calling thread set this value by calling the SetLastError function. You should call the<br> GetLastError function immediately when a function’s return value indicates that such a call will return useful data.<br> That is because some functions call SetLastError with a zero when they succeed, wiping out the error code set by<br> the most recently failed function.<br> To obtain an error string for system error codes, use the FormatMessage function. For a complete list of error codes<br> provided by the operating system, see System Error Codes.<br> The error codes returned by a function are Not part of the Windows API specification And can vary by operating system<br> Or device driver. For this reason, we cannot provide the complete list of error codes that can be returned by each<br> function. There are also many functions whose documentation does Not include even a partial list of error codes that<br> can be returned.<br> Error codes are 32-bit values (bit 31 Is the most significant bit). Bit 29 Is reserved For application-defined Error<br> codes; no system Error code has this bit Set. If you are defining an Error code For your application, Set this bit<br> To one. That indicates that the Error code has been defined by an application, And ensures that your Error code does<br> Not conflict With any Error codes defined by the system.</p>
+<p> To convert a system error into an HRESULT value, use the HRESULT_FROM_WIN32 macro.</p>
 </blockquote>
 
               
             </div>
             <footer class="article-footer">
               <a href="/API/T-Microsoft.VisualBasic.Win32.GetLastErrorAPI.html" class="article-date">
-  <time datetime="2016-07-07T09:46:40.776Z" itemprop="datePublished">2016-07-07</time>
+  <time datetime="2016-07-27T12:07:51.620Z" itemprop="datePublished">2016-07-27</time>
 </a>
               <a data-url="http://framework-docs.xieguigang.me/API/T-Microsoft.VisualBasic.Win32.GetLastErrorAPI.html" data-id="cipfqyi7400qpr0v4vo4le7sb" class="article-share-link">Share</a>
               

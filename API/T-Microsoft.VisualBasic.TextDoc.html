@@ -8,21 +8,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <meta name="baidu-site-verification" content="1ZsVVOmjoT" />
     <meta name="description" content="TextDocnamespace: Microsoft.VisualBasic
-MethodsIsTextFile1Microsoft.VisualBasic.TextDoc.IsTextFile(System.String,System.Int32)
-Determined that the target file is a text file or binary file? (判断是否是文本文件">
+MethodsForEachChar1Microsoft.VisualBasic.TextDoc.ForEachChar(System.String,Microsoft.VisualBasic.TextEncodings.Encodings)
+Enumerate all of the chars in the targ">
 <meta property="og:type" content="website">
 <meta property="og:title" content="TextDoc">
 <meta property="og:url" content="http://framework-docs.xieguigang.me/API/T-Microsoft.VisualBasic.TextDoc.html">
 <meta property="og:site_name" content="Microsoft VisualBasic App Framework API docs">
 <meta property="og:description" content="TextDocnamespace: Microsoft.VisualBasic
-MethodsIsTextFile1Microsoft.VisualBasic.TextDoc.IsTextFile(System.String,System.Int32)
-Determined that the target file is a text file or binary file? (判断是否是文本文件">
-<meta property="og:updated_time" content="2016-07-07T09:46:20.185Z">
+MethodsForEachChar1Microsoft.VisualBasic.TextDoc.ForEachChar(System.String,Microsoft.VisualBasic.TextEncodings.Encodings)
+Enumerate all of the chars in the targ">
+<meta property="og:updated_time" content="2016-07-27T12:07:50.520Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="TextDoc">
 <meta name="twitter:description" content="TextDocnamespace: Microsoft.VisualBasic
-MethodsIsTextFile1Microsoft.VisualBasic.TextDoc.IsTextFile(System.String,System.Int32)
-Determined that the target file is a text file or binary file? (判断是否是文本文件">
+MethodsForEachChar1Microsoft.VisualBasic.TextDoc.ForEachChar(System.String,Microsoft.VisualBasic.TextEncodings.Encodings)
+Enumerate all of the chars in the targ">
     
       <link rel="alternative" href="/atom.xml" title="Microsoft VisualBasic App Framework API docs" type="application/atom+xml">
     
@@ -120,7 +120,7 @@ var _hmt = _hmt || [];
         
 
         <!--<a href="/API/T-Microsoft.VisualBasic.TextDoc.html" class="article-date">
-  <time datetime="2016-07-07T09:46:20.185Z" itemprop="datePublished">2016-07-07</time>
+  <time datetime="2016-07-27T12:07:50.520Z" itemprop="datePublished">2016-07-27</time>
 </a>-->
         <!--  -->
       </div>
@@ -143,11 +143,31 @@ var _hmt = _hmt || [];
             
             <div class="article-entry" itemprop="articleBody">
               <div class="page-toc">
-                <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#TextDoc"><span class="toc-number">1.</span> <span class="toc-text">TextDoc</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Methods"><span class="toc-number">1.0.1.</span> <span class="toc-text">Methods</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#IsTextFile"><span class="toc-number">1.0.1.1.</span> <span class="toc-text">IsTextFile</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#IterateAllLines"><span class="toc-number">1.0.1.2.</span> <span class="toc-text">IterateAllLines</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#ReadAllLines"><span class="toc-number">1.0.1.3.</span> <span class="toc-text">ReadAllLines</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#ReadAllText"><span class="toc-number">1.0.1.4.</span> <span class="toc-text">ReadAllText</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#ReadFirstLine"><span class="toc-number">1.0.1.5.</span> <span class="toc-text">ReadFirstLine</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#SaveTo"><span class="toc-number">1.0.1.6.</span> <span class="toc-text">SaveTo</span></a></li></ol></li></ol></li></ol></li></ol>
+                <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#TextDoc"><span class="toc-number">1.</span> <span class="toc-text">TextDoc</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Methods"><span class="toc-number">1.0.1.</span> <span class="toc-text">Methods</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#ForEachChar"><span class="toc-number">1.0.1.1.</span> <span class="toc-text">ForEachChar</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#IsTextFile"><span class="toc-number">1.0.1.2.</span> <span class="toc-text">IsTextFile</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#IterateAllLines"><span class="toc-number">1.0.1.3.</span> <span class="toc-text">IterateAllLines</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#OpenWriter"><span class="toc-number">1.0.1.4.</span> <span class="toc-text">OpenWriter</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#ReadAllLines"><span class="toc-number">1.0.1.5.</span> <span class="toc-text">ReadAllLines</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#ReadAllText"><span class="toc-number">1.0.1.6.</span> <span class="toc-text">ReadAllText</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#ReadFirstLine"><span class="toc-number">1.0.1.7.</span> <span class="toc-text">ReadFirstLine</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#SaveTo"><span class="toc-number">1.0.1.8.</span> <span class="toc-text">SaveTo</span></a></li></ol></li></ol></li></ol></li></ol>
               </div>
               
                 <h1 id="TextDoc"><a href="#TextDoc" class="headerlink" title="TextDoc"></a>TextDoc</h1><p><em>namespace: <a href="N-Microsoft.VisualBasic.html">Microsoft.VisualBasic</a></em></p>
-<h3 id="Methods"><a href="#Methods" class="headerlink" title="Methods"></a>Methods</h3><h4 id="IsTextFile"><a href="#IsTextFile" class="headerlink" title="IsTextFile"></a>IsTextFile</h4><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Microsoft.VisualBasic.TextDoc.IsTextFile(System.String,System.Int32)</span><br></pre></td></tr></table></figure>
+<h3 id="Methods"><a href="#Methods" class="headerlink" title="Methods"></a>Methods</h3><h4 id="ForEachChar"><a href="#ForEachChar" class="headerlink" title="ForEachChar"></a>ForEachChar</h4><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Microsoft.VisualBasic.TextDoc.ForEachChar(System.String,Microsoft.VisualBasic.TextEncodings.Encodings)</span><br></pre></td></tr></table></figure>
+<p>Enumerate all of the chars in the target text file.</p>
+<table>
+<thead>
+<tr>
+<th>Parameter Name</th>
+<th>Remarks</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>path</td>
+<td>-</td>
+</tr>
+<tr>
+<td>encoding</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<h4 id="IsTextFile"><a href="#IsTextFile" class="headerlink" title="IsTextFile"></a>IsTextFile</h4><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Microsoft.VisualBasic.TextDoc.IsTextFile(System.String,System.Int32)</span><br></pre></td></tr></table></figure>
 <p>Determined that the target file is a text file or binary file?<br> (判断是否是文本文件)</p>
 <table>
 <thead>
@@ -183,6 +203,26 @@ var _hmt = _hmt || [];
 <tbody>
 <tr>
 <td>path</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<h4 id="OpenWriter"><a href="#OpenWriter" class="headerlink" title="OpenWriter"></a>OpenWriter</h4><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Microsoft.VisualBasic.TextDoc.OpenWriter(System.String,Microsoft.VisualBasic.TextEncodings.Encodings,System.String)</span><br></pre></td></tr></table></figure>
+<p>Open text file writer, this function will auto handle all things.</p>
+<table>
+<thead>
+<tr>
+<th>Parameter Name</th>
+<th>Remarks</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>path</td>
+<td>-</td>
+</tr>
+<tr>
+<td>encoding</td>
 <td>-</td>
 </tr>
 </tbody>
@@ -272,7 +312,7 @@ var _hmt = _hmt || [];
             </div>
             <footer class="article-footer">
               <a href="/API/T-Microsoft.VisualBasic.TextDoc.html" class="article-date">
-  <time datetime="2016-07-07T09:46:20.185Z" itemprop="datePublished">2016-07-07</time>
+  <time datetime="2016-07-27T12:07:50.520Z" itemprop="datePublished">2016-07-27</time>
 </a>
               <a data-url="http://framework-docs.xieguigang.me/API/T-Microsoft.VisualBasic.TextDoc.html" data-id="cipfqyi6z00qgr0v4ke2i74va" class="article-share-link">Share</a>
               

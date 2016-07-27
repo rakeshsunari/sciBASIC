@@ -1,0 +1,398 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Statistics | Microsoft VisualBasic App Framework API docs</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="baidu-site-verification" content="1ZsVVOmjoT" />
+    <meta name="description" content="Statisticsnamespace: Microsoft.VisualBasic.DataMining
+Set of statistics functions.
+
+The class represents collection of simple functions used in statistics.
+
+MethodsEntropy1Microsoft.VisualBasic.DataMi">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Statistics">
+<meta property="og:url" content="http://framework-docs.xieguigang.me/API/T-Microsoft.VisualBasic.DataMining.Statistics.html">
+<meta property="og:site_name" content="Microsoft VisualBasic App Framework API docs">
+<meta property="og:description" content="Statisticsnamespace: Microsoft.VisualBasic.DataMining
+Set of statistics functions.
+
+The class represents collection of simple functions used in statistics.
+
+MethodsEntropy1Microsoft.VisualBasic.DataMi">
+<meta property="og:updated_time" content="2016-07-27T12:07:52.098Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Statistics">
+<meta name="twitter:description" content="Statisticsnamespace: Microsoft.VisualBasic.DataMining
+Set of statistics functions.
+
+The class represents collection of simple functions used in statistics.
+
+MethodsEntropy1Microsoft.VisualBasic.DataMi">
+    
+      <link rel="alternative" href="/atom.xml" title="Microsoft VisualBasic App Framework API docs" type="application/atom+xml">
+    
+    
+      <link rel="icon" href="https://raw.githubusercontent.com/xieguigang/VisualBasic_AppFramework/master/logo.jpg">
+    
+    <link rel="stylesheet" href="/css/style.css">
+
+    
+<!-- Baidu Analytics -->
+<script type="text/javascript">
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "//hm.baidu.com/hm.js?fe2c7555911b8560db5e56121c5d5960";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+<!-- End Baidu Analytics -->
+
+
+    <script src="//cdn.bootcss.com/jquery/2.0.3/jquery.min.js"></script>
+</head>
+<body>
+<div id="container"> 
+
+    
+    <div id="wrap">
+	   
+
+<header id="header" class="hdpage">
+    
+    <div id="header-outer" class="outer">
+        
+        <div id="header-inner" class="inner">
+          <nav id="main-nav">
+            <a id="main-nav-toggle" class="nav-icon"></a>
+            
+              <a class="main-nav-link" href="/">
+                  
+                  
+
+                
+                  Home
+                </a>
+            
+              <a class="main-nav-link" href="/API">
+                  
+                  
+
+                
+                  API
+                </a>
+            
+              <a class="main-nav-link" href="https://github.com/xieguigang/VisualBasic_AppFramework">
+                  
+                  
+
+                
+                  Github
+                </a>
+            
+          </nav>
+          <nav id="sub-nav">
+            
+              <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+            
+            <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+          </nav>
+          <div id="search-form-wrap">
+            <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" results="0" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://framework-docs.xieguigang.me"></form>
+          </div>
+        </div>
+    </div>
+</header>
+		<div class="outer">
+		
+    <article id="page-undefined" class="article article-type-page" itemscope itemprop="blogPost">
+      <div class="article-meta">
+        
+          <header class="article-header">
+            
+  
+    <a href="/API/T-Microsoft.VisualBasic.DataMining.Statistics.html">
+      <h1 class="article-title" itemprop="name">
+        Statistics
+      </h1>
+    </a>
+  
+
+
+
+          </header>
+        
+
+        <!--<a href="/API/T-Microsoft.VisualBasic.DataMining.Statistics.html" class="article-date">
+  <time datetime="2016-07-27T12:07:52.098Z" itemprop="datePublished">2016-07-27</time>
+</a>-->
+        <!--  -->
+      </div>
+      <div class="article-inner">
+            
+            
+              <!--<header class="article-header">
+                
+  
+    <a href="/API/T-Microsoft.VisualBasic.DataMining.Statistics.html">
+      <h1 class="article-title" itemprop="name">
+        Statistics
+      </h1>
+    </a>
+  
+
+
+
+              </header>-->
+            
+            <div class="article-entry" itemprop="articleBody">
+              <div class="page-toc">
+                <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Statistics"><span class="toc-number">1.</span> <span class="toc-text">Statistics</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Methods"><span class="toc-number">1.0.1.</span> <span class="toc-text">Methods</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#Entropy"><span class="toc-number">1.0.1.1.</span> <span class="toc-text">Entropy</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#GetRange"><span class="toc-number">1.0.1.2.</span> <span class="toc-text">GetRange</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Mean"><span class="toc-number">1.0.1.3.</span> <span class="toc-text">Mean</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Median"><span class="toc-number">1.0.1.4.</span> <span class="toc-text">Median</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Mode"><span class="toc-number">1.0.1.5.</span> <span class="toc-text">Mode</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#StdDev"><span class="toc-number">1.0.1.6.</span> <span class="toc-text">StdDev</span></a></li></ol></li></ol></li></ol></li></ol>
+              </div>
+              
+                <h1 id="Statistics"><a href="#Statistics" class="headerlink" title="Statistics"></a>Statistics</h1><p><em>namespace: <a href="N-Microsoft.VisualBasic.DataMining.html">Microsoft.VisualBasic.DataMining</a></em></p>
+<p>Set of statistics functions.</p>
+<blockquote>
+<p>The class represents collection of simple functions used<br> in statistics.</p>
+</blockquote>
+<h3 id="Methods"><a href="#Methods" class="headerlink" title="Methods"></a>Methods</h3><h4 id="Entropy"><a href="#Entropy" class="headerlink" title="Entropy"></a>Entropy</h4><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Microsoft.VisualBasic.DataMining.Statistics.Entropy(System.Int32[])</span><br></pre></td></tr></table></figure>
+<p>Calculate entropy value.</p>
+<table>
+<thead>
+<tr>
+<th>Parameter Name</th>
+<th>Remarks</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>values</td>
+<td>Histogram array.</td>
+</tr>
+</tbody>
+</table>
+<p><em>returns: Returns entropy value of the specified histagram array.</em></p>
+<blockquote>
+<p>The input array is treated as histogram, i.e. its<br> indexes are treated as values of stochastic function, but<br> array values are treated as “probabilities” (total amount of<br> hits).Sample usage:<br> ‘<br> // create histogram array with 2 values of equal probabilities<br> int[] histogram1 = new int[2] { 3, 3 };<br> // calculate entropy<br> double entropy1 = Statistics.Entropy( histogram1 );<br> // output it (1.000)<br> Console.WriteLine( “entropy1 = “ + entropy1.ToString( “F3” ) );</p>
+<p> // create histogram array with 4 values of equal probabilities<br> int[] histogram2 = new int[4] { 1, 1, 1, 1 };<br> // calculate entropy<br> double entropy2 = Statistics.Entropy( histogram2 );<br> // output it (2.000)<br> Console.WriteLine( “entropy2 = “ + entropy2.ToString( “F3” ) );</p>
+<p> // create histogram array with 4 values of different probabilities<br> int[] histogram3 = new int[4] { 1, 2, 3, 4 };<br> // calculate entropy<br> double entropy3 = Statistics.Entropy( histogram3 );<br> // output it (1.846)<br> Console.WriteLine( “entropy3 = “ + entropy3.ToString( “F3” ) );<br> ‘</p>
+</blockquote>
+<h4 id="GetRange"><a href="#GetRange" class="headerlink" title="GetRange"></a>GetRange</h4><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Microsoft.VisualBasic.DataMining.Statistics.GetRange(System.Int32[],System.Double)</span><br></pre></td></tr></table></figure>
+<p>Get range around median containing specified percentage of values.</p>
+<table>
+<thead>
+<tr>
+<th>Parameter Name</th>
+<th>Remarks</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>values</td>
+<td>Histogram array.</td>
+</tr>
+<tr>
+<td>percent</td>
+<td>Values percentage around median.</td>
+</tr>
+</tbody>
+</table>
+<p><em>returns: Returns the range which containes specifies percentage<br> of values.</em></p>
+<blockquote>
+<p>The input array is treated as histogram, i.e. its<br> indexes are treated as values of stochastic function, but<br> array values are treated as “probabilities” (total amount of<br> hits).The method calculates range of stochastic variable, which summary probability<br> comprises the specified percentage of histogram’s hits.Sample usage:<br> ‘<br> // create histogram array<br> int[] histogram = new int[] { 1, 1, 2, 3, 6, 8, 11, 12, 7, 3 };<br> // get 75% range around median<br> IntRange range = Statistics.GetRange( histogram, 0.75 );<br> // output it ([4, 8])<br> Console.WriteLine( “range = [“ + range.Min + “, “ + range.Max + “]” );<br> ‘</p>
+</blockquote>
+<h4 id="Mean"><a href="#Mean" class="headerlink" title="Mean"></a>Mean</h4><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Microsoft.VisualBasic.DataMining.Statistics.Mean(System.Int32[])</span><br></pre></td></tr></table></figure>
+<p>Calculate mean value.</p>
+<table>
+<thead>
+<tr>
+<th>Parameter Name</th>
+<th>Remarks</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>values</td>
+<td>Histogram array.</td>
+</tr>
+</tbody>
+</table>
+<p><em>returns: Returns mean value.</em></p>
+<blockquote>
+<p>The input array is treated as histogram, i.e. its<br> indexes are treated as values of stochastic function, but<br> array values are treated as “probabilities” (total amount of<br> hits).Sample usage:<br> ‘<br> // create histogram array<br> int[] histogram = new int[] { 1, 1, 2, 3, 6, 8, 11, 12, 7, 3 };<br> // calculate mean value<br> double mean = Statistics.Mean( histogram );<br> // output it (5.759)<br> Console.WriteLine( “mean = “ + mean.ToString( “F3” ) );<br> ‘</p>
+</blockquote>
+<h4 id="Median"><a href="#Median" class="headerlink" title="Median"></a>Median</h4><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Microsoft.VisualBasic.DataMining.Statistics.Median(System.Int32[])</span><br></pre></td></tr></table></figure>
+<p>Calculate median value.</p>
+<table>
+<thead>
+<tr>
+<th>Parameter Name</th>
+<th>Remarks</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>values</td>
+<td>Histogram array.</td>
+</tr>
+</tbody>
+</table>
+<p><em>returns: Returns value of median.</em></p>
+<blockquote>
+<p>The input array is treated as histogram, i.e. its<br> indexes are treated as values of stochastic function, but<br> array values are treated as “probabilities” (total amount of<br> hits).The median value is calculated accumulating histogram’s<br> values starting from the left point until the sum reaches 50% of<br> histogram’s sum.Sample usage:<br> ‘<br> // create histogram array<br> int[] histogram = new int[] { 1, 1, 2, 3, 6, 8, 11, 12, 7, 3 };<br> // calculate median value<br> int median = Statistics.Median( histogram );<br> // output it (6)<br> Console.WriteLine( “median = “ + median );<br> ‘</p>
+</blockquote>
+<h4 id="Mode"><a href="#Mode" class="headerlink" title="Mode"></a>Mode</h4><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Microsoft.VisualBasic.DataMining.Statistics.Mode(System.Int32[])</span><br></pre></td></tr></table></figure>
+<p>Calculate mode value.</p>
+<table>
+<thead>
+<tr>
+<th>Parameter Name</th>
+<th>Remarks</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>values</td>
+<td>Histogram array.</td>
+</tr>
+</tbody>
+</table>
+<p><em>returns: Returns mode value of the histogram array.</em></p>
+<blockquote>
+<p>The input array is treated as histogram, i.e. its<br> indexes are treated as values of stochastic function, but<br> array values are treated as “probabilities” (total amount of<br> hits).Returns the minimum mode value if the specified histogram is multimodal.Sample usage:<br> ‘<br> // create array<br> int[] values = new int[] { 1, 1, 2, 3, 6, 8, 11, 12, 7, 3 };<br> // calculate mode value<br> int mode = Statistics.Mode( values );<br> // output it (7)<br> Console.WriteLine( “mode = “ + mode );<br> ‘</p>
+</blockquote>
+<h4 id="StdDev"><a href="#StdDev" class="headerlink" title="StdDev"></a>StdDev</h4><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Microsoft.VisualBasic.DataMining.Statistics.StdDev(System.Int32[],System.Double)</span><br></pre></td></tr></table></figure>
+<p>Calculate standard deviation.</p>
+<table>
+<thead>
+<tr>
+<th>Parameter Name</th>
+<th>Remarks</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>values</td>
+<td>Histogram array.</td>
+</tr>
+<tr>
+<td>mean</td>
+<td>Mean value of the histogram.</td>
+</tr>
+</tbody>
+</table>
+<p><em>returns: Returns value of standard deviation.</em></p>
+<blockquote>
+<p>The input array is treated as histogram, i.e. its<br> indexes are treated as values of stochastic function, but<br> array values are treated as “probabilities” (total amount of<br> hits).The method is an equevalent to the @”M:Microsoft.VisualBasic.DataMining.Statistics.StdDev(System.Int32[])” method,<br> but it relieas on the passed mean value, which is previously calculated<br> using @”M:Microsoft.VisualBasic.DataMining.Statistics.Mean(System.Int32[])” method.</p>
+</blockquote>
+
+              
+            </div>
+            <footer class="article-footer">
+              <a href="/API/T-Microsoft.VisualBasic.DataMining.Statistics.html" class="article-date">
+  <time datetime="2016-07-27T12:07:52.098Z" itemprop="datePublished">2016-07-27</time>
+</a>
+              <a data-url="http://framework-docs.xieguigang.me/API/T-Microsoft.VisualBasic.DataMining.Statistics.html" data-id="cir4uu8ih00308kv4g6jg725j" class="article-share-link">Share</a>
+              
+              
+            </footer>
+      </div>
+      
+        
+      
+    </article>
+    <script type="text/javascript">
+      window.onscroll = function(){ 
+        $(function(){
+          var $toc = $('.page-toc'),
+              $article = $('.article-entry')
+              toc_top = $toc.offset().top
+              tocsub_width = $toc.children().width()
+              article_height = $article.children().height()
+              scroll_top = document.body.scrollTop
+              screen_h = $(window).height()
+              footer_top = $('.article-footer').offset().top - $(window).height()
+              if(toc_top&&scroll_top&&scroll_top>toc_top&&scroll_top<footer_top){
+                $toc.children().css({
+                  "position": "fixed",
+                  "height": (screen_h -20)+'px',
+                  "overflow": "auto"
+                })
+                $article.css('margin-right',tocsub_width+'px')
+              }else{
+                $toc.children().css({
+                  "position": "relative",
+                  "height":'inherit',
+                  "overflow": "auto"
+                })
+                $article.css('margin-right',0+'px')
+              }
+        })
+      } 
+    </script>
+
+
+
+
+
+
+
+
+		</div>
+		
+
+<footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+        <div class="left">
+            &copy; 2016 谢桂纲<br>
+            Powered by <a href="http://hexo.io/" target="_blank">Hexo</a> and Theme by <a href="https://github.com/jaywcjlove/hexoThemeKacper">hexoThemeKacper </a>
+        </div>
+        <div class="right">
+            
+        </div>
+    </div>
+  </div>
+</footer>
+<script src="//cdn.bootcss.com/jquery/2.0.3/jquery.min.js"></script>
+
+
+<script type="text/javascript">
+$(function(){
+  var $img = $('.article-entry img'),
+      $link = $img.css({
+        "display":"inline-block"
+      }).parent()
+
+  if($link.parent().is("a")){
+      $img.each(function(idx,item) {
+      $(this).parent().attr('href',$(this).parent().parent().attr('href'))
+    })
+  }
+})
+</script>
+
+
+<script src="/js/script.js"></script>
+
+  	</div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/API" class="mobile-nav-link">API</a>
+  
+    <a href="https://github.com/xieguigang/VisualBasic_AppFramework" class="mobile-nav-link">Github</a>
+  
+</nav>
+    
+</div>
+</body>
+</html>
+
