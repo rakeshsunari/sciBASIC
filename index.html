@@ -1,31 +1,42 @@
 <!DOCTYPE html>
 <html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:Web="http://schemas.live.com/Web/">
-	<link rel="stylesheet" href="./bing.css">
-	<link rel="stylesheet" href="./content.css">
+	<link rel="stylesheet" href="./styles/bing.css">
+	<link rel="stylesheet" href="./styles/content.css">
 	<link href="https://cdn.rawgit.com/xieguigang/sciBASIC/master/logo.jpg" rel="shortcut icon" />
 
 	<head>
 		<title>sciBASIC#</title>
 		<meta content="text/html; charset=utf-8" http-equiv="content-type" />
+		<script src="lib/marked.min.js"></script>
+		<script src="lib/http.js"></script>
 		<!-- <link href="/search?format=rss&amp;q=product+showcase+++html+website&amp;qs=n&amp;form=QBLH&amp;pq=product+showcase+html+website&amp;sc=0-29&amp;sp=-1&amp;sk=&amp;cvid=2DFE0B0F40494394B33F459C9859F529" rel="alternate" title="RSS" type="application/rss+xml" /> -->
 	</head>
 
 <body>    
 	<nav class="b_scopebar" role="navigation">		
 		<ul>			
-			<li><a href="#" h="ID=SERP,5019.1">Core</a></li>
-			<li class="b_active"><a href="#" h="ID=SERP,5018.1">Data</a></li>
-			<li><a href="#" h="ID=SERP,5019.1">Data science</a></li>
-			<li><a href="#" h="ID=SERP,5020.1">Graphics System</a></li>
-			<li><a href="#" h="ID=SERP,5021.1">MIME Parser</a></li>
-			<li><a href="#" h="ID=SERP,5022.1">WWW</a></li>
+			<li class="b_active"><a href="#" h="ID=SERP,5019.1">HOME</a></li>
+			<li><a href="#" h="ID=SERP,5018.1">SDK</a></li>
 			<li><a href="#" h="ID=SERP,5023.1">About</a></li>
 		</ul>
 	</nav>
-
-	<br/>
-	<br/>
-	<br/>
+	
+	<div id="b_content">
+		<div id="b_tween"></div>
+		<div id="content"></div>		
+	</div>
+	
+	<script>
+		var url = "./contents/README.md"
+	
+		httpGetAsync(url, function(html) {
+		
+			html = marked(html);
+			document.getElementById('content')
+				.innerHTML = html;		
+		
+		});				
+	</script>
 
 	<footer class="b_footer" role="contentinfo">
 		<div id="b_footerItems">
