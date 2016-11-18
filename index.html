@@ -16,8 +16,8 @@
 	<nav class="b_scopebar" role="navigation">		
 		<ul>			
 			<li class="b_active"><a href="#" h="ID=SERP,5019.1">HOME</a></li>
-			<li><a href="#" h="ID=SERP,5018.1">SDK</a></li>
-			<li><a href="#" h="ID=SERP,5023.1">About</a></li>
+			<li><a href="/SDK.html" h="ID=SERP,5018.1">SDK</a></li>
+			<li><a href="/about.html" h="ID=SERP,5023.1">About</a></li>
 		</ul>
 	</nav>
 	
@@ -28,14 +28,8 @@
 	
 	<script>
 		var url = "./contents/README.md"
-	
-		httpGetAsync(url, function(html) {
 		
-			html = marked(html);
-			document.getElementById('content')
-				.innerHTML = html;		
-		
-		});				
+		load(url);
 	</script>
 
 	<footer class="b_footer" role="contentinfo">
