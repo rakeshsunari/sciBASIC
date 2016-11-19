@@ -1,5 +1,5 @@
 ﻿# ProjectType
-_namespace: [Microsoft.VisualBasic.SoftwareToolkits.XmlDoc.Assembly](<a href="#" onClick="load('/docs/Microsoft.VisualBasic.SoftwareToolkits.XmlDoc.Assembly/index.md')"></a>)_
+_namespace: <a href="#" onClick="load('/docs/Microsoft.VisualBasic.SoftwareToolkits.XmlDoc.Assembly/index.md')">Microsoft.VisualBasic.SoftwareToolkits.XmlDoc.Assembly</a>_
 
 A type within a project namespace.
 
@@ -9,7 +9,7 @@ A type within a project namespace.
 
 #### ExportMarkdownFile
 ```csharp
-Microsoft.VisualBasic.SoftwareToolkits.XmlDoc.Assembly.ProjectType.ExportMarkdownFile(System.String,System.String,System.Boolean)
+Microsoft.VisualBasic.SoftwareToolkits.XmlDoc.Assembly.ProjectType.ExportMarkdownFile(System.String,System.String,Microsoft.VisualBasic.SoftwareToolkits.XmlDoc.Serialization.URLBuilder)
 ```
 Exports for the specific type in a namespace
 
@@ -17,7 +17,7 @@ Exports for the specific type in a namespace
 |--------------|-------|
 |folderPath|-|
 |pageTemplate|-|
-|hexoPublish|-|
+|url|-|
 
 > 这里还应该包括完整的函数的参数注释的输出
 

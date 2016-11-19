@@ -3,15 +3,17 @@
 
 |Type|Summary|
 |----|-------|
-|<a href="#" onClick="load('/docs/Microsoft.VisualBasic.Mathematical/INextRandomNumber.md')">INextRandomNumber</a>|Generates a random number|
-|<a href="#" onClick="load('/docs/Microsoft.VisualBasic.Mathematical/IRandomSeeds.md')">IRandomSeeds</a>|Tells the function how to generates a new random seed?|
-|<a href="#" onClick="load('/docs/Microsoft.VisualBasic.Mathematical/MatrixExtensions.md')">MatrixExtensions</a>|This class contains methods that perform mathematical operations on matrices. ...|
-|<a href="#" onClick="load('/docs/Microsoft.VisualBasic.Mathematical/NumberGroups.md')">NumberGroups</a>|Simple number vector grouping|
-|<a href="#" onClick="load('/docs/Microsoft.VisualBasic.Mathematical/PreciseRandom.md')">PreciseRandom</a>|主要针对的是非常小的小数（仅适用于Positive Number）|
-|<a href="#" onClick="load('/docs/Microsoft.VisualBasic.Mathematical/RandomExtensions.md')">RandomExtensions</a>|Some extension methods for @``T:System.Random`` for creating a few more kinds of random stuff.|
-|<a href="#" onClick="load('/docs/Microsoft.VisualBasic.Mathematical/RandomRange.md')">RandomRange</a>|针对负数到正数的range随机数，小数位最多精确到1E-4|
-|<a href="#" onClick="load('/docs/Microsoft.VisualBasic.Mathematical/Ranks.md')">Ranks</a>||
-|<a href="#" onClick="load('/docs/Microsoft.VisualBasic.Mathematical/ScaleMaps.md')">ScaleMaps</a>||
-|<a href="#" onClick="load('/docs/Microsoft.VisualBasic.Mathematical/Trigonometric.md')">Trigonometric</a>||
-|<a href="#" onClick="load('/docs/Microsoft.VisualBasic.Mathematical/VBMathExtensions.md')">VBMathExtensions</a>||
+|<a href="#" onClick="load('/docs/Microsoft.VisualBasic.Mathematical/Bootstraping.md')">Bootstraping</a>||
+|<a href="#" onClick="load('/docs/Microsoft.VisualBasic.Mathematical/Expression.md')">Expression</a>|Expression Evaluation Engine|
+|<a href="#" onClick="load('/docs/Microsoft.VisualBasic.Mathematical/ExpressionParser.md')">ExpressionParser</a>|Parser for complex expressions|
+|<a href="#" onClick="load('/docs/Microsoft.VisualBasic.Mathematical/Extensions.md')">Extensions</a>||
+|<a href="#" onClick="load('/docs/Microsoft.VisualBasic.Mathematical/Func.md')">Func</a>|User define function.(用户自定义函数)|
+|<a href="#" onClick="load('/docs/Microsoft.VisualBasic.Mathematical/FuncCaller.md')">FuncCaller</a>|Function object model.(调用函数的方法)|
+|<a href="#" onClick="load('/docs/Microsoft.VisualBasic.Mathematical/FuncParser.md')">FuncParser</a>|Parser for the user define @``T:Microsoft.VisualBasic.Mathematical.Func``.(用户自定义函数的解析器)|
+|<a href="#" onClick="load('/docs/Microsoft.VisualBasic.Mathematical/MemoryCollection`1.md')">MemoryCollection`1</a>||
+|<a href="#" onClick="load('/docs/Microsoft.VisualBasic.Mathematical/MetaExpression`2.md')">MetaExpression`2</a>||
+|<a href="#" onClick="load('/docs/Microsoft.VisualBasic.Mathematical/ScriptEngine.md')">ScriptEngine</a>|Math expression script engine.|
+|<a href="#" onClick="load('/docs/Microsoft.VisualBasic.Mathematical/SimpleParser.md')">SimpleParser</a>|Parser for simple expression|
+|<a href="#" onClick="load('/docs/Microsoft.VisualBasic.Mathematical/TokenIcer.md')">TokenIcer</a>||
+|<a href="#" onClick="load('/docs/Microsoft.VisualBasic.Mathematical/Tokens.md')">Tokens</a>||
 

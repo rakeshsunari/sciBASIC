@@ -1,0 +1,12 @@
+﻿# Surface
+_namespace: <a href="#" onClick="load('/docs/Microsoft.VisualBasic.Imaging.Drawing3D/index.md')">Microsoft.VisualBasic.Imaging.Drawing3D</a>_
+
+
+
+
+
+
+### Properties
+
+#### vertices
+请注意，在这里面的点都是有先后顺序分别的

@@ -1,5 +1,5 @@
 ﻿# DocAPI
-_namespace: [Microsoft.VisualBasic.SoftwareToolkits.XmlDoc.Serialization](<a href="#" onClick="load('/docs/Microsoft.VisualBasic.SoftwareToolkits.XmlDoc.Serialization/index.md')"></a>)_
+_namespace: <a href="#" onClick="load('/docs/Microsoft.VisualBasic.SoftwareToolkits.XmlDoc.Serialization/index.md')">Microsoft.VisualBasic.SoftwareToolkits.XmlDoc.Serialization</a>_
 
 
 
@@ -17,5 +17,18 @@ Microsoft.VisualBasic.SoftwareToolkits.XmlDoc.Serialization.DocAPI.__trans(Syste
 |--------------|-------|
 |cref|-|
 
+
+#### GetLibraryType
+```csharp
+Microsoft.VisualBasic.SoftwareToolkits.XmlDoc.Serialization.DocAPI.GetLibraryType(Microsoft.VisualBasic.Language.Value{System.String})
+```
+类型名称的大小写不敏感
+
+|Parameter Name|Remarks|
+|--------------|-------|
+|type|-|
+
+
+_returns: 查找失败的时候默认是返回@``F:Microsoft.VisualBasic.SoftwareToolkits.XmlDoc.Serialization.Libraries.Github``_
 
 

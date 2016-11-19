@@ -1,5 +1,5 @@
 ﻿# ProjectSpace
-_namespace: [Microsoft.VisualBasic.SoftwareToolkits.XmlDoc.Assembly](<a href="#" onClick="load('/docs/Microsoft.VisualBasic.SoftwareToolkits.XmlDoc.Assembly/index.md')"></a>)_
+_namespace: <a href="#" onClick="load('/docs/Microsoft.VisualBasic.SoftwareToolkits.XmlDoc.Assembly/index.md')">Microsoft.VisualBasic.SoftwareToolkits.XmlDoc.Assembly</a>_
 
 A collection of one or more projects put together, and their attendant namespaces.
 
@@ -9,19 +9,19 @@ A collection of one or more projects put together, and their attendant namespace
 
 #### BuildIndex
 ```csharp
-Microsoft.VisualBasic.SoftwareToolkits.XmlDoc.Assembly.ProjectSpace.BuildIndex(System.String,System.Boolean)
+Microsoft.VisualBasic.SoftwareToolkits.XmlDoc.Assembly.ProjectSpace.BuildIndex(System.String,Microsoft.VisualBasic.SoftwareToolkits.XmlDoc.Serialization.Libraries)
 ```
 
 
 |Parameter Name|Remarks|
 |--------------|-------|
 |out|-|
-|hexoPublish|Generates the hexo page source?|
+|lib|Generates the hexo page source?|
 
 
 #### ExportMarkdownFiles
 ```csharp
-Microsoft.VisualBasic.SoftwareToolkits.XmlDoc.Assembly.ProjectSpace.ExportMarkdownFiles(System.String,System.Boolean)
+Microsoft.VisualBasic.SoftwareToolkits.XmlDoc.Assembly.ProjectSpace.ExportMarkdownFiles(System.String,Microsoft.VisualBasic.SoftwareToolkits.XmlDoc.Serialization.URLBuilder)
 ```
 Using this method for the xml docs export as markdown documents
 
@@ -30,7 +30,7 @@ Using this method for the xml docs export as markdown documents
 |folderPath|
  The root directory folder path for the generated markdown document that saved.
  |
-|hexoPublish|Generates the hexo page source file?|
+|url|Generates the hexo page source file?|
 
 
 
